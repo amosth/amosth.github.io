@@ -114,8 +114,8 @@ function update() {
         p = particles[i];
 
         // Change the velocities
-        p.x += p.vx;
-        p.y += p.vy
+        //p.x += p.vx;
+        //p.y += p.vy
 
         // We don't want to make the particles leave the
         // area, so just change their position when they
