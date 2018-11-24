@@ -24,15 +24,15 @@ canvas.width = W;
 canvas.height = H;
 
 // Some variables for later use
-var particleCount = 20,
+var particleCount = 50,
     particles = [],
-    minDist = 70,
+    minDist = 60,
     dist;
 
 // Function to paint the canvas black
 function paintCanvas() {
     // Set the fill color to black
-    ctx.fillStyle = "rgba(0,10,0,1)";
+    ctx.fillStyle = "rgba(0,20,0,1)";
 
     // This will create a rectangle of white color from the
     // top left (0,0) to the bottom right corner (W,H)
@@ -66,7 +66,7 @@ function Particle() {
 
     // Now the radius of the particles. I want all of
     // them to be equal in size so no Math.random() here..
-    this.radius = 4;
+    this.radius = 0;
 
     // This is the method that will draw the Particle on the
     // canvas. It is using the basic fillStyle, then we start
@@ -164,7 +164,7 @@ function distance(p1, p2) {
 
         // Draw the line
         ctx.beginPath();
-        ctx.strokeStyle = "rgba(0,150,0,"+ (1.2-dist/minDist) +")";
+        ctx.strokeStyle = "rgba(0,180,0,"+ (1.2-dist/minDist) +")";
         ctx.moveTo(p1.x, p1.y);
         ctx.lineTo(p2.x, p2.y);
         ctx.stroke();
