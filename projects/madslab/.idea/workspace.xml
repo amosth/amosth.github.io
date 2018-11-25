@@ -14,20 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="110" column="163" selection-start-line="110" selection-start-column="163" selection-end-line="110" selection-end-column="163" />
+            <state relative-caret-position="222">
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contacts.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/contacts.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="962">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="30">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="78" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -42,8 +42,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/contacts.css" />
         <option value="$PROJECT_DIR$/contacts.html" />
+        <option value="$PROJECT_DIR$/css/contacts.css" />
       </list>
     </option>
   </component>
@@ -58,9 +58,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="388" />
-    <option name="y" value="232" />
-    <option name="width" value="1229" />
-    <option name="height" value="707" />
+    <option name="y" value="231" />
+    <option name="width" value="1228" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -113,18 +113,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543149382823</updated>
-      <workItem from="1543149387170" duration="353000" />
+      <workItem from="1543149387170" duration="431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353000" />
+    <option name="totallyTimeSpent" value="431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="388" y="232" width="1229" height="707" extended-state="0" />
+    <frame x="388" y="231" width="1228" height="708" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979658" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -150,17 +150,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/contacts.css">
+    <entry file="file://$PROJECT_DIR$/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="222">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacts.html">
+    <entry file="file://$PROJECT_DIR$/css/contacts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="110" column="163" selection-start-line="110" selection-start-column="163" selection-end-line="110" selection-end-column="163" />
+        <state relative-caret-position="30">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="78" selection-end-column="1" />
         </state>
       </provider>
     </entry>

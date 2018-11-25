@@ -60,9 +60,28 @@
     background: linear-gradient(to bottom, rgba(248,248,248,1) 0%,rgba(248,248,248,.8) 40%,rgba(248,248,248,.1) 80%,rgba(248,248,248,0) 100%);
 }
 
+.gmnoprint:last-of-type{
+	top: 100px !important;
+}
+
+.gm-style:nth-child(1) > div:nth-child(7){
+	top: 100px !important;
+}
+
+.gm-style:nth-child(2) > div:nth-child(10),
+.gm-style:nth-child(2) > div:nth-child(9),
+.gm-style:nth-child(2) > div:nth-child(7){
+	top: 100px !important;
+}
+
+.gm-style:nth-child(2) > div:nth-child(10) > div{
+	height: 56px;
+}
+
 #main-content {
   padding-bottom: 0;
 }
+
 
 
 /************
@@ -85,6 +104,20 @@
 
 	#map-gradient{
 		display: none;
+	}
+
+	.gmnoprint:last-of-type{
+		top: initial !important;
+	}
+
+	.gm-style:nth-child(1) > div:nth-child(7){
+		top: initial !important;
+	}
+
+	.gm-style:nth-child(2) > div:nth-child(10)
+	.gm-style:nth-child(2) > div:nth-child(9),
+	.gm-style:nth-child(2) > div:nth-child(7){
+		top: initial !important;
 	}
 
 	.row a:hover p{
