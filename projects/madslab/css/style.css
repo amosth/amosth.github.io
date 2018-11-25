@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,700');
+
+
+html{
+
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: #7F7F7F;
+}
+
+a{
+	color: #7F7F7F;
+	transition: all .2s linear;
+}
+
+p, span, .page-title, .not-linked{
+	cursor: default;
+}
+
+a p, a span{
+	cursor: auto;
+	transition: all .2s linear;
+}
+
+a:visited{
+	color: #7F7F7F;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #7F7F7F;
+	text-decoration: none;
+
+}
+
+a:hover{
+	color: #7F7F7F;
+	text-decoration: none;
+}
+
+
+
+/* TITLE & subtitle */
+
+.page-title{
+	font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.page-subtitle{
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
+
+.page-title2{
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+
+/*
+	first description
+*/
+.description{
+	margin-top: 50px;
+	text-align: center;
+  font-size: 18px;
+  font-weight: lighter;
+	letter-spacing: -1.04px;
+}
+
+/*
+	"main div" present in every page
+*/
+#main-content{
+	background-color: #F8F8F8;
+	padding-bottom: 60px;
+	margin-top: -20px;
+}
+
+/*
+	general classes
+*/
+.medium-weight{
+	font-weight: 500; /* medium */
+	white-space: nowrap;
+}
+
+.bg-fff{
+	background-color: #fff;
+}
+
+
+/* STRENGTHS */
+
+#strengths-wrapper{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #dbdbdb;
+	position: relative;
+}
+
+.strengths img{
+	display: block;
+	margin: auto;
+	width: 32px;
+	margin-bottom: 15px;
+}
+
+.strengths:nth-child(2){
+	margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.strengths p{
+	font-family: 'PT serif', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	color: #656B6F;
+	margin: 0 auto 10px auto;
+    max-width: 80%;
+}
+
+
+/************
+
+	MOBILE
+
+	font-sizes:
+		h1 (titles) -> ~23px
+		p -> ~13px
+		little descriptions -> ~11.5px
+
+
+*************/
+
+@media all and (max-width: 767px){
+
+	/* TITLE & subtitle */
+
+	.page-title{
+		font-size: 23px;
+	}
+
+	.description{
+		font-size: 14px;
+	}
+
+	/* STRENGTHS */
+
+	.strengths p{
+		font-size: 12.5px;
+		margin-bottom: 40px;
+		max-width: 100%;
+	}
+
+	.strengths:nth-child(2) {
+	    margin-bottom: 20px;
+	}
+
+}

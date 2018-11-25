@@ -1,0 +1,160 @@
+.page-subtitle{
+  font-size: 24px;
+}
+
+.description{
+  margin-top: 40px;
+}
+
+.member-picture {
+    height: 144px;
+    filter: grayscale(100%);
+    transition: all .2s linear;
+}
+
+.photo-wrapper{
+  margin-bottom: 25px;
+}
+
+.photo-wrapper > div{
+  text-align: center;
+}
+
+.member-name{
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #3B3D40;
+  letter-spacing: 1.5px;
+  margin: 10px 0 0 0;
+}
+
+.member-role{
+  font-family: "PT serif", sans-serif;
+  font-size: 13px;
+}
+
+.linked {
+  color: #3B3D40;
+}
+
+.photo-wrapper a:hover img{
+  filter: none;
+}
+
+.photo-wrapper a:hover .member-name{
+  color: #962009;
+}
+
+#main-content a:visited {
+  color: #3B3D40;
+}
+
+
+
+.special-behav{
+  display: inline-block;
+  text-align: center;
+}
+
+.member-item  {
+  text-align: center;
+  display: inline;
+}
+
+.photo-wrapper{
+    margin-bottom: 0;
+}
+
+.photo-wrapper > div{
+    margin-bottom: 25px;
+}
+
+.special{
+  display: inline-block;
+}
+
+@media all and (min-width: 768px){
+
+  .photo-wrapper {
+      margin-bottom: 25px;
+  }
+
+  .photo-wrapper:nth-child(2) > div:first-child{
+    text-align: right;
+  }
+
+  .photo-wrapper:nth-child(2) > div:last-child{
+    text-align: left;
+  }
+
+  .person-container {
+      margin-top: 50px;
+  }
+
+}
+
+@media all and (max-width: 767px){
+
+  .member-name{
+    color: #962009;
+  }
+
+  .member-item a:not(.not-linked){
+    color: #962009;
+  }
+
+}
+
+/*  ***************************************************   */
+
+.member-picture:hover {
+  filter: none;
+}
+
+.person-container {
+  margin-bottom: 40px;
+}
+
+.members-time {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #7F7F7F;
+  letter-spacing: -1.38px;
+  text-align: center;
+}
+
+.name {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 11px;
+  color: #3B3D40;
+  letter-spacing: 1.5px;
+  transition: all .2s linear;
+}
+
+.former {
+  margin-bottom: 16px !important;
+}
+
+.member-description {
+  margin-bottom: 40px;
+  font-family: "PT Serif", sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+  color: #656B6F;
+  letter-spacing: 0;
+}
+
+#main-content a.name:hover:not(.not-linked) {
+  color: #962009;
+}
+
+.not-linked {
+  font-weight: 400;
+  color: #56595D;
+}
+
+.not-linked:hover {
+  color: #3B3D40;
+}

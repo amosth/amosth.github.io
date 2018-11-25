@@ -1,0 +1,35 @@
+#main-content{
+	padding-bottom: 120px;
+}
+
+/* image */
+
+#idea-image{
+	display: block;
+	margin: 60px auto 20px auto;
+	width: 135px;
+	height: auto;
+}
+
+#strengths-wrapper{
+	margin-top: 50px;
+}
+
+/* titles */
+.page-title2{
+	margin-top: 80px;
+	color: #962009;
+}
+
+.main {
+	margin-top: 40px !important;
+	margin-bottom: 0 !important;
+}
+
+.description{
+	margin-top: 10px;
+}
+
+#lets-talk {
+	color: #962009;
+}
