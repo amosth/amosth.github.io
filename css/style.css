@@ -1,41 +1,3 @@
-/*DEFINING MAISON NEUE FONT-FACE, weight between 200 and 600*/
-@font-face {
-    font-family: 'Maison Neue';
-    src: url('../fonts/maison-neue/woff2/mn-light.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-light.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Maison Neue';
-    src: url('../fonts/maison-neue/woff2/mn-demi.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-demi.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Maison Neue';
-    src: url('../fonts/maison-neue/woff2/mn-book.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-book.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Maison Neue';
-    src: url('../fonts/maison-neue/woff2/mn-medium.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Maison Neue';
-    src: url('../fonts/maison-neue/woff2/mn-bold.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-bold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Maison Neue Mono';
-    src: url('../fonts/maison-neue/woff2/mn-mono.woff2') format('woff2'),  url('../fonts/maison-neue/woff/mn-mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body,
 html {
     height: 100%;
@@ -81,7 +43,8 @@ canvas {
 
 h1 {
     z-index: 0;
-    font-family: 'Microgramma';
+    font-family: 'Maison Neue';
+    font-weight: 600;
     font-size: 48px;
     color: #eeeeee;
     position: absolute;
