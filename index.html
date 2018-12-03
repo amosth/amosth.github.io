@@ -137,7 +137,16 @@
         <div id='pagecontent'>
             <canvas id="canvas"></canvas>
             <script src="js/animation.js"></script>
-            <h1 id="title">Amos</h1>
+            <h1 id="names">Amos</h1>
+
+            <script>
+                var names = ['test1', 'test2', 'test3', 'test4'];
+
+                setInterval(function() {
+                    var rand = Math.floor(Math.random() * 4);
+                    document.getElementById("name").innerHTML = names[rand];
+                }, 1000);
+            </script>
             <span class="mouse">
 	            <span></span>
             </span>
