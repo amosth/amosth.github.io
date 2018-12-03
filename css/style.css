@@ -41,7 +41,7 @@ canvas {
     z-index: -1;
 }
 
-h1 {
+h1, #name {
     z-index: 0;
     font-family: 'Maison Neue';
     font-weight: 600;
