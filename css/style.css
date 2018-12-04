@@ -41,7 +41,23 @@ canvas {
     z-index: -1;
 }
 
-h3, #name {
+h3 {
+    width: 100%;
+    font-family: 'Maison Neue';
+    margin: 0;
+    font-size: 22px;
+    line-height: normal;
+    text-align: left;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+    cursor: default;
+}
+
+
+
+#name {
     z-index: 0;
     font-family: 'Maison Neue';
     font-weight: 600;
