@@ -149,7 +149,7 @@
                     startDelay: 200,
                     speed: 200,
                     lifelike: true,
-                    cursorChar: "_",
+                    /*cursorChar: "_",*/
                 })
                     .type('Hi')
                     .pause(500)
@@ -168,9 +168,9 @@
                 };
                 setInterval(function () {
                     words = getRandomWord();
-                    $('#first').html(words[0]);
-                    $('#last').html(words[1]);
-                }, 500);
+                    $('#first').html(words[0]).delay(3000)fadeIn();
+                    $('#last').html(words[1]).delay(3000)fadeIn();
+                }, 300);
             </script>
 
             <span class="mouse">
