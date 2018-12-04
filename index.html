@@ -148,12 +148,7 @@
                     </p>
 
                     <script>
-                        $(document).ready(function() {
-                            setTimeout(function() {
-                                $(".clearfix").fadeIn(200);
-                            },7000);
-                        });
-
+                        $("#intro .clearfix").hide();
 
                         new TypeIt('#title', {
                             startDelay: 200,
@@ -169,7 +164,8 @@
                             .options({speed: 100})
                             .delete()
                             .options({speed: 200})
-                            .type('I create',function () {
+                            .type('I create', function () {
+                                alert("ciao");
                                 $("#intro .clearfix").show();
                             })
 
