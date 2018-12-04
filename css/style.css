@@ -43,9 +43,11 @@ canvas {
 
 #intro {
     width: 1000px;
-    height: 132px;
+    height: 100vh;
     margin: auto;
-    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
