@@ -27,6 +27,7 @@
 
             <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js'></script>
             <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js'></script>
+            <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js" />
             <script>
                 TweenMax.set('#circlePath', {
                     attr: {
@@ -142,6 +143,28 @@
                 <span id="first"></span>
                 <span id="last"></span>
             </p>
+
+            <script>
+                new TypeIt('#title', {
+                    speed: 50,
+                    autoStart: false
+                })
+                    .type('Wll')
+                    .pause(500)
+                    .delete(2)
+                    .type('ell, ')
+                    .pause(1000)
+                    .type('I guess I\'m typing..')
+                    .break()
+                    .pause(750)
+                    .type(' but I don\'t really know what to say')
+                    .options({speed: 700})
+                    .type('...')
+                    .pause(750)
+                    .options({speed: 50})
+                    .delete()
+                    .type('IS THAT SO <strong>WRONG??</strong>');
+            </script>
 
             <script>
                 var firstWordsArray = ['Fantastic', 'Beautiful', 'Inspiring', 'Lovely', 'Strong', 'Clever', 'Playful', 'Brilliant', 'Strong', 'Elegant', 'Remarkable', 'Spectacular', 'Sensational', 'Astonishing', 'Sophisticated', 'Innovative'],
