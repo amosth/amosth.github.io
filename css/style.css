@@ -41,6 +41,10 @@ canvas {
     z-index: -1;
 }
 
+#intro {
+    margin: 200px;
+}
+
 h3 {
     width: 100%;
     font-family: 'Maison Neue';
