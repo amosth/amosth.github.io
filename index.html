@@ -169,7 +169,9 @@
                             .options({speed: 100})
                             .delete()
                             .options({speed: 200})
-                            .type('I create')
+                            .type('I create',function () {
+                                $("#intro .clearfix").show();
+                            })
 
                         var firstWordsArray = ['Fantastic', 'Beautiful', 'Inspiring', 'Lovely', 'Strong', 'Clever', 'Playful', 'Brilliant', 'Strong', 'Elegant', 'Remarkable', 'Spectacular', 'Sensational', 'Astonishing', 'Sophisticated', 'Innovative'],
                             secondWordsArray = ['apps', 'websites', 'systems', 'brands', 'reports', 'art', 'design', 'decks', 'logos', 'UI', 'campaigns'],
