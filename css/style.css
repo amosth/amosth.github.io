@@ -119,6 +119,7 @@ h3 {
 }
 
 .clearfix {
+    opacity: 0;
     animation-name: titleOpacity;
     animation-delay: 5s;
     animation-duration: 1s;
