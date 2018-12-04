@@ -149,6 +149,7 @@
                     startDelay: 200,
                     speed: 200,
                     lifelike: true,
+                    autoStart: false,
                     cursorChar: "_",
                 })
                     .type('Hi')
@@ -160,7 +161,7 @@
                     .options({speed: 200})
                     .type('I create')
                     .type('_')
-                    .pause()
+                    .pause(10000)
 
                 var firstWordsArray = ['Fantastic', 'Beautiful', 'Inspiring', 'Lovely', 'Strong', 'Clever', 'Playful', 'Brilliant', 'Strong', 'Elegant', 'Remarkable', 'Spectacular', 'Sensational', 'Astonishing', 'Sophisticated', 'Innovative'],
                     secondWordsArray = ['apps', 'websites', 'systems', 'brands', 'reports', 'art', 'design', 'decks', 'logos', 'UI', 'campaigns'],
