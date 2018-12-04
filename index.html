@@ -147,6 +147,13 @@
                 </p>
 
                 <script>
+                    $(document).ready(function() {
+                        setTimeout(function() {
+                            $(".clearfix").fadeIn(200);
+                        },7000);
+                    });
+
+
                     new TypeIt('#title', {
                         startDelay: 200,
                         speed: 200,
