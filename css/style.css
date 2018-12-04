@@ -57,9 +57,6 @@ h3 {
     cursor: default;
 }
 
-#title:after {
-    content: "_";
-}
 
 .clearfix {
     position: relative;
