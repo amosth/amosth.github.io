@@ -45,7 +45,6 @@ canvas {
     width: 1000px;
     height: 132px;
     margin: auto;
-    display: table-cell;
     vertical-align: middle;
 
 }
