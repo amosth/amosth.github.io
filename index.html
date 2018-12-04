@@ -148,10 +148,10 @@
                     </p>
 
                     <script>
-                        function showTitle() {
+                        var showTitle = function() {
                             alert("ciao");
                             $("#intro .clearfix").show();
-                        }
+                        };
                         $("#intro .clearfix").hide();
 
                         new TypeIt('#title', {
