@@ -71,6 +71,7 @@ h3 {
 #first, #last {
     z-index: 0;
     font-family: 'Maison Neue';
+    color: #eeeeee;
     font-size: 104px;
     line-height: 104px;
     text-align: left;
