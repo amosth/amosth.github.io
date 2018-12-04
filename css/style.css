@@ -113,6 +113,19 @@ h3 {
 }
 
 
+@keyframes titleOpacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.clearfix {
+    animation-name: titleOpacity;
+    animation-delay: 5s;
+    animation-duration: 1s;
+}
+
+
+
 @-webkit-keyframes ani-mouse {
     0% {
         opacity: 1;
