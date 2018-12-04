@@ -145,8 +145,11 @@
             </p>
 
             <script>
-                new TypeIt('#title', {
-                    speed: 30,
+                var introducing = new TypeIt('#title', {
+                    startDelay: 200,
+                    speed: 500,
+                    lifelike: true,
+                    cursorChar: "_",
                 })
                     .type('Hi')
                     .pause(500)
@@ -154,6 +157,11 @@
                     .pause(1000)
                     .delete()
                     .type('I create')
+
+                if(introfucing.isComplete) {
+                    cursor: false;
+                }
+
             </script>
 
             <script>
