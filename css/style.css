@@ -71,10 +71,10 @@ h3 {
 #first, #last {
     z-index: 0;
     font-family: 'Maison Neue';
+    font-weight: 600;
     color: #eeeeee;
     font-size: 104px;
     line-height: 104px;
-    text-align: left;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
@@ -84,10 +84,12 @@ h3 {
 
 #first {
     margin-left: 0 !important;
+    text-align: left;
 }
 
 #last {
     margin-right: 0 !important;
+    text-align: right;
 }
 
 
