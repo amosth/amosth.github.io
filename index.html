@@ -214,7 +214,11 @@
 	            <span></span>
             </span>
 
-            
+            <ul class="pagination">
+                <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
+                <li><a class="" href="#about"><span class="hover-text">About</span></a></li>
+                <li><a class="" href="#projects"><span class="hover-text">Projects</span></a></li>
+            </ul>
         </section>
         <script>
             var loader = document.getElementById("loader");
@@ -262,15 +266,7 @@
                         pagination += "</ul>";
 
                         $(".home").append(pagination);
-                        /*
 
-                        Tip: The two click events below are the same:
-
-                        $(".pagination a").on("click",function() {
-                          $.scrollify.move($(this).attr("href"));
-                        });
-
-                        */
                         $(".pagination a").on("click",$.scrollify.move);
                     }
                 });
