@@ -8,28 +8,7 @@
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
-        <script>
-            $(function() {
-                $.scrollify({
-                    section : "section",
-                    sectionName : "section-name",
-                    interstitialSection : "",
-                    easing: "easeOutExpo",
-                    scrollSpeed: 700,
-                    offset : 0,
-                    scrollbars: false,
-                    standardScrollElements: "",
-                    setHeights: true,
-                    overflowScroll: false,
-                    updateHash: true,
-                    touchScroll:true,
-                    before:function() {},
-                    after:function() {},
-                    afterResize:function() {},
-                    afterRender:function() {}
-                });
-            });
-        </script>
+
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
     </head>
@@ -239,11 +218,23 @@
             </div>
         </section>
 
-        <!--<script>
+        <script>
             $(function() {
                 $.scrollify({
-                    section:".panel",
-                    scrollbars:false,
+                    section : "section",
+                    sectionName : "section-name",
+                    interstitialSection : "",
+                    easing: "easeOutExpo",
+                    scrollSpeed: 700,
+                    offset : 0,
+                    scrollbars: false,
+                    standardScrollElements: "",
+                    setHeights: true,
+                    overflowScroll: false,
+                    updateHash: true,
+                    touchScroll:true,
+                    after:function() {},
+                    afterResize:function() {},
                     before:function(i,panels) {
 
                         var ref = panels[i].attr("data-section-name");
@@ -273,6 +264,6 @@
             });
 
 
-        </script>-->
+        </script>
     </body>
 </html>
