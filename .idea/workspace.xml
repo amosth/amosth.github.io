@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="219" column="31" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
+            <state relative-caret-position="52">
+              <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
               <folding>
                 <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -146,12 +146,12 @@
       <workItem from="1543510858101" duration="1137000" />
       <workItem from="1543604444195" duration="15948000" />
       <workItem from="1543951925498" duration="4338000" />
-      <workItem from="1544016429181" duration="5804000" />
+      <workItem from="1544016429181" duration="5950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27227000" />
+    <option name="totallyTimeSpent" value="27373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="424" y="125" width="1243" height="630" extended-state="0" />
@@ -187,7 +187,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>223</line>
+          <line>219</line>
           <properties lambdaOrdinal="-1" />
         </line-breakpoint>
       </breakpoints>
@@ -261,8 +261,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="219" column="31" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
+        <state relative-caret-position="52">
+          <caret line="216" column="12" selection-start-line="216" selection-start-column="12" selection-end-line="216" selection-end-column="12" />
           <folding>
             <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
