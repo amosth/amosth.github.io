@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+              <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -72,9 +72,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="240" />
-    <option name="y" value="137" />
+    <option name="y" value="378" />
     <option name="width" value="1478" />
-    <option name="height" value="813" />
+    <option name="height" value="572" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -135,15 +135,15 @@
       <updated>1543510856461</updated>
       <workItem from="1543510858101" duration="1137000" />
       <workItem from="1543604444195" duration="15948000" />
-      <workItem from="1543951925498" duration="3116000" />
+      <workItem from="1543951925498" duration="3307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20201000" />
+    <option name="totallyTimeSpent" value="20392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="137" width="1478" height="813" extended-state="0" />
+    <frame x="240" y="378" width="1478" height="572" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17089911" />
@@ -219,7 +219,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="90" selection-start-line="7" selection-start-column="90" selection-end-line="7" selection-end-column="90" />
+          <caret line="7" column="59" lean-forward="true" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
