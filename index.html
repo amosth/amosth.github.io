@@ -8,6 +8,28 @@
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+        <script>
+            $(function() {
+                $.scrollify({
+                    section : "section",
+                    sectionName : "section-name",
+                    interstitialSection : "",
+                    easing: "easeOutExpo",
+                    scrollSpeed: 1100,
+                    offset : 0,
+                    scrollbars: true,
+                    standardScrollElements: "",
+                    setHeights: true,
+                    overflowScroll: true,
+                    updateHash: true,
+                    touchScroll:true,
+                    before:function() {},
+                    after:function() {},
+                    afterResize:function() {},
+                    afterRender:function() {}
+                });
+            });
+        </script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
     </head>
@@ -139,7 +161,7 @@
                 mainTl.timeScale(1.1)
             </script>
         </div>
-        <section id='pagecontent'>
+        <section class="prova" id='pagecontent'>
             <canvas id="canvas"></canvas>
             <script src="js/animation.js"></script>
 
@@ -192,20 +214,19 @@
 	            <span></span>
             </span>
         </section>
-
         <script>
             var loader = document.getElementById("loader");
             window.addEventListener('load', function(){
                 loader.style.display = 'none';
             })
         </script>
-        <section class="panel1">
+        <section class="prova panel1">
             <div class="inner">
                 <div class="vertical-center">
                 </div>
             </div>
         </section>
-        <section class="panel2">
+        <section class="prova panel2">
             <div class="inner">
                 <div class="vertical-center">
                 </div>
