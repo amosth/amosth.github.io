@@ -2,14 +2,18 @@
 <html>
     <head>
         <title>AMOSTH</title>
-
         <meta charset="UTF-8" name="keywords" content="HTML, CSS, XML, JavaScript">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="js/jquery.scrollify.js"></script>
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
-        <link rel="icon"/>
+        <script>
+            var loader = document.getElementById("loader");
+            window.addEventListener('load', function(){
+                loader.style.display = 'none';
+            })
+        </script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/fonts.css">
     </head>
@@ -210,11 +214,5 @@
                 </div>
             </div>
         </section>
-        <script>
-            var loader = document.getElementById("loader");
-            window.addEventListener('load', function(){
-                loader.style.display = 'none';
-            })
-        </script>
     </body>
 </html>
