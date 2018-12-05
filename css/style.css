@@ -67,6 +67,10 @@ li, span {
     vertical-align: baseline;
 }
 
+ul {
+    list-style: none;
+}
+
 
 .pagination {
     position: fixed;
