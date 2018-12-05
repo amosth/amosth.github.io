@@ -41,6 +41,24 @@ canvas {
     z-index: -1;
 }
 
+section {
+    margin: 0;
+}
+
+.panel1 {
+    background: hsl(28,100%,52%);
+}
+
+.panel2 {
+    background: hsl(200,60%,55%);
+}
+
+.inner {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+
 #intro {
     width: 1000px;
     height: 100vh;
