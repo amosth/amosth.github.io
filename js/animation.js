@@ -32,7 +32,7 @@ var particleCount = 50,
 // Function to paint the canvas black
 function paintCanvas() {
     var grd = ctx.createLinearGradient(0, 0, 0, H);
-    grd.addColorStop(0, "#003300");
+    grd.addColorStop(0, "#002000");
     grd.addColorStop(1, "#000000");
     ctx.fillStyle = grd;
     // This will create a rectangle of white color from the
