@@ -31,9 +31,10 @@ var particleCount = 50,
 
 // Function to paint the canvas black
 function paintCanvas() {
-    // Set the fill color to black
-    ctx.fillStyle = "linear-gradient(to bottom, #009900 0%, #000000 100%)";
-
+    var grd = ctx.createLinearGradient(0, 0, 0, 170);
+    grd.addColorStop(0, "#003300");
+    grd.addColorStop(0.6, "#000000");
+    ctx.fillStyle = grd;
     // This will create a rectangle of white color from the
     // top left (0,0) to the bottom right corner (W,H)
     ctx.fillRect(0,0,W,H);
