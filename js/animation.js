@@ -31,7 +31,7 @@ var particleCount = 50,
 
 // Function to paint the canvas black
 function paintCanvas() {
-    var grd = ctx.createLinearGradient(0, 0, 0, H);
+    var grd = ctx.createLinearGradient(0, 0, 0, 500);
     grd.addColorStop(0, "#008800");
     grd.addColorStop(1, "#000000");
     ctx.fillStyle = grd;
