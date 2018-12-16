@@ -33,7 +33,7 @@ var particleCount = 50,
 function paintCanvas() {
     var grd = ctx.createLinearGradient(0, 0, 0, 170);
     grd.addColorStop(0, "#008800");
-    grd.addColorStop(3, "#000000");
+    grd.addColorStop(1, "#000000");
     ctx.fillStyle = grd;
     // This will create a rectangle of white color from the
     // top left (0,0) to the bottom right corner (W,H)
