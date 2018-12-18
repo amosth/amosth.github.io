@@ -73,19 +73,19 @@ ul {
 
 .midnightHeader.white {
     background: none;
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .midnightHeader.black {
     background: none;
-    color: #000000 !important;
+    color: #000000;
 }
 
 
 .pagination {
     position:fixed;
-    right:20px !important;
-    top: 50% !important;
+    right:20px;
+    top: 50%;
     transform: translateY(-50%);
 
     font-size:1.4em;
