@@ -71,6 +71,16 @@ ul {
     list-style: none;
 }
 
+.midnightHeader.white {
+    background: none;
+    color: #ffffff;
+}
+
+.midnightHeader.black {
+    background: none;
+    color: #000000;
+}
+
 
 .pagination {
     position:fixed;
