@@ -19,13 +19,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="197" column="33" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
+            <state relative-caret-position="417">
+              <caret line="205" column="26" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
               <folding>
                 <element signature="e#810#6514#0" />
                 <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -168,12 +167,12 @@
       <workItem from="1544016429181" duration="7090000" />
       <workItem from="1544620688572" duration="161000" />
       <workItem from="1544970876949" duration="2584000" />
-      <workItem from="1545136385727" duration="3263000" />
+      <workItem from="1545136385727" duration="3369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34521000" />
+    <option name="totallyTimeSpent" value="34627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="244" y="146" width="1431" height="836" extended-state="0" />
@@ -206,12 +205,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.html</url>
-          <line>204</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
@@ -224,7 +217,6 @@
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -268,7 +260,6 @@
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -297,7 +288,6 @@
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -326,7 +316,6 @@
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -348,7 +337,6 @@
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -405,13 +393,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="197" column="33" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
+        <state relative-caret-position="417">
+          <caret line="205" column="26" selection-start-line="205" selection-start-column="26" selection-end-line="205" selection-end-column="26" />
           <folding>
             <element signature="e#810#6514#0" />
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#0;n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
