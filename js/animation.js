@@ -116,7 +116,7 @@ function update() {
 
         // Change the velocities
         p.x += p.vx;
-        p.y += p.vy
+        p.y += p.vy;
 
         // We don't want to make the particles leave the
         // area, so just change their position when they
