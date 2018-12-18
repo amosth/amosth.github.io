@@ -73,12 +73,12 @@ ul {
 
 .midnightHeader.white {
     background: none;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .midnightHeader.black {
     background: none;
-    color: #000000;
+    color: #000000 !important;
 }
 
 
