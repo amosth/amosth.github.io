@@ -11,6 +11,9 @@
         <script src="js/jquery.scrollify.js"></script>
         <script>
             $(function() {
+
+                $('ul.fixed').midnight();
+
                 $.scrollify({
                     section : "section",
                     sectionName : "section-name",
@@ -190,16 +193,7 @@
                 mainTl.timeScale(1.1)
             </script>
         </div>
-
-
-        <script>
-            // Start midnight
-            $(document).ready(function(){
-                // Change this to the correct selector.
-                $('ul.fixed').midnight();
-            });
-        </script>
-
+        
 
 
         <section class="prova" id='pagecontent' data-section-name="home" data-midnight="white">
