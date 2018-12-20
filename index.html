@@ -9,6 +9,52 @@
 
         <!-- Scrollify -->
         <script src="js/jquery.scrollify.js"></script>
+        <script>
+            $(function() {
+                $.scrollify({
+                    section : "section",
+                    sectionName : "section-name",
+                    interstitialSection : "",
+                    easing: "easeOutExpo",
+                    scrollSpeed: 700,
+                    offset : 0,
+                    scrollbars: false,
+                    standardScrollElements: "",
+                    setHeights: true,
+                    overflowScroll: false,
+                    updateHash: true,
+                    touchScroll:true,
+                    after:function() {},
+                    afterResize:function() {},
+                    before:function(i,panels) {
+
+                        var ref = panels[i].attr("data-section-name");
+
+                        $(".pagination .active").removeClass("active");
+
+                        $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+                    },
+                    afterRender:function() {
+                        var pagination = "<ul class=\"pagination\">";
+                        var activeClass = "";
+                        $(".panel").each(function(i) {
+                            activeClass = "";
+                            if(i===0) {
+                                activeClass = "active";
+                            }
+                            pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+                        });
+
+                        pagination += "</ul>";
+
+                        $(".home").append(pagination);
+
+                        $(".pagination a").on("click",$.scrollify.move);
+                    }
+                });
+            });
+            
+        </script>
         <!-- UIkit JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
@@ -216,10 +262,11 @@
             </ul>
         </section>
         <script>
+            /*
             var loader = document.getElementById("loader");
             window.addEventListener('load', function(){
                 loader.style.display = 'none';
-            })
+            })*/
         </script>
         <section class="prova panel1" data-section-name="about" data-midnight="black">
             <div class="inner">
@@ -233,54 +280,5 @@
                 </div>
             </div>
         </section>
-
-        <script>
-            $(function() {
-                $.scrollify({
-                    section : "section",
-                    sectionName : "section-name",
-                    interstitialSection : "",
-                    easing: "easeOutExpo",
-                    scrollSpeed: 700,
-                    offset : 0,
-                    scrollbars: false,
-                    standardScrollElements: "",
-                    setHeights: true,
-                    overflowScroll: false,
-                    updateHash: true,
-                    touchScroll:true,
-                    after:function() {},
-                    afterResize:function() {},
-                    before:function(i,panels) {
-
-                        var ref = panels[i].attr("data-section-name");
-
-                        $(".pagination .active").removeClass("active");
-
-                        $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
-                    },
-                    afterRender:function() {
-                        /*
-                        var pagination = "<ul class=\"pagination\">";
-                        var activeClass = "";
-                        $(".panel").each(function(i) {
-                            activeClass = "";
-                            if(i===0) {
-                                activeClass = "active";
-                            }
-                            pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-                        });
-
-                        pagination += "</ul>";
-
-                        $(".home").append(pagination);
-
-                        $(".pagination a").on("click",$.scrollify.move);*/
-                    }
-                });
-            });
-
-
-        </script>
     </body>
 </html>
