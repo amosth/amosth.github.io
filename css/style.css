@@ -68,7 +68,6 @@ li, span {
 
 ul {
     list-style: none;
-    left: initial;
 }
 
 .midnightHeader.default {
@@ -90,9 +89,9 @@ ul {
 .pagination {
     position:fixed;
     right:20px !important;
+    left: initial !important;
     top: 50% !important;
     transform: translateY(-50%);
-
     font-size:1.4em;
     z-index: 10;
 }
