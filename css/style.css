@@ -74,14 +74,16 @@ ul {
     background: none;
     color: #ffffff;
 }
+.midnightHeader.black a.active:after {
+    color: #ffffff;
+}
 
 .midnightHeader.black {
     background: none;
     color: #000000;
 }
-
 .midnightHeader.black a.active:after {
-    color: black;
+    color: #000000;
 }
 
 .pagination {
