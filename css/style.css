@@ -70,7 +70,7 @@ ul {
     list-style: none;
 }
 
-.midnightHeader.white {
+.midnightHeader.default {
     background: none;
     color: #ffffff;
 }
@@ -94,7 +94,7 @@ ul {
     display:block;
     height:20px;
     margin-bottom:5px;
-    color:white;
+    color: inherit;
     position:relative;
     padding:4px;
 }
