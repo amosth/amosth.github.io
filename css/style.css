@@ -118,7 +118,7 @@ ul {
     -webkit-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
     width: 100%;
-    padding-right: 25px;
+    right: 25px;
 }
 .pagination a:hover .hover-text {
     opacity: 1;
