@@ -36,8 +36,8 @@
       <file leaf-file-name="hamburgers.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/hamburgers.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="100" column="98" selection-start-line="100" selection-start-column="98" selection-end-line="100" selection-end-column="98" />
+            <state relative-caret-position="200">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -86,6 +86,7 @@
       <find>scrollify</find>
       <find>scrolli</find>
       <find>document</find>
+      <find>r</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,8 +116,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="268" />
-    <option name="y" value="119" />
+    <option name="x" value="228" />
+    <option name="y" value="244" />
     <option name="width" value="1374" />
     <option name="height" value="647" />
   </component>
@@ -189,15 +190,15 @@
       <workItem from="1544016429181" duration="7090000" />
       <workItem from="1544620688572" duration="161000" />
       <workItem from="1544970876949" duration="2584000" />
-      <workItem from="1545136385727" duration="13127000" />
+      <workItem from="1545136385727" duration="13222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44385000" />
+    <option name="totallyTimeSpent" value="44480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="268" y="119" width="1374" height="647" extended-state="0" />
+    <frame x="228" y="244" width="1374" height="647" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18403548" />
@@ -442,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/hamburgers.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="100" column="98" selection-start-line="100" selection-start-column="98" selection-end-line="100" selection-end-column="98" />
+        <state relative-caret-position="200">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
