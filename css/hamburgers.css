@@ -6,19 +6,17 @@
  * @link https://github.com/jonsuh/hamburgers
  */
 .hamburger {
+    transform: scale(0.7);
     float: right;
-    padding: 15px 15px;
+    margin-top: 25px;
+    margin-right: 15px;
     display: inline-block;
     cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
     font: inherit;
     color: inherit;
     text-transform: none;
     background-color: transparent;
     border: 0;
-    margin: 0;
     overflow: visible; }
 .hamburger:hover {
     opacity: 0.7; }
