@@ -47,7 +47,6 @@ canvas {
     text-decoration: none;
     color: inherit;
     writing-mode: vertical-rl;
-    position: fixed;
     left: 15px;
     bottom: 140px;
 }
