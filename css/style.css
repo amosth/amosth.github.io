@@ -42,7 +42,9 @@ canvas {
 #email-link {
     font-family: 'Maison Neue', sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+    letter-spacing: -.5px;
+    text-decoration: nones;
     writing-mode: vertical-rl;
     position: fixed;
 }
