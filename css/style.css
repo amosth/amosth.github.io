@@ -45,6 +45,7 @@ canvas {
     font-size: 12px;
     letter-spacing: -0.5px;
     text-decoration: none;
+    color: #ffffff;
     writing-mode: vertical-rl;
     position: fixed;
     left: 10px;
