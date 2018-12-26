@@ -47,6 +47,8 @@ canvas {
     text-decoration: nones;
     writing-mode: vertical-rl;
     position: fixed;
+    left: 10px;
+    bottom: 180px;
 }
 
 section {
