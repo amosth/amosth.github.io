@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+            <state relative-caret-position="350">
+              <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
               <folding>
                 <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -54,8 +54,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="186" column="29" lean-forward="true" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
+            <state relative-caret-position="23">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#3598#3845#0" />
                 <element signature="e#3846#4090#0" />
@@ -181,12 +181,12 @@
       <workItem from="1544016429181" duration="7090000" />
       <workItem from="1544620688572" duration="161000" />
       <workItem from="1544970876949" duration="2584000" />
-      <workItem from="1545136385727" duration="18714000" />
+      <workItem from="1545136385727" duration="18813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49972000" />
+    <option name="totallyTimeSpent" value="50071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="214" y="160" width="1374" height="647" extended-state="0" />
@@ -419,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="186" column="29" lean-forward="true" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
+        <state relative-caret-position="23">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#3598#3845#0" />
             <element signature="e#3846#4090#0" />
@@ -434,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="256" column="46" selection-start-line="256" selection-start-column="46" selection-end-line="256" selection-end-column="46" />
+        <state relative-caret-position="350">
+          <caret line="266" column="20" selection-start-line="266" selection-start-column="20" selection-end-line="266" selection-end-column="20" />
           <folding>
             <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
