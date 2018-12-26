@@ -39,6 +39,14 @@ canvas {
     z-index: -1;
 }
 
+#email-link {
+    font-family: 'Maison Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    position: fixed;
+}
+
 section {
     margin: 0;
 }
