@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/css/hamburgers.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/hamburgers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,23 +34,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hamburgers.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/hamburgers.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="e#16523#16540#0" />
-                <element signature="e#16585#16718#0" />
-                <element signature="e#16762#16780#0" />
-                <element signature="e#16828#16885#0" />
-                <element signature="e#16940#17023#0" />
-                <element signature="e#17077#17136#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hamburgers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/hamburgers.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,12 +52,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="319">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               <folding>
+                <element signature="e#2076#2093#0" />
+                <element signature="e#2138#2271#0" />
+                <element signature="e#2315#2333#0" />
+                <element signature="e#2381#2438#0" />
+                <element signature="e#2493#2576#0" />
+                <element signature="e#2630#2689#0" />
                 <element signature="e#3598#3845#0" />
                 <element signature="e#3846#4090#0" />
                 <element signature="e#4091#4330#0" />
@@ -109,8 +99,8 @@
         <option value="$PROJECT_DIR$/js/animation.js" />
         <option value="$PROJECT_DIR$/js/hamburgers.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/hamburgers.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -198,12 +188,12 @@
       <workItem from="1544016429181" duration="7090000" />
       <workItem from="1544620688572" duration="161000" />
       <workItem from="1544970876949" duration="2584000" />
-      <workItem from="1545136385727" duration="17376000" />
+      <workItem from="1545136385727" duration="17501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48634000" />
+    <option name="totallyTimeSpent" value="48759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="195" y="179" width="1374" height="647" extended-state="0" />
@@ -274,6 +264,12 @@
         <state relative-caret-position="705">
           <caret line="47" column="27" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
           <folding>
+            <element signature="e#2076#2093#0" />
+            <element signature="e#2138#2271#0" />
+            <element signature="e#2315#2333#0" />
+            <element signature="e#2381#2438#0" />
+            <element signature="e#2493#2576#0" />
+            <element signature="e#2630#2689#0" />
             <element signature="e#3598#3845#0" />
             <element signature="e#3846#4090#0" />
             <element signature="e#4091#4330#0" />
@@ -419,6 +415,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/hamburgers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="103" lean-forward="true" selection-start-line="7" selection-end-line="103" />
+          <folding>
+            <element signature="e#16523#16540#0" />
+            <element signature="e#16585#16718#0" />
+            <element signature="e#16762#16780#0" />
+            <element signature="e#16828#16885#0" />
+            <element signature="e#16940#17023#0" />
+            <element signature="e#17077#17136#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -436,30 +447,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="319">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
           <folding>
+            <element signature="e#2076#2093#0" />
+            <element signature="e#2138#2271#0" />
+            <element signature="e#2315#2333#0" />
+            <element signature="e#2381#2438#0" />
+            <element signature="e#2493#2576#0" />
+            <element signature="e#2630#2689#0" />
             <element signature="e#3598#3845#0" />
             <element signature="e#3846#4090#0" />
             <element signature="e#4091#4330#0" />
             <element signature="e#4339#4844#0" />
             <element signature="e#4860#4990#0" />
             <element signature="e#5002#5355#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/hamburgers.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#16523#16540#0" />
-            <element signature="e#16585#16718#0" />
-            <element signature="e#16762#16780#0" />
-            <element signature="e#16828#16885#0" />
-            <element signature="e#16940#17023#0" />
-            <element signature="e#17077#17136#0" />
           </folding>
         </state>
       </provider>
