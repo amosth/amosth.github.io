@@ -18,6 +18,7 @@
     background-color: transparent;
     border: 0;
     overflow: visible;
+    z-index: 10;
 }
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,

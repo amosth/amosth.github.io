@@ -49,6 +49,7 @@ canvas {
     writing-mode: vertical-rl;
     left: 15px;
     bottom: 140px;
+    z-index: 10;
 }
 
 section {
