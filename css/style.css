@@ -40,12 +40,15 @@ canvas {
 }
 
 #email-link {
+    position: fixed;
+}
+
+#email-link a {
     font-family: 'Maison Neue', sans-serif;
     font-weight: 400;
     font-size: 13.8px;
     letter-spacing: -0.6px;
     text-decoration: none;
-    position: fixed;
     color: inherit;
     writing-mode: vertical-rl;
     left: 15px;
