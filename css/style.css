@@ -160,11 +160,6 @@ canvas {
 
 
 
-
-
-
-
-
 section {
     margin: 0;
 }
@@ -200,7 +195,7 @@ ul {
     background: none;
     color: #ffffff;
 }
-.midnightHeader.black a.active:after {
+.midnightHeader.default a, .midnightHeader.default a.active:after {
     color: #ffffff;
 }
 
@@ -208,7 +203,7 @@ ul {
     background: none;
     color: #000000;
 }
-.midnightHeader.black a.active:after {
+.midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
 }
 
