@@ -41,6 +41,8 @@ canvas {
 
 #email-link {
     position: fixed;
+    left: 15px;
+    bottom: 140px;
 }
 
 #email-link a {
@@ -51,9 +53,8 @@ canvas {
     text-decoration: none;
     color: inherit;
     writing-mode: vertical-rl;
-    left: 15px;
-    bottom: 140px;
     z-index: 10;
+    color: #ffffff;
 }
 
 
