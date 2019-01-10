@@ -75,10 +75,6 @@ canvas {
     opacity: 0.7; }
 .hamburger.is-active:hover {
     opacity: 0.7; }
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-    background-color: #000; }
 
 .hamburger-box {
     width: 40px;
@@ -201,9 +197,9 @@ ul {
     color: #000000;
 }
 .midnightHeader.black a, .midnightHeader.black a.active:after,
-.midnightHeader.default .hamburger-inner,
-.midnightHeader.default .hamburger-inner::before,
-.midnightHeader.default .hamburger-inner::after {
+.midnightHeader.black .hamburger-inner,
+.midnightHeader.black .hamburger-inner::before,
+.midnightHeader.black .hamburger-inner::after {
     color: #000000;
 }
 
