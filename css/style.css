@@ -186,9 +186,8 @@ ul {
     color: #ffffff;
 }
 .midnightHeader.default a, .midnightHeader.default a.active:after,
-.midnightHeader.default .hamburger-inner,
-.midnightHeader.default .hamburger-inner::before,
-.midnightHeader.default .hamburger-inner::after {
+.midnightHeader.default span, .midnightHeader.default span:before,
+.midnightHeader.default span:after {
     color: #ffffff;
 }
 
