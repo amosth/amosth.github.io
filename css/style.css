@@ -42,6 +42,7 @@ canvas {
 #email-link {
     left: 15px !important;
     bottom: 140px !important;
+    height: 237px !important;
 }
 
 #email-link a {
