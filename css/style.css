@@ -188,8 +188,9 @@ ul {
 .midnightHeader.default a, .midnightHeader.default a.active:after {
     color: #ffffff;
 }
-.midnightHeader.default span, .midnightHeader.default span:before,
-.midnightHeader.default span:after {
+.midnightHeader.default .hamburger-inner,
+.midnightHeader.default .hamburger-inner:before,
+.midnightHeader.default .hamburger-inner:after {
     background-color: #ffffff;
 }
 
@@ -200,8 +201,9 @@ ul {
 .midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
 }
-.midnightHeader.black span, .midnightHeader.black span:before,
-.midnightHeader.black span:after {
+.midnightHeader.black .hamburger-inner,
+.midnightHeader.black .hamburger-inner:before,
+.midnightHeader.black .hamburger-inner:after {
     background-color: #000000;
 }
 
