@@ -58,6 +58,10 @@ canvas {
 
 
 .hamburger {
+    top: 40px !important;
+    left: calc(100vw - 100px) !important;
+    transform: scale(.8);
+    width: 40px;
     padding: 15px 15px;
     display: inline-block;
     cursor: pointer;
