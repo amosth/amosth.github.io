@@ -93,7 +93,6 @@ canvas {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -190,7 +189,10 @@ ul {
     background: none;
     color: #ffffff;
 }
-.midnightHeader.default a, .midnightHeader.default a.active:after {
+.midnightHeader.default a, .midnightHeader.default a.active:after,
+.midnightHeader.default .hamburger-inner,
+.midnightHeader.default .hamburger-inner::before,
+.midnightHeader.default .hamburger-inner::after {
     color: #ffffff;
 }
 
@@ -198,7 +200,10 @@ ul {
     background: none;
     color: #000000;
 }
-.midnightHeader.black a, .midnightHeader.black a.active:after {
+.midnightHeader.black a, .midnightHeader.black a.active:after,
+.midnightHeader.default .hamburger-inner,
+.midnightHeader.default .hamburger-inner::before,
+.midnightHeader.default .hamburger-inner::after {
     color: #000000;
 }
 
