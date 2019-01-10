@@ -78,7 +78,7 @@ canvas {
 
 .hamburger-box {
     width: 40px;
-    height: 24px;
+    height: 32px;
     display: inline-block;
     position: relative; }
 
@@ -88,6 +88,7 @@ canvas {
     margin-top: -2px; }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
+    margin-top: 1px;
     height: 2.4px;
     border-radius: 2px;
     position: absolute;
