@@ -256,6 +256,19 @@
                 </span>
             </button>
 
+            <div id="menu"></div>
+
+            <script>
+                $('.hamburger').on('click', function() {
+                    if ($('#menu').css('opacity') == 0) {
+                        $('#menu').css('opacity', 1);
+                    }
+                    else {
+                        $('#menu').css('opacity', 0);
+                    }
+                });
+            </script>
+
             <div class="fixed" id="email-link">
                 <a href="mailto:amos.cappellaro@me.com?subject=Hey">
                     <strong>amos</strong> [dot] <strong>cappellaro</strong> [at] <strong>me</strong> [dot] <strong>com</strong>
