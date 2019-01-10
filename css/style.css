@@ -185,21 +185,24 @@ ul {
     background: none;
     color: #ffffff;
 }
-.midnightHeader.default a, .midnightHeader.default a.active:after,
+.midnightHeader.default a, .midnightHeader.default a.active:after {
+    color: #ffffff;
+}
 .midnightHeader.default span, .midnightHeader.default span:before,
 .midnightHeader.default span:after {
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
 .midnightHeader.black {
     background: none;
     color: #000000;
 }
-.midnightHeader.black a, .midnightHeader.black a.active:after,
-.midnightHeader.black .hamburger-inner,
-.midnightHeader.black .hamburger-inner::before,
-.midnightHeader.black .hamburger-inner::after {
+.midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
+}
+.midnightHeader.black span, .midnightHeader.black span:before,
+.midnightHeader.black span:after {
+    background-color: #000000;
 }
 
 .pagination {
