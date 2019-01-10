@@ -40,9 +40,8 @@ canvas {
 }
 
 #email-link {
-    position: fixed;
-    left: 15px;
-    bottom: 140px;
+    left: 15px !important;
+    bottom: 140px !important;
 }
 
 #email-link a {
@@ -55,9 +54,6 @@ canvas {
     writing-mode: vertical-rl;
     z-index: 10;
 }
-
-
-
 
 
 
@@ -211,7 +207,6 @@ ul {
 }
 
 .pagination {
-    position:fixed;
     width: 40px;
     right:20px !important;
     left: initial !important;
