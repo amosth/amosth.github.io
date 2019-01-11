@@ -212,7 +212,7 @@ ul {
 .midnightHeader.default a, .midnightHeader.default a.active:after {
     color: #ffffff;
 }
-.midnightHeader.default svg {
+.midnightHeader.default #logo {
     fill: #ffffff;
 }
 .midnightHeader.default .hamburger-inner,
@@ -229,7 +229,7 @@ ul {
 .midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
 }
-.midnightHeader.black svg {
+.midnightHeader.black #logo {
     fill: #000000;
 }
 .midnightHeader.black .hamburger-inner,
