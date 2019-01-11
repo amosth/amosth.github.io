@@ -212,6 +212,9 @@ ul {
 .midnightHeader.default a, .midnightHeader.default a.active:after {
     color: #ffffff;
 }
+.midnightHeader.default svg {
+    fill: #ffffff;
+}
 .midnightHeader.default .hamburger-inner,
 .midnightHeader.default .hamburger-inner:before,
 .midnightHeader.default .hamburger-inner:after {
@@ -225,6 +228,9 @@ ul {
 }
 .midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
+}
+.midnightHeader.black svg {
+    fill: #000000;
 }
 .midnightHeader.black .hamburger-inner,
 .midnightHeader.black .hamburger-inner:before,
