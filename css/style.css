@@ -57,12 +57,12 @@ canvas {
 }
 
 #logo {
-    position: fixed;
+    /*position: fixed;
     z-index: 10;
     top: 40px !important;
     left: 80px !important;
     height: 24px !important;
-    fill: #ffffff;
+    fill: #ffffff;*/
 }
 
 .hamburger {
