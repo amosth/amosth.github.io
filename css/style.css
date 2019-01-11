@@ -56,6 +56,13 @@ canvas {
     z-index: 10;
 }
 
+#logo {
+    position: fixed;
+    top: 40px;
+    left: 80px;
+    height: 24px;
+    fill: #fff;
+}
 
 .hamburger {
     top: 40px !important;
