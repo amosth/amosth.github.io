@@ -21,8 +21,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="264" column="49" selection-start-line="264" selection-start-column="49" selection-end-line="264" selection-end-column="49" />
+                <state relative-caret-position="238">
+                  <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -167,12 +167,12 @@
       <workItem from="1545136385727" duration="19196000" />
       <workItem from="1546597635125" duration="1169000" />
       <workItem from="1547119636216" duration="112000" />
-      <workItem from="1547119884433" duration="12922000" />
+      <workItem from="1547119884433" duration="13190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64657000" />
+    <option name="totallyTimeSpent" value="64925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="106" y="94" width="1484" height="838" extended-state="0" />
@@ -502,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="264" column="49" selection-start-line="264" selection-start-column="49" selection-end-line="264" selection-end-column="49" />
+        <state relative-caret-position="238">
+          <caret line="265" column="56" selection-start-line="265" selection-start-column="56" selection-end-line="265" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />

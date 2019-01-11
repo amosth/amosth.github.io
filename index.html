@@ -263,6 +263,7 @@
                 $('.hamburger').on('click', function() {
                     let menuDiv = $('#menu');
                     if (menuDiv.css('opacity') == 0) {
+                        $('#menu').addClass("active-menu");
                         menuDiv.css('opacity', 1);
                     }
                     else {
