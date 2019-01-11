@@ -16,6 +16,10 @@
                 $('#email-link.fixed').midnight();
                 $('.hamburger.fixed').midnight();
 
+                if($('#menu').css('opacity') == 0) {
+                    $('#menu').style.display = 'none';
+                }
+
                 $.scrollify({
                     section : "section",
                     sectionName : "section-name",
