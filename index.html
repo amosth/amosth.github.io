@@ -265,14 +265,12 @@
                     $hamburger.on('click', function() {
                         $hamburger.toggleClass("is-active");
                         // Do something else, like open/close menu
-                    });
-                    if (menuDiv.css('opacity') == 0) {
-                        $hamburger.addClass("active-menu");
-                        menuDiv.css('opacity', 1);
-                    }
-                    else {
-                        menuDiv.css('opacity', 0);
-                    }
+                        if (menuDiv.css('opacity') == 0) {
+                            $hamburger.addClass("active-menu");
+                            menuDiv.css('opacity', 1);
+                        } else {
+                            menuDiv.css('opacity', 0);
+                        }
                 });
             </script>
 
