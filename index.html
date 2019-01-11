@@ -260,10 +260,14 @@
             <div id="menu"></div>
 
             <script>
-                $('.hamburger').on('click', function() {
-                    let menuDiv = $('#menu');
+                var $hamburger = $(".hamburger");
+                let menuDiv = $('#menu');
+                    $hamburger.on('click', function() {
+                        $hamburger.toggleClass("is-active");
+                        // Do something else, like open/close menu
+                    });
                     if (menuDiv.css('opacity') == 0) {
-                        $('.hamburger').addClass("active-menu");
+                        $hamburger.addClass("active-menu");
                         menuDiv.css('opacity', 1);
                     }
                     else {
