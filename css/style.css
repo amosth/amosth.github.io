@@ -182,31 +182,26 @@ canvas {
     background: #fcf113;
 }
 
-a {
-    background-image: linear-gradient(to bottom, transparent 65%, #00dd00 10%);
-    background-size: 0% 100%;
-    background-repeat: no-repeat;
-    text-decoration: none;
-    -webkit-transition: background-size 0.4s ease;
-    -moz-transition: background-size 0.4s ease;
-    -ms-transition: background-size 0.4s ease;
-    -o-transition: background-size 0.4s ease;
-    transition: background-size 0.4s ease;;
-}
-
-a:hover, a:focus {
-    background-size: 100% 100%;
-    cursor: pointer;
-}
-
 .menu-item a {
     font-family: 'Neuzeit', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
     font-size: 11vh;
+    background-image: linear-gradient(to bottom, transparent 65%, #00dd00 10%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: background-size 0.4s ease;
+    -moz-transition: background-size 0.4s ease;
+    -ms-transition: background-size 0.4s ease;
+    -o-transition: background-size 0.4s ease;
+    transition: background-size 0.4s ease;
 }
 
+.menu-item a:hover, .menu-item a:focus {
+    background-size: 100% 100%;
+    cursor: pointer;
+}
 
 
 section {
