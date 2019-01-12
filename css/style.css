@@ -174,13 +174,16 @@ canvas {
     padding: 20vh 0;
 }
 
+.menu-item {
+    margin-bottom: 2vh;
+}
+
 .menu-item a {
     font-family: 'Maison Neue', sans-serif;
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
     font-size: 9vh;
-    margin-bottom: 2vh;
 }
 
 
