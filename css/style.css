@@ -171,13 +171,15 @@ canvas {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    padding: 200px;
+    padding: 150px 0;
 }
 
 .menu-item {
+    font-family: 'Maison Neue', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
     font-size: 32px;
     margin-bottom: 20px;
-    text-decoration: none;
 }
 
 
