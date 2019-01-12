@@ -171,7 +171,7 @@ canvas {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    padding: 20vh 0;
+    padding: 16vh 0;
 }
 
 .menu-item {
@@ -183,7 +183,7 @@ canvas {
     font-weight: 700;
     text-decoration: none;
     color: #ffffff;
-    font-size: 9vh;
+    font-size: 11.5vh;
 }
 
 
