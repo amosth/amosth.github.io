@@ -178,10 +178,7 @@ canvas {
     margin-bottom: 1.5vh;
 }
 
-::selection {
-    background: #fcf113;
-}
-::-moz-selection {
+::selection, ::-moz-selection {
     background: #fcf113;
 }
 
