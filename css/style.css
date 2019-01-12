@@ -160,6 +160,7 @@ canvas {
 
 #menu {
     position: fixed;
+    text-align: center;
     top: 0;
     width:100vw;
     height:100vh;
@@ -170,6 +171,11 @@ canvas {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.menu-item {
+    margin: 150px;
+    color: #000000;
 }
 
 
