@@ -186,7 +186,7 @@ canvas {
 }
 
 a {
-    background-image: linear-gradient(to bottom, transparent 65%, #fcf113 10%);
+    background-image: linear-gradient(to bottom, transparent 65%, #00dd00 10%);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     text-decoration: none;
