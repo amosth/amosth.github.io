@@ -278,14 +278,15 @@
                 $('.hamburger').on('click', function() {
                     if ($('#menu').css('opacity') == 0) {
                         $('#menu').css('z-index', 9);
-                        $('#menu a').css('display', 'block');
-                        $('#menu a').css('z-index', 9);
+                        $('#menu ul').css('z-index', 9);
+                        $('#menu ul').css('display', 'block');
                         $('#menu').css('opacity', 1);
                     }
                     else {
                         $('#menu').css('opacity', 0);
                         $('#menu').css('z-index', 0);
-                        $('#menu a').css('display', 'none');
+                        $('#menu ul').css('z-index', 0);
+                        $('#menu ul').css('display', 'none');
                     }
                 });
             </script>
