@@ -37,7 +37,7 @@
             <entry file="file://$PROJECT_DIR$/resume/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
-                  <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+                  <caret line="7" column="115" selection-start-line="7" selection-start-column="115" selection-end-line="7" selection-end-column="115" />
                   <folding>
                     <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -183,12 +183,12 @@
       <workItem from="1547119636216" duration="112000" />
       <workItem from="1547119884433" duration="14592000" />
       <workItem from="1547246850581" duration="9255000" />
-      <workItem from="1547370436824" duration="943000" />
+      <workItem from="1547370436824" duration="1062000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76525000" />
+    <option name="totallyTimeSpent" value="76644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="242" y="69" width="1300" height="835" extended-state="0" />
@@ -570,7 +570,7 @@
     <entry file="file://$PROJECT_DIR$/resume/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="76" selection-start-line="7" selection-start-column="76" selection-end-line="7" selection-end-column="76" />
+          <caret line="7" column="115" selection-start-line="7" selection-start-column="115" selection-end-line="7" selection-end-column="115" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#body#0;n#html#0;n#!!top" expanded="true" />
