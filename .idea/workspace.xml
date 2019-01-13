@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resume/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resume/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -102,7 +100,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="125" />
     <option name="y" value="69" />
     <option name="width" value="1416" />
@@ -182,15 +180,15 @@
       <workItem from="1547119636216" duration="112000" />
       <workItem from="1547119884433" duration="14592000" />
       <workItem from="1547246850581" duration="9255000" />
-      <workItem from="1547370436824" duration="3050000" />
+      <workItem from="1547370436824" duration="3408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78632000" />
+    <option name="totallyTimeSpent" value="78990000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="125" y="69" width="1416" height="835" extended-state="0" />
+    <frame x="125" y="69" width="1416" height="835" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17706093" />
