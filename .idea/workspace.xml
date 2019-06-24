@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/certificates/cae/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/cae/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -89,8 +87,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="98" />
-    <option name="y" value="52" />
+    <option name="x" value="143" />
+    <option name="y" value="282" />
     <option name="width" value="1531" />
     <option name="height" value="695" />
   </component>
@@ -173,15 +171,15 @@
       <workItem from="1547246850581" duration="9255000" />
       <workItem from="1547370436824" duration="5619000" />
       <workItem from="1554995273487" duration="35000" />
-      <workItem from="1561371158847" duration="947000" />
+      <workItem from="1561371158847" duration="1208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82183000" />
+    <option name="totallyTimeSpent" value="82444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="52" width="1531" height="695" extended-state="0" />
+    <frame x="143" y="282" width="1531" height="695" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16357616" />
