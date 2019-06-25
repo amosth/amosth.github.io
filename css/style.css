@@ -56,7 +56,7 @@ canvas {
     z-index: 10;
 }
 
-#logo {
+.logo {
     position: fixed;
     z-index: 10;
     top: 40px !important;
@@ -243,7 +243,7 @@ ul {
 .midnightHeader.default a, .midnightHeader.default a.active:after {
     color: #ffffff;
 }
-.midnightHeader.default #logo {
+.midnightHeader.default .logo {
     fill: #ffffff;
 }
 .midnightHeader.default .hamburger-inner,
@@ -260,7 +260,7 @@ ul {
 .midnightHeader.black a, .midnightHeader.black a.active:after {
     color: #000000;
 }
-.midnightHeader.black #logo {
+.midnightHeader.black .logo {
     fill: #000000;
 }
 .midnightHeader.black .hamburger-inner,

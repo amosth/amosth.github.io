@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo black.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/css/fonts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-book.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-demi.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff/mn-mono.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-book.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-demi.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/maison-neue/woff2/mn-mono.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/neuzeit/woff/neuzeit-book.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/neuzeit/woff/neuzeit-heavy.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/neuzeit/woff2/neuzeit-book.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/fonts/neuzeit/woff2/neuzeit-heavy.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/js/animation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrollifyTest/js/jquery.scrollify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/index.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="135" column="85" selection-start-line="135" selection-start-column="85" selection-end-line="135" selection-end-column="85" />
+            <state relative-caret-position="182">
+              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
               <folding>
                 <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -52,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2655">
-              <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
+            <state relative-caret-position="172">
+              <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -73,6 +50,7 @@
       <find>r</find>
       <find>z-index</find>
       <find>font-family</find>
+      <find>logo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,7 +66,6 @@
         <option value="$PROJECT_DIR$/js/hamburgers.js" />
         <option value="$PROJECT_DIR$/css/hamburgers.css" />
         <option value="$USER_HOME$/Desktop/Projects/Personali/email sign/html/email-sign.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/resume/index.html" />
         <option value="$PROJECT_DIR$/about/index.html" />
         <option value="$PROJECT_DIR$/contact/index.html" />
@@ -97,12 +74,13 @@
         <option value="$PROJECT_DIR$/certificates/cae/index.html" />
         <option value="$PROJECT_DIR$/../www/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
-    <option name="y" value="264" />
+    <option name="x" value="189" />
+    <option name="y" value="240" />
     <option name="width" value="1171" />
     <option name="height" value="712" />
   </component>
@@ -123,6 +101,11 @@
               <item name="amosth.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="amosth.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="certificates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amosth.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amosth.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,15 +165,15 @@
       <workItem from="1554995273487" duration="35000" />
       <workItem from="1561371158847" duration="1527000" />
       <workItem from="1561469650802" duration="101000" />
-      <workItem from="1561471448199" duration="175000" />
+      <workItem from="1561471448199" duration="372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83039000" />
+    <option name="totallyTimeSpent" value="83236000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="264" width="1171" height="712" extended-state="0" />
+    <frame x="189" y="240" width="1171" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21478261" />
@@ -293,8 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="135" column="85" selection-start-line="135" selection-start-column="85" selection-end-line="135" selection-end-column="85" />
+        <state relative-caret-position="182">
+          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
           <folding>
             <element signature="n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -303,8 +286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
+        <state relative-caret-position="172">
+          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
         </state>
       </provider>
     </entry>
