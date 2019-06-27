@@ -351,7 +351,7 @@ h3 {
 
 #title:after {
     content: "_";
-    margin-left: -16px;
+    margin-left: -5px;
 }
 
 .clearfix {
