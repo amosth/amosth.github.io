@@ -19,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
-              <caret line="118" column="97" selection-start-line="118" selection-start-column="97" selection-end-line="118" selection-end-column="97" />
+              <caret line="118" column="116" selection-start-line="118" selection-start-column="116" selection-end-line="118" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -77,7 +77,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="118" />
-    <option name="y" value="142" />
+    <option name="y" value="141" />
     <option name="width" value="1510" />
     <option name="height" value="728" />
   </component>
@@ -163,15 +163,15 @@
       <workItem from="1561371158847" duration="1527000" />
       <workItem from="1561469650802" duration="101000" />
       <workItem from="1561471448199" duration="1230000" />
-      <workItem from="1561636066688" duration="746000" />
+      <workItem from="1561636066688" duration="829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84840000" />
+    <option name="totallyTimeSpent" value="84923000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="142" width="1510" height="728" extended-state="0" />
+    <frame x="118" y="141" width="1510" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16588314" />
@@ -275,7 +275,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="118" column="97" selection-start-line="118" selection-start-column="97" selection-end-line="118" selection-end-column="97" />
+          <caret line="118" column="116" selection-start-line="118" selection-start-column="116" selection-end-line="118" selection-end-column="116" />
         </state>
       </provider>
     </entry>
