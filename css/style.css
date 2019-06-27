@@ -40,6 +40,7 @@ canvas {
 }
 
 #email-link {
+    width: 20px;
     left: 15px !important;
     top: calc(100vh - 378px) !important;
     height: 245px !important;
