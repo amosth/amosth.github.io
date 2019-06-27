@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+            <state relative-caret-position="336">
+              <caret line="126" column="54" lean-forward="true" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -76,10 +76,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="141" />
-    <option name="y" value="120" />
-    <option name="width" value="1510" />
-    <option name="height" value="728" />
+    <option name="x" value="246" />
+    <option name="y" value="232" />
+    <option name="width" value="1431" />
+    <option name="height" value="761" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -93,16 +93,6 @@
             <path>
               <item name="amosth.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="amosth.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amosth.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amosth.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="certificates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="amosth.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amosth.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -163,18 +153,18 @@
       <workItem from="1561371158847" duration="1527000" />
       <workItem from="1561469650802" duration="101000" />
       <workItem from="1561471448199" duration="1230000" />
-      <workItem from="1561636066688" duration="2228000" />
+      <workItem from="1561636066688" duration="2555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86322000" />
+    <option name="totallyTimeSpent" value="86649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="141" y="120" width="1510" height="728" extended-state="0" />
+    <frame x="246" y="232" width="1431" height="761" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16588314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1751773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -281,8 +271,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="35" column="36" lean-forward="true" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+        <state relative-caret-position="336">
+          <caret line="126" column="54" lean-forward="true" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
         </state>
       </provider>
     </entry>
