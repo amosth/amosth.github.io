@@ -344,7 +344,7 @@ h3 {
     font-weight: 500;
     color: #eeeeee;
     margin: 0;
-    font-size: 22px;
+    font-size: 21px;
     line-height: normal;
     text-align: left;
     -webkit-user-select: none; /* Safari */
@@ -373,10 +373,11 @@ h3 {
 
 #first, #last {
     z-index: 0;
+    height: 105px;
     font-family: 'Maison Neue';
     font-weight: 600;
     color: #eeeeee;
-    font-size: 104px;
+    font-size: 92px;
     line-height: 110px;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -407,6 +408,7 @@ h3 {
 
 .clearfix {
     opacity: 0;
+    height: 105px;
     animation-name: titleOpacity;
     animation-delay: 10s;
     animation-duration: .2s;
