@@ -371,6 +371,10 @@ h3 {
     box-sizing: border-box;
 }
 
+#menu ul {
+    padding-left: 0;
+}
+
 #first, #last {
     z-index: 0;
     height: 105px;
@@ -520,4 +524,40 @@ h3 {
     -webkit-animation: ani-mouse 1.5s linear infinite;
     -moz-animation: ani-mouse 1.5s linear infinite;
     animation: ani-mouse 1.5s linear infinite;
+}
+
+@media only screen and (max-width: 768px) {
+    #email-link, .pagination, .mouse {
+        display: none;
+    }
+
+    .clearfix {
+        margin-top: -20px;
+        margin-left: -40px;
+    }
+
+    #first, #last {
+        font-size: 7.7vw;
+    }
+
+    #logo {
+        top: 22px !important;
+        left: 30px !important;
+        height: 30px !important;
+    }
+
+    .hamburger {
+        top: 20px !important;
+        left: calc(100vw - 70px) !important;
+        transform: scale(1);
+    }
+
+    #title {
+        font-size: 4vw;
+        margin-left: 60px;
+    }
+
+
+
+
 }
