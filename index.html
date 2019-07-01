@@ -27,7 +27,7 @@
                 $('ul.fixed').midnight();
                 $('#email-link.fixed').midnight();
                 $('.hamburger.fixed').midnight();
-                $('#logo.fixed').midnight();
+                $('#logo-wrapper.fixed').midnight();
 
                 $.scrollify({
                     section : "section",
@@ -132,7 +132,10 @@
 	            <span></span>
             </span>
 
-            <img class="fixed" id="logo" alt="" draggable="false" src="img/logo.png">
+            <div class="fixed logo-wrapper">
+                <p>prova</p>
+                <img id="logo" alt="" draggable="false" src="img/logo.svg">
+            </div>
 
             <button class="hamburger hamburger--slider js-hamburger fixed" type="button">
                 <span class="hamburger-box">
