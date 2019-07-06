@@ -27,7 +27,7 @@
                 $('ul.fixed').midnight();
                 $('#email-link.fixed').midnight();
                 $('.hamburger.fixed').midnight();
-                $('#logo-wrapper.fixed').midnight();
+                $('.logo-wrapper.fixed').midnight();
 
                 $.scrollify({
                     section : "section",
@@ -82,6 +82,17 @@
             <canvas id="canvas"></canvas>
             <script src="js/animation.js"></script>
 
+            <div class="fixed logo-wrapper">
+                <svg id="logo" alt="" draggable="false" viewBox="0 0 570.91 460"><defs><style>.cls-1{fill:#fff;}</style></defs><title>logo</title><path d="M3019.77,1578.6h0v-230a26.58,26.58,0,0,0-26.5-26.5H2475.36a26.58,26.58,0,0,0-26.5,26.5v407a26.57,26.57,0,0,0,26.5,26.5h115a26.57,26.57,0,0,1-26.5-26.5v-292a26.58,26.58,0,0,1,26.5-26.5h287.91a26.58,26.58,0,0,1,26.5,26.5v88.5H2705.36a26.58,26.58,0,0,0-26.5,26.5v62a26.57,26.57,0,0,0,26.5,26.5h199.41v88.5a26.58,26.58,0,0,1-26.5,26.5h115a26.58,26.58,0,0,0,26.5-26.5v-115h0Z" transform="translate(-2448.86 -1322.1)"/></svg>
+                <!--<img id="logo" alt="" draggable="false" src="img/logo.svg">-->
+            </div>
+
+            <button class="hamburger hamburger--slider js-hamburger fixed" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
             <article id="intro">
                 <div>
                     <h3 id="title"></h3>
@@ -131,16 +142,6 @@
             <span class="mouse">
 	            <span></span>
             </span>
-
-            <div class="fixed logo-wrapper">
-                <img id="logo" alt="" draggable="false" src="img/logo.svg">
-            </div>
-
-            <button class="hamburger hamburger--slider js-hamburger fixed" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
 
             <nav role="navigation">
                 <div id="menu">
