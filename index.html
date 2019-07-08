@@ -3,9 +3,9 @@
     <head>
         <title>Amos Cappellaro | Official Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <meta charset="UTF-8" name="keywords" content="HTML, CSS, XML, JavaScript">
+        <meta charset="UTF-8" name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Amos Cappellaro">
-        <meta name="Description" content="Hi! My name's Amos, Göthenburg-based designer specialised in web development, web design and creative consulting. My goal is to help brands build authenticity, clarity and purpose through design.">
+        <meta name="Description" content="Hi! My name's Amos, Vicenza-based designer specialised in web development, web design and creative consulting.">
         <!-- FAVICO -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,7 +34,7 @@
                     sectionName : "section-name",
                     interstitialSection : "",
                     easing: "easeOutExpo",
-                    scrollSpeed: 700,
+                    scrollSpeed: 600,
                     offset : 0,
                     scrollbars: false,
                     standardScrollElements: "",
@@ -45,11 +45,9 @@
                     after:function() {},
                     afterResize:function() {},
                     before:function(i,panels) {
-
                         var ref = panels[i].attr("data-section-name");
 
                         $(".pagination .active").removeClass("active");
-
                         $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
                     },
                     afterRender:function() {
@@ -66,7 +64,6 @@
                         pagination += "</ul>";
 
                         $(".home").append(pagination);
-
                         $(".pagination a").on("click",$.scrollify.move);
                     }
                 });
@@ -83,8 +80,11 @@
             <script src="js/animation.js"></script>
 
             <div class="fixed logo-wrapper">
-                <svg id="logo" alt="" draggable="false" viewBox="0 0 570.91 460"><defs><style>.cls-1{fill:#fff;}</style></defs><title>logo</title><path d="M3019.77,1578.6h0v-230a26.58,26.58,0,0,0-26.5-26.5H2475.36a26.58,26.58,0,0,0-26.5,26.5v407a26.57,26.57,0,0,0,26.5,26.5h115a26.57,26.57,0,0,1-26.5-26.5v-292a26.58,26.58,0,0,1,26.5-26.5h287.91a26.58,26.58,0,0,1,26.5,26.5v88.5H2705.36a26.58,26.58,0,0,0-26.5,26.5v62a26.57,26.57,0,0,0,26.5,26.5h199.41v88.5a26.58,26.58,0,0,1-26.5,26.5h115a26.58,26.58,0,0,0,26.5-26.5v-115h0Z" transform="translate(-2448.86 -1322.1)"/></svg>
-                <!--<img id="logo" alt="" draggable="false" src="img/logo.svg">-->
+                <a href="https://amosth.github.io/">
+                    <svg id="logo" alt="" draggable="false" viewBox="0 0 570.91 460">
+                        <path d="M3019.77,1578.6h0v-230a26.58,26.58,0,0,0-26.5-26.5H2475.36a26.58,26.58,0,0,0-26.5,26.5v407a26.57,26.57,0,0,0,26.5,26.5h115a26.57,26.57,0,0,1-26.5-26.5v-292a26.58,26.58,0,0,1,26.5-26.5h287.91a26.58,26.58,0,0,1,26.5,26.5v88.5H2705.36a26.58,26.58,0,0,0-26.5,26.5v62a26.57,26.57,0,0,0,26.5,26.5h199.41v88.5a26.58,26.58,0,0,1-26.5,26.5h115a26.58,26.58,0,0,0,26.5-26.5v-115h0Z" transform="translate(-2448.86 -1322.1)"/>
+                    </svg>
+                </a>
             </div>
 
             <button class="hamburger hamburger--slider js-hamburger fixed" type="button">
@@ -104,8 +104,8 @@
                     <script src="typeit.min.js"></script>
                     <script>
                         new TypeIt('#title', {
-                            startDelay: 200,
-                            speed: 200,
+                            startDelay: 400,
+                            speed: 80,
                             lifelike: true,
                             cursor: false,
                             cursorChar: "_",
@@ -114,13 +114,13 @@
                             .type('Hi')
                             .pause(400)
                             .type(',')
-                            .pause(500)
+                            .pause(300)
                             .type(' my name is Amos.')
                             .pause(800)
-                            .options({speed: 100})
+                            .options({speed: 60})
                             .delete()
                             .pause(500)
-                            .options({speed: 200})
+                            .options({speed: 80})
                             .type('I create')
                             .go();
 
@@ -134,42 +134,38 @@
                             words = getRandomWord();
                             $('#first').html(words[0]);
                             $('#last').html(words[1]);
-                        }, 300);
+                        }, 250);
                     </script>
                 </div>
             </article>
 
-            <span class="mouse">
-	            <span></span>
-            </span>
+            <a href="#about" class="mouse">
+                <span></span>
+            <a/>
 
             <nav role="navigation">
                 <div id="menu">
                     <ul>
                         <li class="menu-item"><a href="https://amosth.github.io/">Home</a></li>
-                        <li class="menu-item"><a href="https://amosth.github.io/about/">About</a></li>
-                        <li class="menu-item"><a href="https://amosth.github.io/work/">Work</a></li>
+                        <li class="menu-item"><a href="https://amosth.github.io/#about">About</a></li>
+                        <li class="menu-item menu-item-disabled"><a>Works</a></li>
                         <li class="menu-item"><a href="https://amosth.github.io/resume/">Résumé</a></li>
-                        <li class="menu-item"><a href="https://amosth.github.io/contact/">Contact</a></li>
+                        <li class="menu-item"><a href="https://amosth.github.io/#contact">Contact</a></li>
                     </ul>
+
+                    <div id="heart-footer">
+                        <p class="heart-text">made with </p>
+                        <svg id="heart" width="16" height="16" viewBox="0 0 24 24">
+                            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                        </svg>
+                        <span class="heart-text"> in <strong>Vicenza, Italy</strong></span>
+                    </div>
                 </div>
             </nav>
 
             <script>
                 $('.hamburger').on('click', function() {
-                    if ($('#menu').css('opacity') == 0) {
-                        $('#menu').css('z-index', 9);
-                        $('#menu').css('opacity', 1);
-                        $('#menu ul').css('z-index', 9);
-                        $('#menu ul').css('display', 'block');
-                    }
-                    else {
-                        $('#menu ul').css('z-index', 0);
-                        $('#menu ul').css('display', 'none');
-                        $('#menu').css('opacity', 0);
-                        $('#menu').css('z-index', 0);
-
-                    }
+                    $('#menu').fadeToggle(140);
                 });
             </script>
 
@@ -182,7 +178,7 @@
             <ul class="pagination fixed">
                 <li><a class="active" href="#home"><span class="hover-text">Home</span></a></li>
                 <li><a class="" href="#about"><span class="hover-text">About</span></a></li>
-                <li><a class="" href="#projects"><span class="hover-text">Projects</span></a></li>
+                <li><a class="" href="#contact"><span class="hover-text">Contact</span></a></li>
             </ul>
         </section>
         <section class="prova panel1" data-section-name="about" data-midnight="black">
@@ -191,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section class="prova panel2" data-section-name="projects" data-midnight="default">
+        <section class="prova panel2" data-section-name="contact" data-midnight="default">
             <div class="inner">
                 <div class="vertical-center">
                 </div>
