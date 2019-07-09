@@ -1,0 +1,27 @@
+body {
+    background: hsl(0,0%,10%);
+}
+
+strong {
+    font-weight: bold;
+}
+
+#logo {
+    margin-top: -4px;
+}
+
+#menu {
+    padding-top: calc(13vh + 5px);
+}
+
+
+.learn-more {
+    text-decoration: none;
+}
+
+
+@media (max-width: 991px) {
+    .contact-typo {
+        padding: 0 10px;
+    }
+}

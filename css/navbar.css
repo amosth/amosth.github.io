@@ -140,10 +140,6 @@ body {
     user-select: none;
 }
 
-.menu-item {
-    margin-bottom: 1.5vh;
-}
-
 .menu-item a {
     font-family: 'Neuzeit', sans-serif;
     font-weight: 700;

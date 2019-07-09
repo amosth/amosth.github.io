@@ -147,10 +147,10 @@
                 <div id="menu">
                     <ul>
                         <li class="menu-item"><a href="https://amosth.github.io/">Home</a></li>
-                        <li class="menu-item"><a href="https://amosth.github.io/#about">About</a></li>
-                        <li class="menu-item menu-item-disabled"><a>Works</a></li>
+                        <li class="menu-item"><a href="https://amosth.github.io/about/">About</a></li>
+                        <li class="menu-item menu-item-disabled"><a href="">Works</a></li>
                         <li class="menu-item"><a href="https://amosth.github.io/resume/">Résumé</a></li>
-                        <li class="menu-item"><a href="https://amosth.github.io/#contact">Contact</a></li>
+                        <li class="menu-item"><a href="https://amosth.github.io/contact/">Contact</a></li>
                     </ul>
 
                     <div id="heart-footer">
@@ -183,13 +183,32 @@
         </section>
         <section class="prova panel1" data-section-name="about" data-midnight="black">
             <div class="inner">
-                <div class="vertical-center">
-                </div>
+                <div class="about-main">
+                    <div class="about-typo">
+                        <h1 class="about-typo" id="about-title">Hey, Amos Cappellaro here!</h1>
+
+                        <h3 class="about-typo" id="about-subtitle">I'm a design-oriented front-end developer, and I solve <span class="line-through"><span id="random-word"></span> of your</span> problems.</h3>
+                        <script>
+                            const array = ['all', 'some', 'one'];
+                            let counter = 0;
+                            const getWord = () => array[counter++ % array.length];
+
+                            setInterval(() => {
+                                $('#random-word').html(getWord());
+                            }, 300);
+                        </script>
+                        <p class="about-typo" id="about-body">I’ve always been drawn to the overlap between design and development. I love building web apps through carefully crafted code and user-centric design, from start to finish. My passion is creating, and I find happiness in being a better me today than the me yesterday. </p>
+
+                        <a class="learn-more learn-more-light" href="https://amosth.github.io/about/">learn more about me</a>
+
+                    </div>
             </div>
         </section>
         <section class="prova panel2" data-section-name="contact" data-midnight="default">
             <div class="inner">
-                <div class="vertical-center">
+                <div class="contact-main">
+                        <p class="contact-typo" id="contact-body">If you wanna get in touch, talk to me about a project collaboration or just say hi, drop me a line at <a href="mailto:amos.cappellaro@me.com"><strong>amos</strong> [dot] <strong>cappellaro</strong> [at] <strong>me</strong> [dot] <strong>com</strong></a> and let’s talk.</p>
+                        <a class="learn-more learn-more-dark" href="mailto:amos.cappellaro@me.com?subject=Hey">drop me a line</a>
                 </div>
             </div>
         </section>

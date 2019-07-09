@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+body *::selection {
+    background: #99ee99;
+}
+
 #loader {
     background-color: #001400;
     width: 100%;
@@ -180,7 +184,7 @@ canvas {
 }
 
 .menu-item {
-    margin-bottom: 1vh;
+    margin-bottom: 1vh !important;
 }
 
 ::selection, ::-moz-selection {
@@ -223,11 +227,15 @@ section {
 }
 
 .panel1 {
-    background: hsl(0,0%,85%);
+    background: hsl(0,0%,80%);
 }
 
 .panel2 {
     background: hsl(0,0%,10%);
+}
+
+.panel1 .inner,  .panel2 .inner {
+    display: flex;
 }
 
 .inner {
@@ -268,19 +276,19 @@ ul {
 
 .midnightHeader.black {
     background: none;
-    color: #000000;
-    fill: #000000;
+    color: hsl(0,0%,10%);;
+    fill: hsl(0,0%,10%);;
 }
 .midnightHeader.black a, .midnightHeader.black a.active:after {
-    color: #000000;
+    color: hsl(0,0%,10%);;
 }
 .midnightHeader.black #logo {
-    fill: #000000;
+    fill: hsl(0,0%,10%);;
 }
 .midnightHeader.black .hamburger-inner,
 .midnightHeader.black .hamburger-inner:before,
 .midnightHeader.black .hamburger-inner:after {
-    background-color: #000000;
+    background-color: hsl(0,0%,10%);;
 }
 
 .pagination {
@@ -538,7 +546,7 @@ h3 {
 
 #heart-footer {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     left: calc(50% - 87.5px);
 }
 
@@ -554,7 +562,7 @@ h3 {
 
 #heart {
     fill: #ff0000;
-    animation: pulse 5s infinite linear;
+    animation: pulse 3s infinite linear;
     vertical-align: middle;
     margin: 0 2px;
 }
@@ -569,9 +577,127 @@ h3 {
 }
 
 
+.about-typo {
+    font-family: 'Neuzeit', sans-serif;
+    margin: 10px 0;
+    color: hsl(0,0%,10%);
+}
+
+.contact-typo {
+    font-family: 'Neuzeit', sans-serif;
+    font-weight: normal;
+    margin: 10px 0;
+    color: hsl(0,0%,80%);
+}
+
+.contact-typo a {
+    letter-spacing: -2px;
+    text-decoration: none;
+    color: #00aa00;
+}
+
+.about-main {
+    margin: auto 0;
+    padding: 0;
+}
+
+.contact-main {
+    margin: auto 0;
+    padding: 0;
+}
+
+.about-main-right {
+    margin: 150px 0;
+    padding: 0;
+}
+
+.about-main-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#about-title {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#about-subtitle {
+    font-size: 32px;
+    letter-spacing: -.5px;
+}
+
+#about-body {
+    font-size: 22px;
+    letter-spacing: -.5px;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding-right: 40px;
+}
+
+#contact-body {
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding-right: 40px;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: hsl(0,0%,50%);
+}
+
+.learn-more {
+    font-family: 'Neuzeit', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    user-select: none;
+    background: none;
+    padding: 20px 10px;
+    width: 228px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    -webkit-transition: background-size 0.4s ease, color 0.4s ease;
+    -moz-transition: background-size 0.4s ease, color 0.4s ease;
+    -ms-transition: background-size 0.4s ease, color 0.4s ease;
+    -o-transition: background-size 0.4s ease, color 0.4s ease;
+    transition: background-size 0.4s ease, color 0.4s ease;
+}
+
+.learn-more:hover, .learn-more:focus {
+    background-size: 100% 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.learn-more-light {
+    color: hsl(0,0%,10%);
+    border: 4px solid hsl(0,0%,10%);
+    background-image: linear-gradient(to bottom, transparent 0%, #0f0f0f 0%);
+}
+
+.learn-more-light:hover, .learn-more-light:focus {
+    color: hsl(0,0%,80%);
+}
+
+.learn-more-dark {
+    color: hsl(0,0%,80%);
+    border: 4px solid hsl(0,0%,80%);
+    background-image: linear-gradient(to bottom, transparent 0%, hsl(0,0%,80%) 0%);
+}
+
+.learn-more-dark:hover, .learn-more-dark:focus {
+    color: hsl(0,0%,10%);
+}
 
 
-@media only screen and (max-width: 960px) {
+
+
+@media only screen and (max-width: 991px) {
     #email-link, .pagination, .mouse {
         display: none;
     }
@@ -609,6 +735,8 @@ h3 {
     }
 
 
-
+    .learn-more {
+        margin-top: -80px;
+    }
 
 }

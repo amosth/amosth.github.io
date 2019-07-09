@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amos Cappellaro | Official Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta charset="UTF-8" name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Amos Cappellaro">
+    <meta name="Description" content="Hi! My name's Amos, Vicenza-based designer specialised in web development, web design and creative consulting.">
+    <!-- FAVICO -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00bb00">
+    <meta name="msapplication-TileColor" content="#00bb00">
+    <meta name="theme-color" content="#ffffff">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Midnight.js -->
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
+    <script>
+        $(function() {
+            $('#email-link.fixed').midnight();
+            $('.hamburger.fixed').midnight();
+            $('.logo-wrapper.fixed').midnight();
+        });
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+<body>
+    <header data-midnight="default">
+
+        <div class="fixed logo-wrapper">
+            <a href="https://amosth.github.io/">
+                <svg id="logo" alt="" draggable="false" viewBox="0 0 570.91 460">
+                    <path d="M3019.77,1578.6h0v-230a26.58,26.58,0,0,0-26.5-26.5H2475.36a26.58,26.58,0,0,0-26.5,26.5v407a26.57,26.57,0,0,0,26.5,26.5h115a26.57,26.57,0,0,1-26.5-26.5v-292a26.58,26.58,0,0,1,26.5-26.5h287.91a26.58,26.58,0,0,1,26.5,26.5v88.5H2705.36a26.58,26.58,0,0,0-26.5,26.5v62a26.57,26.57,0,0,0,26.5,26.5h199.41v88.5a26.58,26.58,0,0,1-26.5,26.5h115a26.58,26.58,0,0,0,26.5-26.5v-115h0Z" transform="translate(-2448.86 -1322.1)"/>
+                </svg>
+            </a>
+        </div>
+        <button class="hamburger hamburger--slider js-hamburger fixed" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+        </button>
+        <nav role="navigation">
+            <div id="menu">
+                <ul>
+                    <li class="menu-item"><a href="https://amosth.github.io/">Home</a></li>
+                    <li class="menu-item"><a href="https://amosth.github.io/#about">About</a></li>
+                    <li class="menu-item menu-item-disabled"><a href="">Works</a></li>
+                    <li class="menu-item"><a href="https://amosth.github.io/resume/">Résumé</a></li>
+                    <li class="menu-item"><a href="https://amosth.github.io/#contact">Contact</a></li>
+                </ul>
+
+                <div id="heart-footer">
+                    <p class="heart-text">made with </p>
+                    <svg id="heart" width="16" height="16" viewBox="0 0 24 24">
+                        <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                    </svg>
+                    <span class="heart-text"> in <strong>Vicenza, Italy</strong></span>
+                </div>
+            </div>
+        </nav>
+        <script>
+            $('.hamburger').on('click', function() {
+                $('#menu').fadeToggle(140);
+            });
+        </script>
+        <div class="fixed" id="email-link">
+            <a href="mailto:amos.cappellaro@me.com?subject=Hey">
+                <strong>amos</strong> [dot] <strong>cappellaro</strong> [at] <strong>me</strong> [dot] <strong>com</strong>
+            </a>
+        </div>
+    </header>
+
+    <section class="part1" data-midnight="black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 about-main">
+                    <div class="about-typo">
+                        <h1 class="about-typo" id="about-title">Hey, Amos Cappellaro here!</h1>
+
+                        <h3 class="about-typo" id="about-subtitle">I'm a design-oriented front-end developer, and I solve <span class="line-through"><span id="random-word"></span> of your</span> problems.</h3>
+                        <script>
+                            const array = ['all', 'some', 'one'];
+                            let counter = 0;
+                            const getWord = () => array[counter++ % array.length];
+
+                            setInterval(() => {
+                                $('#random-word').html(getWord());
+                            }, 300);
+                        </script>
+
+                        <p class="about-typo" id="about-body">I’ve always been drawn to the overlap between design and development. I love building web apps through carefully crafted code and user-centric design, from start to finish. My passion is creating, and I find happiness in being a better me today than the me yesterday. </p>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 about-typo about-main-right">
+                    <h3 class="about-typo" id="about-tools-title">WHAT I DO & USE</h3>
+                    <div class="tools-box">
+                        <h5 class="about-typo" id="about-tools-subtitle">FRONT-END</h5>
+                        <ul>
+                            <li class="about-typo about-tools-body">HTML5</li>
+                            <li class="about-typo about-tools-body">CSS3</li>
+                            <li class="about-typo about-tools-body">ES6</li>
+                            <li class="about-typo about-tools-body">React</li>
+                        </ul>
+                    </div>
+                    <div class="tools-box">
+                        <h5 class="about-typo" id="about-tools-subtitle">BACK-END</h5>
+                        <ul>
+                            <li class="about-typo about-tools-body">NodeJS</li>
+                            <li class="about-typo about-tools-body">JSON</li>
+                            <li class="about-typo about-tools-body">PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tools-box">
+                        <h5 class="about-typo" id="about-tools-subtitle">VCS</h5>
+                        <ul>
+                            <li class="about-typo about-tools-body">GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tools-box">
+                        <h5 class="about-typo" id="about-tools-subtitle">DESIGN</h5>
+                        <ul>
+                            <li class="about-typo about-tools-body">Sketch</li>
+                            <li class="about-typo about-tools-body">Figma</li>
+                            <li class="about-typo about-tools-body">InVision</li>
+                            <li class="about-typo about-tools-body">Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="part2" data-midnight="default">
+        <div class="container edu-section">
+            <h2 class="about-typo" id="about-exp-title">EDUCATION</h2>
+            <h3 class="about-typo" id="about-exp-subtitle">Universities and institutions I am studying or used to study at</h3>
+            <div class="row">
+                <div class="col-lg-4 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/edu/uniud.png"/>
+                    <p class="about-typo about-exp-text">Università degli Studi di Udine</p>
+                    <p class="about-typo about-exp-text place">Udine, Italy</p>
+                    <p class="about-typo about-exp-text period">Sep 2016 · Present</p>
+                </div>
+                <div class="col-lg-4 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/edu/idf.png"/>
+                    <p class="about-typo about-exp-text">Interaction Design Foundation</p>
+                    <p class="about-typo about-exp-text place">online</p>
+                    <p class="about-typo about-exp-text period">Sep 2017 · Present</p>
+                </div>
+                <div class="col-lg-4 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/edu/chalmers.png"/>
+                    <p class="about-typo about-exp-text">Chalmers University of Technology</p>
+                    <p class="about-typo about-exp-text place">Göteborg, Sweden</p>
+                    <p class="about-typo about-exp-text period">Jan 2019 · Jun 2019</p>
+                </div>
+            </div>
+
+            <h2 class="about-typo" id="about-exp-title">WORK EXPERIENCE</h2>
+            <h3 class="about-typo" id="about-exp-subtitle">Companies and organizations I've worked for or volunteered at</h3>
+            <div class="row">
+                <div class="col-lg-3 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/work/xanterra.png"/>
+                    <p class="about-typo about-exp-text">Xanterra Parks and Resorts</p>
+                    <p class="about-typo about-exp-text place">Yellowstone National Park, USA</p>
+                    <p class="about-typo about-exp-text period">Jul 2018 · Sep 2018</p>
+                </div>
+                <div class="col-lg-3 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/work/jodel.png"/>
+                    <p class="about-typo about-exp-text">Jodel App</p>
+                    <p class="about-typo about-exp-text place">Berlin, Germany</p>
+                    <p class="about-typo about-exp-text period">Jul 2016 · Aug 2016</p>
+                </div>
+                <div class="col-lg-3 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/work/tedx.png"/>
+                    <p class="about-typo about-exp-text">TEDxUdine</p>
+                    <p class="about-typo about-exp-text place">Udine, Italy</p>
+                    <p class="about-typo about-exp-text period">March 2017</p>
+                </div>
+                <div class="col-lg-3 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/work/aim.png"/>
+                    <p class="about-typo about-exp-text">AIM Mobilità</p>
+                    <p class="about-typo about-exp-text place">Vicenza, Italy</p>
+                    <p class="about-typo about-exp-text period">Jul 2014 · Aug 2014</p>
+                </div>
+                <div class="col-lg-3 exp-item">
+                    <img class="about-exp-img" draggable="false" src="../img/work/abc.png"/>
+                    <p class="about-typo about-exp-text">abc.it Apple Premium Reseller</p>
+                    <p class="about-typo about-exp-text place">Vicenza, Italy</p>
+                    <p class="about-typo about-exp-text period">Jul 2013 · Aug 2013</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="../js/hamburgers.js" async=""></script>
+</body>
+</html>

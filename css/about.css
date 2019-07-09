@@ -1,0 +1,144 @@
+html {
+    background: linear-gradient(hsl(0,0%,10%), hsl(0,0%,80%));
+}
+
+strong {
+    font-weight: bold;
+}
+
+#logo {
+    margin-top: -4px;
+}
+
+#menu {
+    padding-top: calc(13vh + 5px);
+}
+
+.menu-item {
+    margin-bottom: -2vh !important;
+}
+
+.part1 {
+    min-height: 100vh;
+    background: hsl(0,0%,80%);
+}
+
+.part2 {
+    background: hsl(0,0%,10%);
+}
+
+#about-tools-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#about-tools-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.about-tools-body {
+    text-align: right;
+    margin: 0;
+}
+
+#about-exp-title {
+    font-weight: bold;
+    color: hsl(0,0%,80%);
+    display: block;
+    padding-top: 40px;
+}
+
+#about-exp-subtitle {
+    color: hsl(0,0%,80%);
+    display: block;
+    padding-bottom: 40px;
+}
+
+.edu-section h2, .edu-section h3 {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.exp-item {
+    opacity: .4;
+    transition: opacity .5s ease;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.exp-item:hover {
+    opacity: 1;
+}
+
+.about-exp-img {
+    width: 130px;
+    height: 120px;
+}
+
+.about-exp-text {
+    font-family: 'Neuzeit', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: hsl(0,0%,10%);
+    transition: color .5s ease;
+    margin-bottom: 0;
+}
+
+.period {
+    font-size: 10px;
+    margin: 0;
+}
+
+.place {
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.exp-item:hover .about-exp-text {
+    color: hsl(0,0%,80%);
+}
+
+.exp-item:hover .period, .exp-item:hover .place {
+    color: hsl(0,0%,40%);
+}
+
+
+@media (max-width: 991px) {
+    .about-typo {
+        padding: 0 10px;
+    }
+
+
+    .about-main {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+    .about-main-right {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .about-main-right li, #about-tools-title, #about-tools-subtitle {
+        text-align: left;
+        display: table;
+    }
+
+    .tools-box {
+        display: inline-table;
+        margin-right: 5vw;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1440px;
+    }
+}
