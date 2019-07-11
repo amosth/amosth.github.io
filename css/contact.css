@@ -1,27 +1,25 @@
-body {
-    background: hsl(0,0%,10%);
+.contact-typo {
+    font-family: 'Neuzeit', sans-serif;
+    font-weight: normal;
+    margin: 10px 0;
+    color: hsl(0,0%,80%);
 }
 
-strong {
-    font-weight: bold;
-}
-
-#logo {
-    margin-top: -4px;
-}
-
-#menu {
-    padding-top: calc(13vh + 5px);
-}
-
-
-.learn-more {
+.contact-typo a {
+    letter-spacing: -2px;
     text-decoration: none;
+    color: #00aa00;
 }
 
+.contact-main {
+    margin: auto 0;
+    padding: 0;
+}
 
-@media (max-width: 991px) {
-    .contact-typo {
-        padding: 0 10px;
-    }
+#contact-body {
+    font-size: 36px;
+    line-height: 43px;
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding-right: 40px;
 }

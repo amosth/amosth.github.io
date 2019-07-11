@@ -196,7 +196,7 @@ ul {
 
 #heart {
     fill: #ff0000;
-    animation: pulse 5s infinite linear;
+    animation: pulse 3s infinite linear;
     vertical-align: middle;
     margin: 0 2px;
 }

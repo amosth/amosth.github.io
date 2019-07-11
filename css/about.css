@@ -1,13 +1,18 @@
-html {
-    background: linear-gradient(hsl(0,0%,10%), hsl(0,0%,80%));
+body {
+    height: 200vh;
+    background: linear-gradient(hsl(0,0%,10%) 50%, hsl(0,0%,80%) 50%);
 }
 
 strong {
     font-weight: bold;
 }
 
-#logo {
-    margin-top: -4px;
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    padding: 0;
 }
 
 #menu {
@@ -27,48 +32,90 @@ strong {
     background: hsl(0,0%,10%);
 }
 
-#about-tools-title {
+.about-typo {
+    width: initial;
+    color: hsl(0,0%,10%);
+}
+
+.about-minititle {
     font-size: 22px;
     font-weight: bold;
-    text-align: right;
 }
 
 #about-tools-subtitle {
     font-size: 14px;
     font-weight: bold;
-    text-align: right;
     margin-top: 20px;
     margin-bottom: 4px;
 }
 
-.about-tools-body {
+.line-through {
+    text-decoration: line-through;
+    color: hsl(0,0%,50%);
+}
+
+.about-main-left {
+    margin: 8vw 3.8vw 0;
+}
+
+.about-main-right {
+    position: absolute;
+    margin-top: calc(100vh - 580px);
+    margin-bottom: 0;
+    right: 48px;
+}
+
+.about-main-right * {
     text-align: right;
+}
+
+.about-main-right ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+}
+
+#about-title {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#about-subtitle {
+    font-size: 32px;
+    letter-spacing: -.5px;
+}
+
+#about-body {
+    font-size: 22px;
+    letter-spacing: -.5px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+
+.about-tools-body {
+    margin: 0;
+}
+
+.exp-section .row {
+    margin-bottom: 28px;
 }
 
 #about-exp-title {
     font-weight: bold;
     color: hsl(0,0%,80%);
-    display: block;
-    padding-top: 40px;
 }
 
 #about-exp-subtitle {
     color: hsl(0,0%,80%);
     display: block;
-    padding-bottom: 40px;
-}
-
-.edu-section h2, .edu-section h3 {
-    margin-left: -15px;
-    margin-right: -15px;
+    padding-bottom: 24px;
 }
 
 .exp-item {
     opacity: .4;
     transition: opacity .5s ease;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .exp-item:hover {
@@ -110,29 +157,50 @@ strong {
 
 
 @media (max-width: 991px) {
-    .about-typo {
-        padding: 0 10px;
-    }
-
-
-    .about-main {
-        margin-top: 100px;
-        margin-bottom: 0;
+    .about-main-left {
+        margin: 0;
+        margin-top: 20px;
     }
 
     .about-main-right {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        position: relative;
+        margin-top: 0;
+        margin-left: 50px;
+    }
+
+    .about-main-right * {
+        text-align: left;
+        padding: 0;
+    }
+
+    #about-tools-subtitle {
+        margin-top: 0;
     }
 
     .about-main-right li, #about-tools-title, #about-tools-subtitle {
-        text-align: left;
         display: table;
+    }
+
+    .about-minititle {
+        margin-top: 0;
+    }
+
+    #about-body {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .skills-wrapper {
+        margin-bottom: 20px;
     }
 
     .tools-box {
         display: inline-table;
         margin-right: 5vw;
+    }
+
+    .exp-item {
+        margin-bottom: 20px;
     }
 }
 
