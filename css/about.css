@@ -233,8 +233,14 @@ strong {
 }
 
 
-@media (min-width: 1500px) {
+@media only screen and (min-width: 1500px) {
     .container {
         max-width: 1440px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #resume-list-item {
+        display: none;
     }
 }

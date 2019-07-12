@@ -256,7 +256,7 @@ body:not(embedded-doc) {
 }
 
 @media only screen and (max-width: 640px) {
-    #menu li:nth-child(4) {
+    #resume-list-item {
         display: none;
     }
 }
