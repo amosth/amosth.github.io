@@ -12,6 +12,10 @@ strong {
     margin-top: -3vh;
 }
 
+.inner {
+    display: flex;
+}
+
 .contact-typo {
     font-family: 'Neuzeit', sans-serif;
     font-weight: normal;
@@ -30,19 +34,11 @@ strong {
     padding: 0;
 }
 
-#contact-body {
-    font-size: 36px;
-    line-height: 43px;
-    margin-top: 40px;
-    margin-bottom: 140px;
-    padding-right: 40px;
+.learn-more {
+    width: 256px;
+    height: 68px;
 }
 
-@media only screen and (max-width: 991px) {
-    #contact-body {
-        font-size: 12.4px;
-    }
-}
 
 @media only screen and (max-width: 640px) {
     #resume-list-item {
