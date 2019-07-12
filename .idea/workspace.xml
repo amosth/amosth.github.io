@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,11 +59,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="541" column="20" lean-forward="true" selection-start-line="541" selection-start-column="20" selection-end-line="541" selection-end-column="20" />
+                <state relative-caret-position="498">
+                  <caret line="653" column="29" selection-start-line="653" selection-start-column="29" selection-end-line="653" selection-end-column="29" />
                   <folding>
                     <element signature="e#8355#8426#0" />
                     <element signature="e#8438#8714#0" />
@@ -93,10 +93,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/about.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="637">
+                <state relative-caret-position="183">
                   <caret line="209" column="21" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
                 </state>
               </provider>
@@ -125,7 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>r</find>
       <find>z-index</find>
       <find>font-family</find>
       <find>typeit</find>
@@ -155,6 +154,7 @@
       <find>text-ali</find>
       <find>row</find>
       <find>midni</find>
+      <find>exp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,12 +176,12 @@
         <option value="$PROJECT_DIR$/certificates/cae/index.html" />
         <option value="$PROJECT_DIR$/css/navbar.css" />
         <option value="$PROJECT_DIR$/css/contact.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/about/index.html" />
         <option value="$PROJECT_DIR$/contact/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resume/index.html" />
         <option value="$PROJECT_DIR$/css/about.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -288,12 +288,12 @@
       <workItem from="1561636066688" duration="9807000" />
       <workItem from="1562332551571" duration="276000" />
       <workItem from="1562398746676" duration="1964000" />
-      <workItem from="1562583531725" duration="53460000" />
+      <workItem from="1562583531725" duration="53583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149601000" />
+    <option name="totallyTimeSpent" value="149724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -406,29 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="541" column="20" lean-forward="true" selection-start-line="541" selection-start-column="20" selection-end-line="541" selection-end-column="20" />
-          <folding>
-            <element signature="e#8355#8426#0" />
-            <element signature="e#8438#8714#0" />
-            <element signature="e#8716#8963#0" />
-            <element signature="e#8964#9208#0" />
-            <element signature="e#9209#9448#0" />
-            <element signature="e#9457#9962#0" />
-            <element signature="e#9978#10108#0" />
-            <element signature="e#10120#10473#0" />
-            <element signature="e#11920#12000#0" />
-            <element signature="e#12613#12695#0" />
-            <element signature="e#12729#12737#0" />
-            <element signature="e#12898#12980#0" />
-            <element signature="e#12932#13069#0" />
-            <element signature="e#13128#13157#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -470,8 +447,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/about.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
+        <state relative-caret-position="183">
           <caret line="209" column="21" selection-start-line="209" selection-start-column="21" selection-end-line="209" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="653" column="29" selection-start-line="653" selection-start-column="29" selection-end-line="653" selection-end-column="29" />
+          <folding>
+            <element signature="e#8355#8426#0" />
+            <element signature="e#8438#8714#0" />
+            <element signature="e#8716#8963#0" />
+            <element signature="e#8964#9208#0" />
+            <element signature="e#9209#9448#0" />
+            <element signature="e#9457#9962#0" />
+            <element signature="e#9978#10108#0" />
+            <element signature="e#10120#10473#0" />
+            <element signature="e#11920#12000#0" />
+            <element signature="e#12613#12695#0" />
+            <element signature="e#12729#12737#0" />
+            <element signature="e#12898#12980#0" />
+            <element signature="e#12932#13069#0" />
+            <element signature="e#13128#13157#0" />
+          </folding>
         </state>
       </provider>
     </entry>
