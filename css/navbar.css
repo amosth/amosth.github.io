@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+body:not(embedded-doc) {
+    overflow: hidden;
+}
+
 .navbar {
     display: flex;
     position: fixed;
