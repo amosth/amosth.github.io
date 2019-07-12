@@ -236,24 +236,7 @@ input.annotation[type='password'] {
 
 
 
-
-
-
-
-
 @media only screen and (max-width: 960px) {
-    #email-link, .pagination, .mouse {
-        display: none;
-    }
-
-    .clearfix {
-        margin-top: -16px;
-        margin-left: -40px;
-    }
-
-    #first, #last {
-        font-size: 7.7vw;
-    }
 
     #logo {
         height: 30px !important;
@@ -274,11 +257,27 @@ input.annotation[type='password'] {
         transform: scale(1);
     }
 
-    #title {
-        margin-left: 60px;
+}
+
+
+@media only screen and (max-width: 540px) {
+
+    #logo {
+        height: 60px !important;
     }
 
+    .logo-wrapper {
+        display: initial;
+        top: 22px !important;
+        left: 30px !important;
+        height: 60px !important;
+        z-index: 10;
+    }
 
-
+    .hamburger {
+        top: 20px !important;
+        left: calc(100vw - 70px) !important;
+        transform: scale(1);
+    }
 
 }

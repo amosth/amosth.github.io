@@ -282,7 +282,7 @@ ul {
 }
 
 .pagination {
-    width: 40px;
+    width: 80px;
     right:20px !important;
     left: initial !important;
     top: 50% !important;
@@ -653,6 +653,10 @@ h3 {
         top: 20px !important;
         left: calc(100vw - 62px) !important;
         transform: scale(1);
+    }
+
+    .menu-item a:hover {
+        background-size: 0;
     }
 
     #title {
