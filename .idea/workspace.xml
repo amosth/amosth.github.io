@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/certificates/cae/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/certificates/cae/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/about.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resume/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resume/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -55,11 +58,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/resume/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="666">
-                  <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+                <state relative-caret-position="624">
+                  <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/certificates/cae/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-457">
+                  <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
                 </state>
               </provider>
             </entry>
@@ -68,11 +80,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="284" column="13" selection-start-line="284" selection-start-column="13" selection-end-line="284" selection-end-column="13" />
+                <state relative-caret-position="708">
+                  <caret line="669" column="25" selection-start-line="669" selection-start-column="25" selection-end-line="669" selection-end-column="25" />
                   <folding>
                     <element signature="e#8355#8426#0" />
                     <element signature="e#8438#8714#0" />
@@ -105,17 +117,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/about.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="218" column="25" selection-start-line="218" selection-start-column="25" selection-end-line="218" selection-end-column="25" />
+                <state relative-caret-position="334">
+                  <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/navbar.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="432">
-                  <caret line="240" column="23" selection-start-line="240" selection-start-column="23" selection-end-line="240" selection-end-column="23" />
+                <state relative-caret-position="347">
+                  <caret line="155" column="47" lean-forward="true" selection-start-line="155" selection-start-column="47" selection-end-line="155" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -134,13 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-family</find>
-      <find>typeit</find>
-      <find>type</find>
-      <find>_</find>
-      <find>emai</find>
-      <find>#menu</find>
-      <find>104</find>
       <find>clearf</find>
       <find>logo</find>
       <find>proje</find>
@@ -152,7 +157,6 @@
       <find>hsl</find>
       <find>panel</find>
       <find>mailto</find>
-      <find>heart</find>
       <find>about-t</find>
       <find>cont</find>
       <find>about-tools-tit</find>
@@ -160,10 +164,18 @@
       <find>midn</find>
       <find>text-ali</find>
       <find>row</find>
-      <find>exp</find>
       <find>made with</find>
       <find>midni</find>
       <find>navbar</find>
+      <find>menu</find>
+      <find>menu ul</find>
+      <find>.menu-item a</find>
+      <find>heart</find>
+      <find>exp</find>
+      <find>menu-item</find>
+      <find>ul</find>
+      <find>ul</find>
+      <find>skil</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,15 +195,15 @@
         <option value="$PROJECT_DIR$/cae/index.html" />
         <option value="$PROJECT_DIR$/../www/package.json" />
         <option value="$PROJECT_DIR$/css/contact.css" />
-        <option value="$PROJECT_DIR$/css/about.css" />
         <option value="$PROJECT_DIR$/about/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contact/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/PDFreader.css" />
+        <option value="$PROJECT_DIR$/resume/index.html" />
         <option value="$PROJECT_DIR$/certificates/cae/index.html" />
         <option value="$PROJECT_DIR$/css/navbar.css" />
-        <option value="$PROJECT_DIR$/resume/index.html" />
+        <option value="$PROJECT_DIR$/css/about.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -299,18 +311,18 @@
       <workItem from="1561636066688" duration="9807000" />
       <workItem from="1562332551571" duration="276000" />
       <workItem from="1562398746676" duration="1964000" />
-      <workItem from="1562583531725" duration="58190000" />
+      <workItem from="1562583531725" duration="61473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154331000" />
+    <option name="totallyTimeSpent" value="157614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15792646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15792646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -403,36 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/about.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="218" column="25" selection-start-line="218" selection-start-column="25" selection-end-line="218" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="284" column="13" selection-start-line="284" selection-start-column="13" selection-end-line="284" selection-end-column="13" />
-          <folding>
-            <element signature="e#8355#8426#0" />
-            <element signature="e#8438#8714#0" />
-            <element signature="e#8716#8963#0" />
-            <element signature="e#8964#9208#0" />
-            <element signature="e#9209#9448#0" />
-            <element signature="e#9457#9962#0" />
-            <element signature="e#9978#10108#0" />
-            <element signature="e#10120#10473#0" />
-            <element signature="e#11920#12000#0" />
-            <element signature="e#12613#12695#0" />
-            <element signature="e#12729#12737#0" />
-            <element signature="e#12898#12980#0" />
-            <element signature="e#12932#13069#0" />
-            <element signature="e#13128#13157#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3275">
@@ -464,13 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/certificates/cae/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/PDFreader.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -478,17 +453,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/navbar.css">
+    <entry file="file://$PROJECT_DIR$/resume/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="240" column="23" selection-start-line="240" selection-start-column="23" selection-end-line="240" selection-end-column="23" />
+        <state relative-caret-position="624">
+          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/index.html">
+    <entry file="file://$PROJECT_DIR$/certificates/cae/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="63" column="45" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="45" />
+        <state relative-caret-position="-457">
+          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="155" column="47" lean-forward="true" selection-start-line="155" selection-start-column="47" selection-end-line="155" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/about.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="198" column="5" selection-start-line="198" selection-start-column="5" selection-end-line="198" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="669" column="25" selection-start-line="669" selection-start-column="25" selection-end-line="669" selection-end-column="25" />
+          <folding>
+            <element signature="e#8355#8426#0" />
+            <element signature="e#8438#8714#0" />
+            <element signature="e#8716#8963#0" />
+            <element signature="e#8964#9208#0" />
+            <element signature="e#9209#9448#0" />
+            <element signature="e#9457#9962#0" />
+            <element signature="e#9978#10108#0" />
+            <element signature="e#10120#10473#0" />
+            <element signature="e#11920#12000#0" />
+            <element signature="e#12613#12695#0" />
+            <element signature="e#12729#12737#0" />
+            <element signature="e#12898#12980#0" />
+            <element signature="e#12932#13069#0" />
+            <element signature="e#13128#13157#0" />
+          </folding>
         </state>
       </provider>
     </entry>

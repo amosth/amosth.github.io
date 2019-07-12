@@ -135,8 +135,8 @@ body:not(embedded-doc) {
     top: 0;
     width:100vw;
     height:100vh;
+    padding-top: calc(13vh + 5px);
     background-color: #1a1a1a;
-    padding: 13vh 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -173,18 +173,22 @@ body:not(embedded-doc) {
     cursor: not-allowed;
 }
 
-ul {
-    list-style: none;
-}
-
 #menu ul {
-    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #heart-footer {
+    display: inline-block;
     position: fixed;
-    bottom: 18px;
-    left: calc(50% - 87.5px);
+    left: calc(50vw - 105.5px);
+    bottom: 20px;
+    padding-bottom: 0;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
 }
 
 .heart-text {
@@ -205,26 +209,11 @@ ul {
 }
 
 
-
 .embedded-doc {
     border: none;
     width: 100vw;
     height: calc(100% - 64px);
 }
-
-#annotationContainer {
-    overflow: hidden;
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: -webkit-box;
-    -webkit-box-align: center;
-    -webkit-box-pack: center;
-}
-
 
 
 @media only screen and (max-width: 960px) {

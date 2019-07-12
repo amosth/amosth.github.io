@@ -12,14 +12,6 @@ strong {
     padding: 0;
 }
 
-#menu {
-    padding-top: calc(13vh + 5px);
-}
-
-.menu-item {
-    margin-bottom: -2vh !important;
-}
-
 .part1 {
     min-height: 100vh;
     background: hsl(0,0%,80%);
