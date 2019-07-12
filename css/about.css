@@ -8,10 +8,6 @@ strong {
     font-weight: bold;
 }
 
-section {
-    padding: 40px 20px;
-}
-
 .container {
     padding: 0;
 }
@@ -27,10 +23,12 @@ section {
 .part1 {
     min-height: 100vh;
     background: hsl(0,0%,80%);
+    padding: 40px 20px;
 }
 
 .part2 {
     background: hsl(0,0%,10%);
+    padding-top: 40px;
 }
 
 .about-typo {
