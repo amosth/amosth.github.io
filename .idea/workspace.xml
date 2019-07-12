@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +21,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
+                <state relative-caret-position="1050">
                   <caret line="185" column="41" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
                 </state>
               </provider>
@@ -79,8 +80,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="551" selection-start-line="551" selection-end-line="565" selection-end-column="1" />
+                <state relative-caret-position="666">
+                  <caret line="720" selection-start-line="720" selection-end-line="724" selection-end-column="1" />
                   <folding>
                     <element signature="e#8355#8426#0" />
                     <element signature="e#8438#8714#0" />
@@ -122,8 +123,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/navbar.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="552">
-                  <caret line="231" column="1" selection-start-line="231" selection-start-column="1" selection-end-line="231" selection-end-column="1" />
+                <state relative-caret-position="804">
+                  <caret line="261" column="1" selection-start-line="261" selection-start-column="1" selection-end-line="261" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -194,11 +195,11 @@
         <option value="$PROJECT_DIR$/about/index.html" />
         <option value="$PROJECT_DIR$/css/about.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/contact/index.html" />
         <option value="$PROJECT_DIR$/css/contact.css" />
         <option value="$PROJECT_DIR$/resume/index.html" />
         <option value="$PROJECT_DIR$/certificates/cae/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/navbar.css" />
       </list>
     </option>
@@ -307,12 +308,12 @@
       <workItem from="1561636066688" duration="9807000" />
       <workItem from="1562332551571" duration="276000" />
       <workItem from="1562398746676" duration="1964000" />
-      <workItem from="1562583531725" duration="63485000" />
+      <workItem from="1562583531725" duration="63710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159626000" />
+    <option name="totallyTimeSpent" value="159851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -458,7 +459,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="1050">
           <caret line="185" column="41" selection-start-line="185" selection-start-column="41" selection-end-line="185" selection-end-column="41" />
         </state>
       </provider>
@@ -472,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="551" selection-start-line="551" selection-end-line="565" selection-end-column="1" />
+        <state relative-caret-position="666">
+          <caret line="720" selection-start-line="720" selection-end-line="724" selection-end-column="1" />
           <folding>
             <element signature="e#8355#8426#0" />
             <element signature="e#8438#8714#0" />
@@ -495,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="231" column="1" selection-start-line="231" selection-start-column="1" selection-end-line="231" selection-end-column="1" />
+        <state relative-caret-position="804">
+          <caret line="261" column="1" selection-start-line="261" selection-start-column="1" selection-end-line="261" selection-end-column="1" />
         </state>
       </provider>
     </entry>
