@@ -221,18 +221,6 @@ ul {
     -webkit-box-align: center;
     -webkit-box-pack: center;
 }
-.annotation {
-    position: absolute;
-    pointer-events: auto;
-}
-textarea.annotation {
-    resize: none;
-}
-input.annotation[type='password'] {
-    position: static;
-    width: 200px;
-    margin-top: 100px;
-}
 
 
 
@@ -261,6 +249,14 @@ input.annotation[type='password'] {
 
 
 @media only screen and (max-width: 540px) {
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        height: 180px;
+        width: 100%;
+        background: #1a1a1a;
+    }
 
     #logo {
         height: 60px !important;
