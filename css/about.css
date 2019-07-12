@@ -211,7 +211,7 @@ strong {
     }
 
     .about-skills-item {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .tools-box {
@@ -225,6 +225,8 @@ strong {
     }
 
     .about-exp-title, .about-exp-subtitle {
+        margin-left: 20px;
+        margin-right: 20px;
         padding-left: 0;
     }
 }
