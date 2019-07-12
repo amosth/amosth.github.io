@@ -215,9 +215,25 @@ body:not(embedded-doc) {
     height: calc(100% - 64px);
 }
 
+#heart {
+    fill: #ff0000;
+    animation: pulse 3s infinite linear;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+@keyframes pulse {
+    0%{ transform: scale(1);}
+    84%{ transform: scale(1); }
+    88%{ transform: scale(1.2); }
+    92%{ transform: scale(1);}
+    96%{ transform: scale(1.2);}
+    100%{ transform: scale(1);}
+}
+
 
 @media only screen and (max-width: 960px) {
-    
+
     #logo {
         height: 30px !important;
     }
