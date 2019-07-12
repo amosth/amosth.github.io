@@ -6,19 +6,12 @@ html {
     padding: 0;
 }
 
-body {
-    margin: 0;
-}
-
-body *::selection {
+html *::selection {
     background: #99ee99;
 }
 
-#loader {
-    background-color: #001400;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+body {
+    margin: 0;
 }
 
 svg.mainSVG {
@@ -61,15 +54,10 @@ canvas {
     z-index: 10;
 }
 
-#logo {
-    height: 24px !important;
-}
-
 .logo-wrapper {
     display: initial;
     top: 40px !important;
     left: 80px !important;
-    height: 24px !important;
     width: 30px !important;
     z-index: 10;
 }
@@ -261,36 +249,36 @@ ul {
 
 .midnightHeader.default {
     background: none;
-    color: hsl(0,0%,80%);
-    fill: hsl(0,0%,80%);
+    color: hsl(0,0%,100%);
+    fill: hsl(0,0%,100%);
 }
 .midnightHeader.default a, .midnightHeader.default a.active:after {
-    color: hsl(0,0%,80%);
+    color: hsl(0,0%,100%);
 }
 .midnightHeader.default #logo {
-    fill: hsl(0,0%,80%);
+    fill: hsl(0,0%,100%);
 }
 .midnightHeader.default .hamburger-inner,
 .midnightHeader.default .hamburger-inner:before,
 .midnightHeader.default .hamburger-inner:after {
-    background-color: hsl(0,0%,80%);
+    background-color: hsl(0,0%,100%);
 }
 
 .midnightHeader.black {
     background: none;
-    color: hsl(0,0%,10%);;
-    fill: hsl(0,0%,10%);;
+    color: hsl(0,0%,10%);
+    fill: hsl(0,0%,10%);
 }
 .midnightHeader.black a, .midnightHeader.black a.active:after {
-    color: hsl(0,0%,10%);;
+    color: hsl(0,0%,10%);
 }
 .midnightHeader.black #logo {
-    fill: hsl(0,0%,10%);;
+    fill: hsl(0,0%,10%);
 }
 .midnightHeader.black .hamburger-inner,
 .midnightHeader.black .hamburger-inner:before,
 .midnightHeader.black .hamburger-inner:after {
-    background-color: hsl(0,0%,10%);;
+    background-color: hsl(0,0%,10%);
 }
 
 .pagination {
@@ -545,10 +533,15 @@ h3 {
     animation: ani-mouse 1.5s linear infinite;
 }
 
-#heart-footer {
+.heart-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heart-menu {
     position: fixed;
-    bottom: 20px;
-    left: calc(50% - 87.5px);
+    bottom: 0;
+    width: 100%;
 }
 
 .heart-text {
@@ -570,9 +563,9 @@ h3 {
 
 @keyframes pulse {
     0%{ transform: scale(1);}
-    90%{ transform: scale(1); }
-    92%{ transform: scale(1.2); }
-    94%{ transform: scale(1);}
+    84%{ transform: scale(1); }
+    88%{ transform: scale(1.2); }
+    92%{ transform: scale(1);}
     96%{ transform: scale(1.2);}
     100%{ transform: scale(1);}
 }
@@ -652,7 +645,6 @@ h3 {
         display: initial;
         top: 20px !important;
         left: 30px !important;
-        height: 30px !important;
         width: 37px !important;
         z-index: 10;
     }

@@ -1,6 +1,7 @@
 body {
-    height: 200vh;
-    background: linear-gradient(hsl(0,0%,10%) 50%, hsl(0,0%,80%) 50%);
+    background: linear-gradient(hsl(0,0%,80%) 50%, hsl(0,0%,10%) 50%);
+    background-attachment: fixed;
+    cursor: default;
 }
 
 strong {
@@ -98,15 +99,19 @@ section {
 }
 
 .exp-section .row {
-    margin-bottom: 28px;
+    margin-bottom: 36px;
 }
 
-#about-exp-title {
+.about-exp-title, .about-exp-subtitle {
+    padding-left: 20px;
+}
+
+.about-exp-title {
     font-weight: bold;
     color: hsl(0,0%,80%);
 }
 
-#about-exp-subtitle {
+.about-exp-subtitle {
     color: hsl(0,0%,80%);
     display: block;
     padding-bottom: 24px;
@@ -185,7 +190,16 @@ section {
         margin-top: 0;
     }
 
+    #about-title {
+        font-size: 6.5vw;
+    }
+
+    #about-subtitle {
+        font-size: 4.5vw;
+    }
+
     #about-body {
+        font-size: 3.2vw;
         margin-top: 20px;
         margin-bottom: 40px;
     }
@@ -197,10 +211,15 @@ section {
     .tools-box {
         display: inline-table;
         margin-right: 5vw;
+        margin-bottom: 40px;
     }
 
     .exp-item {
         margin-bottom: 20px;
+    }
+
+    .about-exp-title, .about-exp-subtitle {
+        padding-left: 0;
     }
 }
 
