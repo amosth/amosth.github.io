@@ -206,17 +206,17 @@ strong {
         margin-bottom: 20px;
     }
 
-    .about-minititle {
+    .about-minititle, .about-exp-title {
         font-size: 22px;
     }
 
-    .about-skills-item {
+    .about-skills-item, .about-exp-subtitle {
         font-size: 14px;
     }
 
     .tools-box {
         display: inline-table;
-        margin-right: 5vw;
+        margin-right: 3.5vw;
         margin-bottom: 40px;
     }
 
