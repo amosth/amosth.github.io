@@ -260,6 +260,10 @@ ul {
 
 @media only screen and (max-width: 540px) {
 
+    .embedded-doc {
+        width: 80vw;
+    }
+
     #logo {
         height: 60px !important;
     }
