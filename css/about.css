@@ -189,15 +189,15 @@ strong {
     }
 
     #about-title {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     #about-subtitle {
-        font-size: 22px;
+        font-size: 21.4px;
     }
 
     #about-body {
-        font-size: 16px;
+        font-size: 19px;
         margin-top: 20px;
         margin-bottom: 40px;
     }
@@ -207,11 +207,11 @@ strong {
     }
 
     .about-minititle {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .about-skills-item {
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .tools-box {
