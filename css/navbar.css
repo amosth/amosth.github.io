@@ -226,6 +226,15 @@ ul {
 
 @media only screen and (max-width: 960px) {
 
+    .navbar {
+        display: flex;
+        position: fixed;
+        height: 580px;
+        width: 100%;
+        background: #1a1a1a;
+    }
+
+
     #logo {
         height: 30px !important;
     }
@@ -249,14 +258,6 @@ ul {
 
 
 @media only screen and (max-width: 540px) {
-
-    .navbar {
-        display: flex;
-        position: fixed;
-        height: 580px;
-        width: 100%;
-        background: #1a1a1a;
-    }
 
     #logo {
         height: 60px !important;
