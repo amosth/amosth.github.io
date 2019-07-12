@@ -253,7 +253,7 @@ ul {
     .navbar {
         display: flex;
         position: fixed;
-        height: 180px;
+        height: 580px;
         width: 100%;
         background: #1a1a1a;
     }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="207364e3-a21d-415c-be26-9dacf012a427" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/css/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resume/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resume/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,7 +114,7 @@
             <entry file="file://$PROJECT_DIR$/css/navbar.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="435">
-                  <caret line="255" column="12" selection-start-line="255" selection-start-column="12" selection-end-line="255" selection-end-column="12" />
+                  <caret line="255" column="17" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -299,12 +298,12 @@
       <workItem from="1561636066688" duration="9807000" />
       <workItem from="1562332551571" duration="276000" />
       <workItem from="1562398746676" duration="1964000" />
-      <workItem from="1562583531725" duration="56593000" />
+      <workItem from="1562583531725" duration="56671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152734000" />
+    <option name="totallyTimeSpent" value="152812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -488,7 +487,7 @@
     <entry file="file://$PROJECT_DIR$/css/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="255" column="12" selection-start-line="255" selection-start-column="12" selection-end-line="255" selection-end-column="12" />
+          <caret line="255" column="17" selection-start-line="255" selection-start-column="17" selection-end-line="255" selection-end-column="17" />
         </state>
       </provider>
     </entry>
