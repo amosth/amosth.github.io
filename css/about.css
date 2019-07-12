@@ -220,6 +220,11 @@ strong {
         margin-bottom: 40px;
     }
 
+    .exp-section .row {
+        margin: 0;
+        width: 100vw;
+    }
+
     .exp-item {
         margin-bottom: 20px;
     }
