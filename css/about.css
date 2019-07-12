@@ -206,6 +206,10 @@ strong {
         margin-bottom: 20px;
     }
 
+    .about-minititle {
+        font-size: 20px;
+    }
+
     .about-skills-item {
         font-size: 16px;
     }
