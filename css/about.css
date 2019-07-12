@@ -12,6 +12,10 @@ strong {
     padding: 0;
 }
 
+.menu-item {
+    margin-top: -3vh;
+}
+
 .part1 {
     min-height: 100vh;
     background: hsl(0,0%,80%);

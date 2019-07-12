@@ -179,16 +179,16 @@ body:not(embedded-doc) {
     padding: 0;
 }
 
-#heart-footer {
-    display: inline-block;
-    position: fixed;
-    left: calc(50vw - 105.5px);
-    bottom: 20px;
-    padding-bottom: 0;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
+.heart-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
     user-select: none;
+}
+
+.heart-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .heart-text {
@@ -217,19 +217,7 @@ body:not(embedded-doc) {
 
 
 @media only screen and (max-width: 960px) {
-
-    .navbar {
-        display: flex;
-        position: fixed;
-        height: 100px;
-        width: 100%;
-        background: #1a1a1a;
-    }
-
-    .embedded-doc {
-        margin-top: 100px;
-    }
-
+    
     #logo {
         height: 30px !important;
     }
@@ -240,33 +228,6 @@ body:not(embedded-doc) {
         left: 30px !important;
         height: 30px !important;
         width: 37px !important;
-        z-index: 10;
-    }
-
-    .hamburger {
-        top: 20px !important;
-        left: calc(100vw - 70px) !important;
-        transform: scale(1);
-    }
-
-}
-
-
-@media only screen and (max-width: 540px) {
-
-    .embedded-doc {
-        width: 80vw;
-    }
-
-    #logo {
-        height: 60px !important;
-    }
-
-    .logo-wrapper {
-        display: initial;
-        top: 22px !important;
-        left: 30px !important;
-        height: 60px !important;
         z-index: 10;
     }
 

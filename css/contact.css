@@ -1,3 +1,17 @@
+body {
+    background: hsl(0,0%,10%);
+    background-attachment: fixed;
+    cursor: default;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.menu-item {
+    margin-top: -3vh;
+}
+
 .contact-typo {
     font-family: 'Neuzeit', sans-serif;
     font-weight: normal;
