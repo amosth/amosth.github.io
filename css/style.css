@@ -10,12 +10,14 @@ html *::selection {
     background: #99ee99;
 }
 
-body {
-    margin: 0;
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
 }
 
-abbr {
-    text-decoration: none;
+body {
+    margin: 0;
 }
 
 svg.mainSVG {
@@ -662,9 +664,6 @@ h3 {
 .learn-more-dark:hover, .learn-more-dark:focus {
     color: hsl(0,0%,10%);
 }
-
-
-
 
 @media only screen and (max-width: 991px) {
     #email-link, .pagination, .mouse {

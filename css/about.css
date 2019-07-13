@@ -154,7 +154,6 @@ strong {
     color: hsl(0,0%,40%);
 }
 
-
 @media (max-width: 991px) {
     .about-main-left {
         margin: 0;
