@@ -12,7 +12,6 @@ html *::selection {
 
 abbr[title] {
     border-bottom: none !important;
-    cursor: inherit !important;
     text-decoration: none !important;
 }
 
