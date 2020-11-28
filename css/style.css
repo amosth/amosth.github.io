@@ -554,6 +554,11 @@ h3 {
     margin: 0;
 }
 
+.heart-text-clear {
+    color: hsl(0,0%,10%);
+
+}
+
 #heart {
     fill: #ff0000;
     animation: pulse 3s infinite linear;

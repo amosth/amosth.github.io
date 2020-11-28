@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:300,400,700');
+
+html {
+    background-color: #777777;
+}
+
+#container {
+    background-color: #EEEEEE;
+    margin: 50px auto;
+    padding: 40px;
+    width: 960px;
+    box-shadow: 0 0 80px #222222;
+    border-radius: 4px;
+}
+
+h1 {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+	color: #444444;
+    font-weight: 500;
+}
+
+h3 {
+    display: block;
+    margin: 0 auto 80px auto;
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+	color: #777777;
+    font-weight: 300;
+}
+
+.sezione {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px #777777;
+}
+
+.tabbed-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.tabbed-gif {
+    display: block;
+    margin: 0 auto;
+    width: 705px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 60px;
+    box-shadow: 0 20px 50px #777777;
+    border-radius: 5px;
+}
+
+.titolo {
+    background-color: #002206;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    color: #BBBBBB;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.sottotitolo {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 30px;
+}
+
+.contenuto {
+    margin-top: 4px;
+    display: block;
+    font-family: 'PT serif', sans-serif;
+    font-size: 13px;
+    color: #666666;
+    line-height: 20px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+ul {
+    font-family: 'PT serif', sans-serif;
+    font-size: 13px;
+    color: #666666;
+    line-height: 20px;
+    padding-right: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+.console {
+    color: #006600;
+}
+
+code {
+    color: #333333;
+    font-size: 13px;
+}
+
+#listato code{
+    color: #fff;
+}
+
+pre{
+    max-height: 80vh;
+    background-color: #000022;
+    border-radius: 5px;
+    overflow: auto;
+    padding: 0 30px;
+    margin: 0 30px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+}
+
+.hljs {
+    display: block;
+    overflow-x: initial;
+    padding: 0.5em;
+    background: #000022;
+}
+
+#listato .sottotitolo{
+    margin-top: 50px;
+}
+
+video {
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0 20px 80px #444444;
+    border-radius: 5px;
+}
+
+
+@keyframes alerta{
+    0%  { opacity: 1; }
+    50% { opacity: 0; }
+    100%  { opacity: 1; }
+}
+
+/* The element to apply the animation to */
+#alert {
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    opacity: 1;
+    animation-name: alerta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

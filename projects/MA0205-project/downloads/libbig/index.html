@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="description" content="The Models and Applications of Distributed Systems lab is a research unit within the Dep. of Mathematics and Computer Science of the University of Udine."/>
+		<title>LibBig Section | MADS Lab</title>
+		<link rel="icon" href="../../img/icon/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css" media="only screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" media="only screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/header.css" media="only screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/footer.css" media="only screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/libbig.css" media="only screen"/>
+		<link rel="stylesheet" type="text/css" href="../../css/printable/libbig_print.css" media="print"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<img alt="nav-banner" id="nav-bg" src="../../img/header/banner.png"/>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+
+		    <div id="brand-container" class="navbar-header">
+		      	<a class="navbar-brand" href="../index.html"><img alt="madsLogo" src="../../img/header/MADSlogo.png"></a>
+		      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li>
+		        	<a href="../../">Home</a>
+		        </li>
+		        <li>
+		        	<a href="../../news">News</a>
+		        </li>
+		        <li>
+		        	<a href="../../people">People</a>
+		        </li>
+		        <li>
+		        	<a href="../../projects">Projects</a>
+		        </li>
+		        <li>
+		        	<a href="../../publications">Publications</a>
+		        </li>
+		        <li>
+		        	<a href="../../thesis">Thesis & Internships</a>
+		        </li>
+		        <li>
+					<a href="../../downloads">Downloads</a>
+		        </li>
+		        <li>
+		        	<a href="../../contacts">Contacts</a>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<div id="main-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+						<h1 id="first" class="page-title">LibBig
+						</h1>
+					</div>
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+						<p class="page-subtitle libbig">
+							a library for Bigraphs and Bigraphical Reactive Systems
+						</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+						<p class="description">
+							Bigraphs and Bigraphical Reactive Systems are a modern, graphical calculus for the description of the syntax and semantics of systems in terms of the orthogonal notions of connectivity and locality but have been successfully applied also in other fields such as knowledge representation and manipulation. Bigraphs were proposed by Robin Milner and colleagues in 2000, and have been under development since. We refer the reader to Milner’s book The space and motion of communicating agents or to <a class="active" href="http://www.itu.dk/research/pls/wiki/index.php/A_Brief_Introduction_To_Bigraphs"><span class="medium-weight">this site</span></a> for a brief introduction to bigraphs. (Several works and projects involving bigraphs are collected at <a class="active" href="http://bigraph.org/"><span class="medium-weight">this site</span></a>.)
+						</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<img id="book" alt="book" src="../../img/libbig/book.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+							<p id="book-description">
+								The library aims to offer an implementation of bigraphical reactive systems but also to provide some tools and the infrastructure for extending them or implement the brand new flavours of bigraphs in order to meet requirements of a wider spectrum of scenarios.
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								Part of this extensibility is achieved thanks to the attached properties which allows to dynamically extend the structure of bigraphs by attaching attributes or properties (thay may be mutable) to e.g. nodes. For instance, attached properties can be used to store concrete values such as ip addresses or user permissions without the need to encode all this information in the standard bigraphical language reducing the burden of the encoding and resulting in a streamlined model without loss of information thanks to this new layer of abstraction. Matchings and rewritings can be customised to take into account also attached properties and hence, the need to re-implement the whole bigraph framework to meet particular use cases is drastically reduced.
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								The library provides a default implementation of bigraphs. The classes Bigraph and BigraphBuilder provides methods for assembling bigraphs programmatically but importers from some textual representations are offered. Milner’s algebra is supported in the form of methods exposed by Bigraph and BigraphBuilder implementing operations (such as composition, juxtaposition, or nesting) and elementary bigraphs (such as identities or ions). However, BigraphBuilder can be used to modify bigraphs more freely by not necessarily constructive operations.
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								For instance, the following code snippet yields an object describing the bigraph pictured below:
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>BigraphBuilder builder = new BigraphBuilder(signature);
+OuterName spooler = builder.addOuterName("Spooler");
+OuterName network = builder.addOuterName("Network");
+Root root = builder.addRoot();
+Node printer = builder.addNode("Printer",root,spooler,network);
+builder.addSite(root);
+builder.addSite(printer);
+builder.addInnerName("Network",network);
+Bigraph bigraph = builder.makeBigraph();</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+							<img id="printer" alt="printer" src="../../img/libbig/printer.png">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								Attached properties can be used to dynamically attach additional information. For instance, the printer node can be decorated with the default paper format or its network alias:
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>printer.attachProperty(new ProtectedProperty&lt;String&gt; ("NETWORK_ALIAS","Lab printer"));</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								Properties can be easily read:
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>Paper format = printer.&lt;Paper&gt;getProperty("DEFAULT_FORMAT").get();</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								or written:
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>printer.&lt;Paper&gt;getProperty("DEFAULT_FORMAT").set(Paper.A4);</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								Much of the information expressible by attached properties can be easily encoded in the bigraphical language, but there are cases requiring to extend (and hence re-implement) the bigraphical machinery.
+								For instance, spatial information can be represented bigraphically, but in a rather abstract way. What if we are interested in the nearest printer or in the access point with the strongest signal? The following concise example illustrates how the matcher can be instructed to consider access points (nodes decorated with the “AP_C” control) within the range.
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>Matcher matcher = new Matcher(){
+	  protected boolean areMatchable(Bigraph agent, Node nodeAgent, Bigraph redex, Node nodeRedex) {
+	      if(super.areMatchable(agent,nodeAgent,redex,nodeRedex)){
+	          if(nodeAgent.getControl.equals(AP_C))
+	              return checkDistance(nodeAgent);
+	          else
+	              return true;
+	      }
+	      ;return false;
+	  }
+	};
+	for(Match m : matcher.match(bigraph,redex)){
+	    doSomethingWithThisMatch(m);
+	};</code>
+							</pre>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+							<p class="description">
+								However optimal solutions are supported too:
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+							<pre class="code-frame">
+	<code>Matcher matcher = new WeightedMatcher(){
+	    protected int matchingWeight(Bigraph agent, Node nodeAgent, Bigraph redex, Node nodeRedex) {
+	        if(nodeAgent.getControl.equals(AP_C) &amp;&amp; nodeRedex.getControl.equals(AP_C))
+	            return getDistance(nodeAgent);
+	        else
+	            return super.matchingWeight(agent,nodeAgent,redex,nodeRedex);
+	    }
+	};</code>
+							</pre>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+						<a href="../../downloads/">
+							<p id="go-back">
+								<img id="goback-icon" alt="goback-icon" src="../../img/libbig/goback.png">
+								GO BACK TO DOWNLOAD PAGE
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<footer id="footer" class="container">
+			<div class="row" >
+				<div class="col-xs-12 col-sm-4">
+					<div id="footer-general" class="footcenter">
+						<img alt="footer logo" id="footer-logo" src="../../img/footer/UNIUDlogo.png" />
+						<p id="footer-dep">
+							MADS | Dep. of Mathematics and Computer Science<br/>
+							University of Udine
+						</p>
+						<ul>
+							<li>
+								<a href="https://goo.gl/maps/F5EtAQ3RYzR2"><img alt="map icon" src="../../img/footer/mapIcon.png" />Via delle Scienze, 206 - 33100 - Udine (Italy)</a>
+							</li>
+							<li>
+								<a href="mailto:mads@uniud.it"><img alt="email icon" src="../../img/footer/emailIcon.png" />mads@uniud.it</a>
+							</li>
+							<li>
+								<a href="tel:+390432558486"><img alt="phone icon" src="../../img/footer/phoneIcon.png" />+39 0432 558486</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-2 hidden-xs">
+					<div class="footcenter footmenu">
+						<a href="../../">Home</a>
+						<a href="../../news">News</a>
+						<a href="../../people">People</a>
+						<a href="../../projects">Projects</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 hidden-xs">
+					<div class="footcenter footmenu">
+						<a href="../../publications">Publications</a>
+						<a href="../../thesis">Thesis & Internships</a>
+						<a href="../../downloads">Downloads</a>
+						<a href="../../contacts">Contacts</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-2">
+					<div class="footcenter footmeta">
+						<p class="hidden-xs">Meta</p>
+							<a href="http://mads.uniud.it/wordpress/feed/"><img id="rss" alt="rss icon" class="hidden-xs" src="../../img/footer/rssIcon.png" /></a>
+							<a href="http://mads.uniud.it/wordpress/wp-login.php"><img id="wp" alt="wordpress icon" class="hidden-xs" src="../../img/footer/wpIcon.png" /></a>
+							<div class="terms">
+								<a href="http://mads.uniud.it/privpolicy.html" target="_blank">Privacy Policy</a>
+								<a href="../../sitemap" target="_blank">Site Map</a>
+							</div>
+						</div>
+					</div>
+				<div class="col-xs-12 col-sm-1"></div>
+			</div>
+		</footer>
+
+	</body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Amos Cappellaro | About</title>
+    <title>Amos Cappellaro | Projects</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta charset="UTF-8" name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Amos Cappellaro">
@@ -29,7 +29,7 @@
     </script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/projects.css">
     <link rel="stylesheet" href="../css/fonts.css">
 </head>
 <body>
@@ -83,169 +83,79 @@
     <section class="part1" data-midnight="black">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 about-main-left">
-                    <div class="about-typo">
-                        <h2 class="about-typo" id="about-title">Hey, it's Amos here!</h2>
-                        <h3 class="about-typo" id="about-subtitle">I'm a design-oriented front-end developer, and I solve <span class="line-through"><span id="random-word"></span> of your</span> problems.</h3>
-                        <script>
-                            const array = ['all', 'some', 'one'];
-                            let counter = 0;
-                            const getWord = () => array[counter++ % array.length];
+                <div class="col-lg-10 projects-wrapper">
+                    <h2 class="projects-typo" id="projects-title">Projects</h2>
 
-                            setInterval(() => {
-                                $('#random-word').html(getWord());
-                            }, 300);
-                        </script>
+                    <p class="projects-typo" id="projects-body">Here is a selection of some projects I achieved during my work and study experience. For more, check out my <a id="github-link" href="https://github.com/amosth" target="blank">GitHub profile</a>.</p>
 
-                        <p class="about-typo" id="about-body">I’ve always been drawn to the overlap between design and development. I love building web apps through carefully crafted code and user-centric design, from start to finish. My passion is creating, and I find happiness in being a better me today than the me yesterday. </p>
-
-                        <div class="row">
-                            <div class="col-lg-6 skills-wrapper">
-                                <h3 class="about-typo about-minititle">SOFT SKILLS</h3>
-                                <ul>
-                                    <li class="about-typo about-skills-item">Self-organized and able to work independently</li>
-                                    <li class="about-typo about-skills-item">Team player</li>
-                                    <li class="about-typo about-skills-item">Collaborative mindset and open-minded</li>
-                                    <li class="about-typo about-skills-item">Always curious, humble and courageous</li>
-                                    <li class="about-typo about-skills-item">Good at stress management</li>
-                                </ul>
+                    <div class="project-items-wrapper">
+                        <a class="project-item" href="https://amosth.github.io/projects/TDA497-exercise" target="blank">
+                            <div>
+                                <h3 class="project-item-title">My Design Methods Toolbox</h3>
+                                <img class="lang" src="../img/lang/eng.png" alt="eng">
                             </div>
-                            <div class="col-lg-6 skills-wrapper">
-                                <h3 class="about-typo about-minititle">HARD SKILLS</h3>
-                                <ul>
-                                    <li class="about-typo about-skills-item">Diligence and attention to details</li>
-                                    <li class="about-typo about-skills-item">Strong sense of design theory</li>
-                                    <li class="about-typo about-skills-item">Agile Software Development skills</li>
-                                    <li class="about-typo about-skills-item">User-centric mindset for problem solving</li>
-                                    <li class="about-typo about-skills-item">Sketching, creating wireframes, prototyping</li>
-                                </ul>
+                            <div class="project-item-description">
+                                <p class="project-item-desc-main">TDA497 <span>Interaction Design Methodology</span> course exercise.</p>
+                                <p class="project-item-desc-sub">Master's Program in <span>Interaction Design & Technologies</span>, Fall 2020.</p>
                             </div>
+                        </a>
+                        <a class="project-item" href="https://amosth.github.io/projects/CIU176-project" target="blank">
+                            <div>
+                                <h3 class="project-item-title">Pat-Pat Shirt</h3>
+                                <img class="lang" src="../img/lang/eng.png" alt="eng">
+                            </div>
+                            <div class="project-item-description">
+                                <p class="project-item-desc-main">CIU176 <span>Prototyping in Interaction Design</span> course project.</p>
+                                <p class="project-item-desc-sub">Master's Program in <span>Interaction Design & Technologies</span>, Fall 2020.</p>
+                            </div>
+                        </a>
+                        <a class="project-item" href="https://amosth.github.io/projects/MA0205-project" target="blank">
+                            <div>
+                                <h3 class="project-item-title">MADS Lab Website Redesign</h3>
+                                <img class="lang" src="../img/lang/eng.png" alt="eng">
+                            </div>
+                            <div class="project-item-description">
+                                <p class="project-item-desc-main">MA0205 <span>Web Technologies I</span> course project.</p>
+                                <p class="project-item-desc-sub">Bachelor's Program in <span>Web Technologies and Multimedia</span>, Spring 2017.</p>
+                            </div>
+                        </a>
+                        <a class="project-item" href="https://amosth.github.io/projects/MA0175-project" target="blank">
+                            <div>
+                                <h3 class="project-item-title">Web Accessibility Evaluation and User Testing</h3>
+                                <img class="lang" src="../img/lang/ita.png" alt="ita">
+                            </div>
+                            <div class="project-item-description">
+                                <p class="project-item-desc-main">MA0175 <span>Web Site Desig</span> course project.</p>
+                                <p class="project-item-desc-sub">Bachelor's Program in <span>Web Technologies and Multimedia</span>, Spring 2019.</p>
+                            </div>
+                        </a>
+                        <a class="project-item" href="https://amosth.github.io/projects/MA0176-project" target="blank">
+                            <div>
+                                <h3 class="project-item-title">EasyTrain</h3>
+                                <img class="lang" src="../img/lang/ita.png" alt="ita">
+                            </div>
+                            <div class="project-item-description">
+                                <p class="project-item-desc-main">MA0176 <span>Programming</span> course project.</p>
+                                <p class="project-item-desc-sub">Bachelor's Program in <span>Web Technologies and Multimedia</span>, Spring 2017.</p>
+                            </div>
+                        </a>
+                        <div class="project-empty-item">
+                            <p>...more projects to come :)</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 about-typo about-main-right">
-                    <h3 class="about-typo about-minititle">TOOLS</h3>
-                    <div class="tools-box">
-                        <h5 class="about-typo" id="about-tools-subtitle">FRONT-END</h5>
-                        <ul>
-                            <li class="about-typo about-tools-body"><abbr title="HyperText Markup Language 5">HTML5</abbr></li>
-                            <li class="about-typo about-tools-body"><abbr title="Cascading Style Sheets 3">CSS3</abbr></li>
-                            <li class="about-typo about-tools-body"><abbr title="ECMAScript 6">ES6</abbr></li>
-                            <li class="about-typo about-tools-body">React</li>
-                            <li class="about-typo about-tools-body">Vue</li>
-                        </ul>
-                    </div>
-                    <div class="tools-box">
-                        <h5 class="about-typo" id="about-tools-subtitle">BACK-END</h5>
-                        <ul>
-                            <li class="about-typo about-tools-body">NodeJS</li>
-                            <li class="about-typo about-tools-body"><abbr title="JavaScript Object Notation">JSON</abbr></li>
-                            <li class="about-typo about-tools-body"><abbr title="Structured Query Language">SQL</abbr></li>
-                        </ul>
-                    </div>
-                    <div class="tools-box">
-                        <h5 class="about-typo" id="about-tools-subtitle">DESIGN</h5>
-                        <ul>
-                            <li class="about-typo about-tools-body">Sketch</li>
-                            <li class="about-typo about-tools-body">Figma</li>
-                            <li class="about-typo about-tools-body">Framer</li>
-                            <li class="about-typo about-tools-body">InVision</li>
-                        </ul>
-                    </div>
-                    <div class="tools-box">
-                        <h5 class="about-typo" id="about-tools-subtitle"><abbr title="Version Control System">VCS</abbr></h5>
-                        <ul>
-                            <li class="about-typo about-tools-body">GitHub</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="part2" data-midnight="default">
-        <div class="container exp-section">
-            <h2 class="about-typo about-exp-title">EDUCATION</h2>
-            <h3 class="about-typo about-exp-subtitle">Universities and institutions I am studying or used to study at</h3>
-            <div class="row">
-                <div class="col-lg-4 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/edu/chalmers.png"/>
-                    <p class="about-typo about-exp-text">Chalmers University of Technology</p>
-                    <p class="about-typo about-exp-text place">Gothenburg, Sweden</p>
-                    <p class="about-typo about-exp-text period"><abbr title="August">Aug</abbr> 2020 · Present</p>
-                </div>
-                <div class="col-lg-4 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/edu/uniud.png"/>
-                    <p class="about-typo about-exp-text">Università degli Studi di Udine</p>
-                    <p class="about-typo about-exp-text place">Udine, Italy</p>
-                    <p class="about-typo about-exp-text period"><abbr title="September">Sep</abbr> 2016 · <abbr title="July">Jul</abbr> 2020</p>
-                </div>
-                <div class="col-lg-4 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/edu/gu.png"/>
-                    <p class="about-typo about-exp-text">University of Gothenburg</p>
-                    <p class="about-typo about-exp-text place">Gothenburg, Sweden</p>
-                    <p class="about-typo about-exp-text period"><abbr title="January">Jan</abbr> 2019 · <abbr title="June">Jun</abbr> 2019</p>
-                </div>
-                <div class="col-lg-4 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/edu/idf.png"/>
-                    <p class="about-typo about-exp-text">Interaction Design Foundation</p>
-                    <p class="about-typo about-exp-text place">online</p>
-                    <p class="about-typo about-exp-text period"><abbr title="September">Sep</abbr> 2017 · Present</p>
-                </div>
-            </div>
-
-            <h2 class="about-typo about-exp-title">WORK EXPERIENCE</h2>
-            <h3 class="about-typo about-exp-subtitle">Companies and organizations I've worked or volunteered at</h3>
-            <div class="row">
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/develon.png"/>
-                    <p class="about-typo about-exp-text">Develon Digital</p>
-                    <p class="about-typo about-exp-text place">Vicenza, Italy</p>
-                    <p class="about-typo about-exp-text period"><abbr title="March">Mar</abbr> 2020 · <abbr title="April">May</abbr> 2020</p>
-                </div>
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/xanterra.png"/>
-                    <p class="about-typo about-exp-text">Xanterra Parks and Resorts</p>
-                    <p class="about-typo about-exp-text place">Yellowstone National Park, <abbr title="United States of America">USA</abbr></p>
-                    <p class="about-typo about-exp-text period"><abbr title="July">Jul</abbr> 2018 · <abbr title="September">Sep</abbr> 2018</p>
-                </div>
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/jodel.png"/>
-                    <p class="about-typo about-exp-text">Jodel App</p>
-                    <p class="about-typo about-exp-text place">Berlin, Germany</p>
-                    <p class="about-typo about-exp-text period"><abbr title="July">Jul</abbr> 2016 · <abbr title="August">Aug</abbr> 2016</p>
-                </div>
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/tedx.png"/>
-                    <p class="about-typo about-exp-text"><abbr title="Technology Entertainment Design for Udine">TEDxUdine</abbr></p>
-                    <p class="about-typo about-exp-text place">Udine, Italy</p>
-                    <p class="about-typo about-exp-text period"><abbr title="March">Mar</abbr> 2017</p>
-                </div>
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/aim.png"/>
-                    <p class="about-typo about-exp-text">AIM Mobilità</p>
-                    <p class="about-typo about-exp-text place">Vicenza, Italy</p>
-                    <p class="about-typo about-exp-text period"><abbr title="July">Jul</abbr> 2014 · <abbr title="August">Aug</abbr> 2014</p>
-                </div>
-                <div class="col-lg-3 exp-item">
-                    <img class="about-exp-img" draggable="false" src="../img/work/abc.png"/>
-                    <p class="about-typo about-exp-text">abc.it Apple Premium Reseller</p>
-                    <p class="about-typo about-exp-text place">Vicenza, Italy</p>
-                    <p class="about-typo about-exp-text period"><abbr title="July">Jul</abbr> 2013 · <abbr title="August">Aug</abbr> 2013</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="heart-wrapper">
-        <p class="heart-text">handcrafted with </p>
+        <p class="heart-text heart-text-clear">handcrafted with </p>
         <abbr title="love">
             <svg id="heart" width="16" height="16" viewBox="0 0 24 24">
                 <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
             </svg>
         </abbr>
-        <span class="heart-text"> in <strong>Vicenza, Italy</strong></span>
+        <span class="heart-text heart-text-clear"> in <strong>Vicenza, Italy</strong></span>
     </footer>
 
 <script src="../js/hamburgers.js" async=""></script>

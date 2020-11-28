@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="description" content="Relazione del progetto (1° appello) per il corso di Programmazione e Laboratorio A.A. 2016/17"/>
+		<title>Amos Cappellaro | EasyTrain</title>
+		<link rel="stylesheet" href="highlight/styles/atelier-dune-dark.css">
+		<link rel="stylesheet" type="text/css" href="style.css" media="only screen"/>
+		<script src="highlight/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+	</head>
+	<body><div id="container">
+		<h1>Relazione del progetto (1° appello) per il corso di Programmazione e Laboratorio A.A. 2016/17</h1>
+		<h3>Membri del progetto: Cappellaro Amos, Castagnera Marco, Dal Poz Luca</h3>
+
+		<div class="sezione">
+			<p class="titolo">OBIETTIVO</p>
+			<p class="contenuto">Si richiede di implementare un programma che, tramite un'interfaccia grafica, consenta all'utente  di comprare biglietti ferroviari.</p>
+		</div>
+		<div class="sezione">
+			<p class="titolo">ANALISI DEL PROBLEMA</p>
+			<div>
+				<p class="sottotitolo">Lettura e salvataggio degli orari da file</p>
+				<p class="contenuto">Deve essere fornito un file di testo nel comando di esecuzione <code class="console">java EasyTrain nomeFile.txt</code>
+								  contenente in primo luogo il numero di viaggi disponibili, e successivamente tutti i dettagli relativi a ciascuno di essi:</p>
+								  <ul>
+  							  		<li>nome del treno</li>
+  									<li>orario di partenza</li>
+  									<li>stazione di partenza</li>
+									<li>orario di arrivo</li>
+  									<li>stazione di arrivo</li>
+									<li>prezzo</li>
+								  </ul>
+				<p class="contenuto">Per la lettura di queste specifiche è stata creata un’apposita classe <code>ListaOrari.java</code> che utilizza le classi
+								  <code>java.io.FileReader</code> e <code>java.io.BufferedReader</code>. Successivamente viene chiamato il metodo <code>creaOrario()</code>
+								  che trasforma le righe lette da file in attributi dell’oggetto <code>Orario</code> e lo aggiunge ad un array di tipo <code>Orario</code>.
+				</p>
+				<p class="contenuto">La classe <code>Orario</code> è a sua volta composta dagli attributi principali che modellano la struttura di un viaggio (es. nome treno, orario
+								  partenza/arrivo, stazione partenza/arrivo, …).
+				</p>
+				<p class="contenuto">NB: È stata creata una classe aggiuntiva <code>Ora</code>, finalizzata a contenere separatamente ore e minuti di un dato orario. Inoltre
+								  implementa il metodo <code>compareTo()</code> per comparare due orari, restituendo il maggiore, e il metodo <code>sottrai()</code> che restituisce la
+								  sottrazione tra due orari (e quindi la durata del viaggio).
+				</p>
+			</div>
+			<div>
+				<p class="sottotitolo">Creazione della GUI (Interfaccia grafica utente)</p>
+				<p class="contenuto">Per rendere più fruibile il programma da parte di un potenziale utente, è stata pensata la classe OrariGUI.java che estende l’API <code>javax.swing.JFrame</code>,
+								  la quale permette di creare un’interfaccia grafica per visualizzare e gestire i dati più chiaramente.</p>
+				<img class="tabbed-img" src="immagini/JFrame.png"/>
+				<p class="contenuto">Il contenuto viene suddiviso in due schede mediante l’utilizzo del componente grafico <code>javax.swing.JTabbedPane</code> che permette di passare dalla pagina di disponibilità dei
+								  biglietti a quella degli acquisti e viceversa.
+				</p>
+				<p class="contenuto">La classe <code>Orario</code> è a sua volta composta dagli attributi principali che modellano la struttura di un viaggio (es. nome treno, orario
+								  partenza/arrivo, stazione partenza/arrivo, …).
+				</p>
+				<p class="contenuto">La disposizione degli elementi di ciascuna pagina viene gestita dal <code>java.awt.GridBagLayout</code>, API in grado di allineare secondo una griglia specificata i vari componenti.
+				</p>
+				<img class="tabbed-img" src="immagini/GridBag.png"/>
+			</div>
+
+			<div>
+				<p class="sottotitolo">Implementazione della soluzione</p>
+				<p class="contenuto">La pagina di disponibilità dei biglietti presenta una lista di viaggi disponibili, disposti uno per riga, e ordinabili per mezzo di un menù a tendina
+								  (<code>javax.swing.JComboBox</code>) secondo quattro criteri:
+				</p>
+								<ul>
+								  <li>orario di partenza</li>
+								  <li>orario di arrivo</li>
+								  <li>stazione di partenza (A-Z)</li>
+								  <li>stazione di arrivo (A-Z)</li>
+								</ul>
+
+				<p class="contenuto">Un altro mezzo per trovare il viaggio desiderato più agevolmente è il campo di ricerca (<code>javax.swing.JTextField</code>), aggiunto in alto a destra, utile a filtrare i viaggi disponibili.
+				</p>
+
+				<p class="contenuto">Selezionato un viaggio, vengono forniti maggiori dettagli in un pannello (<code>javax.swing.JTextPane</code>) a lato specificando, in aggiunta ai campi già presenti nella lista,
+								  il nome del treno, la durata del viaggio ed il prezzo. Sottostante a questo pannello dei dettagli è presente il bottone Acquista (<code>javax.swing.JButton</code>) che permette di acquistare
+								  il biglietto selezionato, aprendo una finestra di dialogo (<code>javax.swing.JOptionPane</code>) per confermare o annullare l’acquisto.
+				</p>
+				<p class="contenuto">
+								  Sul fondo della finestra è posta un’area di testo (<code>javax.swing.JTextArea</code>) che, simulando il comportamento di una console, riporta i log delle varie operazioni di acquisto dei biglietti con tanto di orario.
+				</p>
+				<p class="contenuto">
+								  Si è pensato di aggiungere una tab <i>ACQUISTATI</i> che mostra lo storico di tutti i viaggi acquistati dall'avvio del programma sotto forma di elenco (<code>javax.swing.JTable</code>).
+				</p>
+
+
+				<p class="contenuto">È stata inoltre fatta la scelta di lanciare due finestre di dialogo in due situazioni critiche, conseguenti alla pressione del bottone Acquista:
+								  <ul>
+							  	  	<li>nel caso in cui si tenti di acquistare un viaggio, senza averne selezionato alcuno dalla lista, viene aperta una finestra di dialogo (<code>javax.swing.JOptionPane.ERROR_MESSAGE</code>) per
+									  	invitare l’utente a selezionare un viaggio;</li>
+							  	  	<li>allo stesso modo, nel tentativo di acquisto di uno stesso viaggio dopo la prima volta, viene aperta una finestra di dialogo (<code>javax.swing.JOptionPane.WARNING_MESSAGE</code>)
+									  	avvertendo l’utente di aver già acquistato il viaggio selezionato.</li>
+							  	  </ul>
+				</p>
+
+
+				<!--
+				<img class="tabbed-gif" src="demoGIF/01ComboBox.gif"/>
+				<img class="tabbed-gif" src="demoGIF/02SearchBar.gif"/>
+				<img class="tabbed-gif" src="demoGIF/03Buying.gif"/>
+				<img class="tabbed-gif" src="demoGIF/04Errors.gif"/>
+				-->
+      	</div>
+    </div>
+
+  	<div class="sezione">
+      <p class="titolo">AGGIUNTE</p>
+      <div>
+	      <p class="contenuto">È stato voluto aggiungere oltre ai requisiti base:</p>
+	      <ul>
+	        <li>
+	          <b>Campo di ricerca</b> - <code>JTextField</code> adibito alla ricerca delle stazioni; Ad ogni lettera premuta, la <code>JList</code> viene ripopolata mostrando solo le stazioni filtrate;
+	      	</li>
+	        <li>
+	          <b>Dettagli</b> - <code>JTextPane</code> che visualizza più chiaramente i dettagli relativi al viaggio selezionato nella <code>JList</code>;
+	      	</li>
+	        <li>
+	          <b>Bottone <i>Acquista</i></b> - <code>JButton</code> adibito all'acquisto vero e proprio del biglietto selezionato;
+	      	</li>
+	        <li>
+	          <b>Tab <i>Acquistati</i></b> - <code>JPanel</code> con la sola funzione di mostrare in una <code>JTable</code> la lista dei viaggi acquistati.
+	      	</li>
+	      </ul>
+	  </div>
+      <div>
+        <p class="sottotitolo">Strutture dati utilizzate</p>
+        <p class="contenuto">
+          	Come struttura dati per la memorizzazione degli orari letti da file, è stata usata la classe <code>java.util.ArrayList&lt;E&gt;</code>, perché sembrava essere la più indicata, anche grazie ai numerosi metodi già presenti per l'aggiunta, l'ordinamento e la ricerca delgi elementi inseriti.
+        </p>
+      </div>
+      <div>
+        <p class="sottotitolo">Classi proprietarie</p>
+        <p class="contenuto">
+        	<ul>
+            <li>
+              <b>classe <code>MyModel</code></b> - Utilizzata come classe intermedia per l'inserimento dei viaggi nel componente grafico <code>JList</code>,<code>JTable</code>;
+            </li>
+            <li>
+              <b>classe <code>MyCellRenderer extends JLabel implements ListCellRenderer&lt;Object&gt;</code></b> - Utilizzata per inserire i loghi per ogni elemento della <code>JList</code>;
+            </li>
+            <li>
+              <b>classe <code>Comparatore implements Comparator&lt;Orario&gt;</code></b> - Utilizzata per fare in modo che gli oggetti di tipo <code>Orario</code> potessero essere confrontati (ad esempio nell'ordinazione della lista orari).
+            </li>
+          </ul>
+        </p>
+      </div>
+
+  	<div>
+        <p class="sottotitolo">Componenti AWT non visti a lezione</p>
+        <p class="contenuto">
+        	<ul>
+            <li>
+              <b><code>javax.swing.JTabbedPane</code></b> - Utilizzato semplicemente per avere due tab separate nell'interfaccia grafica, una per acquistare biglietti e una per vedere la lista di quelli già acquistati;
+            </li>
+            <li>
+              <b><code>javax.swing.JSeparator</code></b> - Utilizzato come separatore grafico vericale nella GUI;
+            </li>
+            <li>
+              <b><code>javax.swing.JTable</code></b> - Componente adibito alla presentazione in lista dei viaggi acquistati nella tab <i>ACQUISTATI</i>, perché si presta alla visualizzazione tabellare con tanto di prima riga che funge da header;
+            </li>
+            <li>
+              <b><code>javax.swing.JTextPane</code></b> - Utilizzato per inserire in maniera semplice e diretta del testo formattato in HTML nel pannello <i>Dettagli</i>.
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="tabbed">
+        <p class="sottotitolo">Swing</p>
+        <p class="contenuto">
+        	È stata fatta la scelta di usare la classi della libreria <code>javax.swing</code> in quanto, essendo essa un evoluzione di <code>java.awt</code>, ingloba gli stessi componenti di quest'ultima aggiungendone degli altri e aggiungendovi funzionalità maggiori, per cui una più facile e completa gestione. <br/>
+        </p>
+        <p class="contenuto">
+        	I componenti della libreria <code>javax.swing</code> risultano inoltre visivamente più eleganti e moderni.
+        </p>
+      </div>
+
+	</div>
+
+
+	<div class="sezione" id="listato">
+      <p class="titolo">LISTATO</p>
+      <p class="sottotitolo">Classe EasyTrain (main)</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.io.*;
+
+/**
+* EasyTrain è la classe principale, contenente il metodo <code>main()</code>, il
+* quale di fatto istanzia tutti gli oggetti per l'avvio del programma
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class EasyTrain{
+
+	public static void main(String[] args) {
+
+		if(args.length>0) {
+			File fileOrari = new File(args[0]);
+
+			if(fileOrari.exists()) {
+				LeggiOrari orari = new LeggiOrari(args[0]);
+
+				OrariGUI gui = new OrariGUI("EasyTrain");
+				gui.caricaDati(orari.getArrayList(),0);
+			} else {
+				System.out.println("ERRORE: file inesistente");
+				System.exit(0);
+			}
+
+		} else {
+			System.out.println("ERRORE: inserire il nome di un file in input dopo il comando di esecuzione");
+			System.exit(0);
+		}
+	}
+}
+	      </code>
+      </pre>
+
+	  <p class="sottotitolo">Classe Ora</p>
+	  <pre class="listato-section">
+		<code class="java">
+/**
+* Ora è la classe che si occupa di salvare un dato orario dividendolo in ore e minuti per poterli gestire separatamente
+*
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class Ora implements Comparable<Ora> {
+	private int ore;
+	private int min;
+
+	/**
+	* Costruttore che assegna i valori ricevuti a tutti gli attributi dichiarati
+	*
+	* @param o parametro che definisce l'ora di un orario
+	* @param m parametro che definisce i minuti di un orario
+	*/
+	public Ora(int o, int m) {
+		ore = o;
+		min = m;
+	}
+
+	/**
+	* Costruttore che assegna valori nulli/azzerati a tutti gli attributi dichiarati
+	*
+	*/
+	public Ora() {
+		this(0, 0);
+	}
+
+	/**
+	* Metodo che ritorna l'ora dell'orario
+	*
+	* @return ora dell'orario
+	*/
+	public int getOra() { return ore; }
+
+	/**
+	* Metodo che ritorna i minuti dell'orario
+	*
+	* @return minuti dell'orario
+	*/
+	public int getMin() { return min; }
+
+	/**
+	* Metodo che setta l'ora dell'orario
+	*
+	* @param o ora
+	*/
+	public void setOra(int o) { ore = o; }
+
+	/**
+	* Metodo che setta i minuti dell'orario
+	*
+	* @param m minuti
+	*/
+	public void setMin(int m) { min = m; }
+
+	/**
+	* Metodo che stampa l'orario nel formato (HH:mm)
+	*
+	* @return ritorna la string <code>ore</code>:<code>min</code>
+	*/
+	public String toString() { return (ore < 10 ? "0" + ore : ore) + ":" + (min < 10 ? "0" + min : min); }
+
+	/**
+	* Metodo ereditato dalla classe <code>Comparable</code> e sovrascritto.&nbsp;Si occupa di comparare due oggetti di tipo
+	* {@link Ora}
+	*
+	* @param o oggetto {@link Ora} da confrontare
+	* @return 1 se l'oggetto l'ora che ha richiamato il metodo è più grande del parametro {@link Ora} passato, 0 se l'oggetto l'ora che ha richiamato il metodo è uguale al parametro {@link Ora} passato, -1 se l'oggetto l'ora che ha richiamato il metodo è più piccolo del parametro {@link Ora} passato
+	*/
+	public int compareTo(Ora o) {
+		if(ore>o.ore) {
+			return 1;
+		} else if(ore==o.ore) {
+			if(min>o.min) {
+				return 1;
+			} else if(min&lt;o.min) {
+				return -1;
+			}
+			return 0;
+		}
+		return -1;
+	}
+
+	/**
+	* Metodo che ha la funzione di sottrarre due oggetti di tipo {@link Ora}, ottendendone un terzo che verrà infine ritornato
+	*
+	* @param o oggetto di tipo {@link Ora} da sottrarre all'istanza chiamante
+	* @return un terzo oggetto di tipo {@link Ora} che rappresenta la durata
+	*/
+	public Ora sottrai(Ora o) {
+		int tempMin = 0,
+			tempOra = 0;
+
+		tempOra = o.getOra() - getOra();
+		if(o.getMin()&lt;getMin()) {
+			tempMin = o.getMin() - getMin() + 60;
+			tempOra -= 1;
+		} else {
+			tempMin = o.getMin() - getMin();
+		}
+
+		return new Ora(tempOra, tempMin);
+	}
+}
+		</code>
+	  </pre>
+
+	  <p class="sottotitolo">Classe Comparatore</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.util.*;
+/**
+* Comparatore è la classe che, implementando l'API {@link Comparator} permette di confrontare due oggetti di tipo {@link Orario}
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+
+public class Comparatore implements Comparator<Orario> {
+
+    private String campo, tipo;
+
+	/**
+	* Unico costruttore.&nbsp;Obbligatorio in quanto per l'esigenza del programma vanno specificati i parametri <code>campo</code>
+	* e <code>tipo</code> per capire in che modo va fatta la comparazione tra due oggetti {@link Orario}
+	*
+	* @param campo specifica se la comparazione andrà fatta in base all'orario o alla stazione
+	* @param tipo specifica se la comparazione andrà fatta basandosi sulla partenza o sull'arrivo
+	*/
+    public Comparatore(String campo, String tipo) {
+    	this.campo = campo;
+    	this.tipo = tipo;
+    }
+
+	/**
+	* Metodo che si occupa del confronto di due oggetti di tipo {@link Orario}
+	*
+	* @param o1 primo oggetto {@link Orario}
+	* @param o2 secondo oggetto {@link Orario}
+	*/
+	@Override
+	public int compare(Orario o1, Orario o2) {
+
+		int res = 0;
+
+		if(campo == "orario") {
+			if(tipo == "partenza")
+				res = o1.getOrarioPartenza().compareTo(o2.getOrarioPartenza());
+			else if(tipo == "arrivo")
+				res = o1.getOrarioArrivo().compareTo(o2.getOrarioArrivo());
+		} else if(campo=="stazione") {
+			if(tipo == "partenza")
+				res = o1.getStazionePartenza().compareTo(o2.getStazionePartenza());
+			else if(tipo == "arrivo")
+				res = o1.getStazioneArrivo().compareTo(o2.getStazioneArrivo());
+		}
+
+		return res;
+
+	};
+
+}
+	      </code>
+      </pre>
+
+	  <p class="sottotitolo">Classe Orario</p>
+      <pre class="listato-section">
+	      <code class="java">
+/**
+* Orario è la classe che si occupa di fornire la struttura necessaria per un
+* intero orario, costituita da orario di partenza e di arrivo, stazione di
+* partenza e di arrivo, prezzo del biglietto, nome del treno e identificativo.
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class Orario{
+
+	private Ora orarioPartenza;
+	private Ora orarioArrivo;
+	private String stazionePartenza;
+	private String stazioneArrivo;
+	private double prezzo;
+	private String nome;
+	private int identificativo;
+
+	/**
+	* Costruttore che inizializza un oggetto di tipo Orario senza i dettagli
+	* specificati
+	*/
+	public Orario() {
+		this(new Ora(), new Ora(), null, null, 0, 0);
+	}
+
+	/**
+	* Costruttore che inizializza un oggetto di tipo Orario contenente i dettagli
+	* di un viaggio: orario di partenza e d'arrivo, stazione di partenza e d'arrivo,
+	* il prezzo del biglietto e l'identificativo.
+	*
+	* @param orarioPartenza		l'orario di partenza
+	* @param orarioArrivo		l'orario d'arrivo
+	* @param stazionePartenza	il nome della stazione di partenza
+	* @param stazioneArrivo		il nome della stazione d'arrivo
+	* @param prezzo				il prezzo del biglietto per il viaggio
+	* @param identificativo		l'id univoco
+	*/
+	public Orario(Ora orarioPartenza, Ora orarioArrivo, String stazionePartenza, String stazioneArrivo, double prezzo, int identificativo) {
+		this.orarioPartenza = orarioPartenza;
+		this.orarioArrivo = orarioArrivo;
+		this.stazionePartenza = stazionePartenza;
+		this.stazioneArrivo = stazioneArrivo;
+		this.prezzo = prezzo;
+		this.identificativo = identificativo;
+	}
+
+	/**
+	* Metodo necessario a modificare l'orario di partenza
+	*
+	* @param o	l'ora della partenza
+	* @param m  il minuto esatto relativo all'ora della partenza
+	*/
+ 	public void setOrarioPartenza(int o, int m) {
+ 		orarioPartenza.setOra(o);
+ 		orarioPartenza.setMin(m);
+ 	}
+
+	/**
+	* Metodo necessario a modificare l'orario d'arrivo
+	*
+	* @param o	l'ora dell'arrivo
+	* @param m  il minuto esatto relativo all'ora dell'arrivo
+	*/
+ 	public void setOrarioArrivo(int o, int m) {
+ 		orarioArrivo.setOra(o);
+ 		orarioArrivo.setMin(m);
+ 	}
+
+	/**
+	* Metodo necessario a modificare il nome della stazione di partenza
+	*
+	* @param s	il nome della stazione di partenza
+	*/
+ 	public void setStazionePartenza(String s) {
+ 		stazionePartenza = s;
+ 	}
+
+	/**
+	* Metodo necessario a modificare il nome della stazione d'arrivo
+	*
+	* @param s  il nome della stazione d'arrivo
+	*/
+ 	public void setStazioneArrivo(String s) {
+ 		stazioneArrivo = s;
+ 	}
+
+	/**
+	* Metodo necessario a modificare il prezzo del biglietto per il viaggio
+	*
+	* @param d	il prezzo del biglietto per il viaggio
+	*/
+ 	public void setPrezzo(Double d) {
+ 		prezzo = d;
+ 	}
+
+	/**
+	* Metodo necessario a modificare l'identificativo
+	*
+	* @param i 	parametro scelto arbitrariamente per dare un id univoco all'orario. È compito del programmatore assicurarsi
+	* 			l'univocità dello stesso
+	*/
+ 	public void setIdentificativo(int i) {
+ 		identificativo = i;
+ 	}
+
+	/**
+	* Metodo necessario a modificare il nome del treno che opererà il viaggio
+	*
+	* @param nome  il nome del treno che opererà il viaggio
+	*/
+ 	public void setNome(String nome) {
+ 		this.nome = nome;
+ 	}
+
+	/**
+	* Metodo che fornisce l'orario di partenza
+	*
+	* @return	l'orario di partenza
+	*/
+ 	public Ora getOrarioPartenza() { return orarioPartenza; }
+
+	/**
+	* Metodo che fornisce l'orario d'arrivo
+	*
+	* @return	l'orario d'arrivo
+	*/
+ 	public Ora getOrarioArrivo() { return orarioArrivo; }
+
+	/**
+	* Metodo che fornisce il nome della stazione di partenza
+	*
+	* @return	il nome della stazione di partenza
+	*/
+ 	public String getStazionePartenza() { return stazionePartenza; }
+
+	/**
+	* Metodo che fornisce il nome della stazione d'arrivo
+	*
+	* @return	il nome della stazione d'arrivo
+	*/
+ 	public String getStazioneArrivo() { return stazioneArrivo; }
+
+	/**
+	* Metodo che fornisce il prezzo del biglietto per il viaggio
+	*
+	* @return	il prezzo del biglietto per il viaggio
+	*/
+ 	public Double getPrezzo() { return prezzo; }
+
+	/**
+	* Metodo che fornisce l'id dell'orario
+	*
+	* @return   l'id dell'orario
+	*/
+ 	public int getIdentificativo() { return identificativo; }
+
+	/**
+	* Metodo che fornisce il nome del treno che opererà il viaggio
+	*
+	* @return	il nome del treno che opererà il viaggio
+	*/
+ 	public String getNome() { return nome; }
+
+	/**
+	* Si occupa di tradurre in stringa i maggiori dettagli del viaggio
+	*
+	* @return	una stringa contenente i maggiori dettagli del viaggio:
+	*			orario di partenza e d'arrivo, stazione di partenza e d'arrivo, prezzo del biglietto
+	*/
+ 	public String toString(){
+ 		String s = "[\n";
+
+ 		s += "orarioPartenza: "+orarioPartenza+"\n";
+ 		s += "stazionePartenza: "+stazionePartenza+"\n";
+ 		s += "\norarioArrivo: "+orarioArrivo+"\n";
+ 		s += "stazioneArrivo: "+stazioneArrivo+"\n";
+ 		s += "\nprezzo: "+prezzo;
+
+ 		s += "\n]";
+
+ 		return s;
+ 	}
+
+}
+	      </code>
+      </pre>
+
+      <p class="sottotitolo">Classe LeggiOrari</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.util.*;
+import java.io.*;
+
+
+/**
+* LeggiOrari è la classe che si occupa di eseguire la lettura da file degli orari, e conseguentemente il salvataggio
+* degli stessi in memoria, attraverso una struttura dati che nel metodo "main" verrà poi passata come parametro alla
+* classe che gestirà l'interfaccia grafica
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class LeggiOrari{
+
+	private ArrayList<Orario> listaOrari;
+
+	/**
+	* Non esistono altri tipi di costruttori, in quanto il programma può essere eseguito solamente indicando tramite
+	* linea di comando il nome di un file esistente da leggere che poi verrà passato a questo costruttore dal metodo "main"
+	*
+	* @param file nome del file che deve essere letto
+	*/
+	public LeggiOrari(String file) {
+		leggiFile(file);
+	}
+
+	/**
+	* Metodo principale di questa classe.&nbsp;Si occupa di andare ad effettuare la lettura vera e propria da file servendosi
+	* delle API FileReader e BufferedReader.&nbsp;Richiama il metodo {@link #creaOrario creaOrario} passandogli
+	* l'array delle righe lette da file
+	*
+	* @param file nome del file che deve essere letto
+	*/
+	public void leggiFile(String file) {
+
+		listaOrari = new ArrayList<Orario>();
+		File fileDaLeggere = new File(file);
+		ArrayList<String> stringList = new ArrayList<String>();
+		String tempString;
+
+		try {
+			FileReader reader = new FileReader(fileDaLeggere);
+			BufferedReader buffReader = new BufferedReader(reader);
+
+			while ((tempString = buffReader.readLine()) != null) {
+		        stringList.add(tempString);
+		    }
+
+			buffReader.close();
+
+		}catch(IOException exc) {
+			System.out.println(exc);
+		}
+
+		creaOrario(stringList);
+
+	}
+
+	/**
+	* Si occupa di tradurre l'array delle righe lette da file in un insieme di singoli orari, inserendoli in un array di oggetti
+	* di tipo {@link Orario}
+	*
+	* @param stringList un array contentente le linee lette da file
+	*/
+	public void creaOrario(ArrayList<String> stringList) {
+
+		Orario orarioTemp;
+
+		int iterazioni = Integer.parseInt(stringList.get(0));
+		int identificativo = 0;
+
+		stringList.remove(0);
+		for (int i=0; i&lt;iterazioni ; i++) {
+
+			orarioTemp = new Orario();
+
+			orarioTemp.setNome(stringList.remove(0));	//nome treno
+
+			String[] splittato = stringList.remove(0).split(":");	//orario partenza
+			orarioTemp.setOrarioPartenza(Integer.parseInt(splittato[0]),Integer.parseInt(splittato[1]));
+
+			orarioTemp.setStazionePartenza(stringList.remove(0));	//stazione partenza
+
+			splittato = stringList.remove(0).split(":");	//orario arrivo
+			orarioTemp.setOrarioArrivo(Integer.parseInt(splittato[0]),Integer.parseInt(splittato[1]));
+
+			orarioTemp.setStazioneArrivo(stringList.remove(0));	//stazione arrivo
+
+			orarioTemp.setPrezzo(Double.parseDouble(stringList.remove(0)));	//prezzo
+
+			orarioTemp.setIdentificativo(identificativo);
+
+			listaOrari.add(i, orarioTemp);
+			identificativo++;
+		}
+
+	}
+
+	/**
+	* Metodo che ritorna l'array di tipo {@link Orario}, in quanto parametro dichiarato privatamente
+	*
+	* @return array degli orari
+	*/
+	public ArrayList<Orario> getArrayList() {
+		return listaOrari;
+	}
+
+}
+
+
+	      </code>
+      </pre>
+
+	  <p class="sottotitolo">Classe OrariGUI</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.table.*;
+import javax.swing.border.*;
+import java.util.*;
+
+/**
+* OrariGUI è la classe che si occupa di modellare la finesra grafica per l'interazione con l'utente, attraverso l'uso delle 
+* librerie <code>java.awt</code> e <code>javax.swing</code>, inoltre implementa anche qualche metodo per lo scambio di dati
+* tra la gli array di memorizzazione e i componenti grafici adibiti alla loro visualizzazione
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class OrariGUI extends JFrame {
+
+	/* DICHIARAZIONE di tutti i componenti */
+	public ArrayList<Orario> arrayOrariOriginale;
+	public ArrayList<Orario> arrayOrari;
+
+	public JPanel 	panelPrincipale,
+					panelAcquistati;
+
+	public JTabbedPane tabbedPane;
+
+	public JLabel 	labelViaggi,
+					labelDettagli;
+
+	public JButton buttonAcquista;
+
+	public JList<MioModello> listOrari;
+	public DefaultListModel<MioModello> model;
+
+	public JSeparator separatore;
+
+	public JScrollPane 	scrollConsole,
+						scrollDettagli,
+						scrollList;
+
+	public JTable tableAcquistati;
+	public DefaultTableModel modelTableAcquistati;
+
+	public JTextArea textAreaConsole;
+
+	public JTextPane textPaneDettagli;
+
+	public JComboBox<String> boxOrdina;
+
+	public JTextField textFieldCerca;
+
+	public GridBagConstraints 	gridCon,
+								gridCon2;
+
+	public GridBagLayout 	gridBL,
+							gridBL2;
+
+	public ArrayList<Integer> acquistati;
+
+	/**
+	* Costruttore unico al quale viene passato solo il titolo della finestra.&nbsp;In quanto non necessita di altri parametri.&nbsp;
+	* Il costruttore della classe OrariGUI contiene buona parte dell'intero codice cella classe, in quanto ha il compito di
+	* istanziare e aggiungere alla finestra tutti i componenti grafici necessari
+	*
+	* @param title il titolo della finestra
+	*/
+	public OrariGUI(String title) {
+		
+		/* FRAME - settaggi iniziali */
+		super(title);
+		setMinimumSize(new Dimension(705,500));
+
+		tabbedPane = new JTabbedPane();
+
+	    panelPrincipale = new JPanel();
+	    panelAcquistati = new JPanel();
+	    tabbedPane.addTab("Disponibilit\u00E0",panelPrincipale);
+	    tabbedPane.addTab("Acquistati",panelAcquistati);
+
+	    setContentPane(tabbedPane);
+	    setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+	    /* ARRAY biglietti acquistati */
+	    acquistati = new ArrayList<Integer>();
+
+	    /* GridBagLayout  */
+
+	    	//GridBagLayout per la tab "VIAGGI DISPONIBILI"
+	    gridBL = new GridBagLayout();	
+	    gridCon = new GridBagConstraints();	
+	    reset();
+		panelPrincipale.setLayout(gridBL);
+	   
+	    	//GridBagLayout per la tab "ACQUISTATI"
+	    gridBL2 = new GridBagLayout();	
+	    gridCon2 = new GridBagConstraints();
+	    gridCon2.insets.top = 5;
+	    gridCon2.insets.bottom = 5;
+	    gridCon2.insets.left = 5;
+	    gridCon2.insets.right = 5;
+		panelAcquistati.setLayout(gridBL2);
+
+
+		/******************** COMPONENTI ********************/
+
+
+		/*---------
+		|		  |
+		|  TAB_1  |  (VIAGGI DISPONIBILI)
+		|		  |
+		---------*/
+		/* -------------------------------------------------- RIGA 1 -------------------------------------------------- */
+
+		/* JComboBox */
+	 	boxOrdina = new JComboBox<>(new String[] {"","orario di partenza","orario di arrivo","stazione di partenza (A-Z)","stazione di arrivo (A-Z)"});
+	 	/* border */
+	   	TitledBorder titoloOrdina;
+	   	titoloOrdina = BorderFactory.createTitledBorder("Ordina per");
+	   	boxOrdina.setBorder(titoloOrdina);
+
+	 	reset();
+	 	gridCon.gridy = 0;
+	 	gridCon.gridx = 1;
+	 	gridCon.anchor = GridBagConstraints.EAST;
+	 	gridCon.fill = GridBagConstraints.NONE;
+	    gridBL.setConstraints(boxOrdina, gridCon);
+	    panelPrincipale.add(boxOrdina);
+
+
+	    /* JSeparator */
+	    separatore = new JSeparator(JSeparator.VERTICAL);
+	    reset();
+	    gridCon.fill = GridBagConstraints.VERTICAL;
+	    gridCon.gridy = 1;
+	 	gridCon.gridx = 2;
+		gridCon.gridheight = 3;
+	    gridBL.setConstraints(separatore, gridCon);
+	    panelPrincipale.add(separatore);
+
+
+	    /* JTextField - cerca */
+	    textFieldCerca =  new JTextField();
+	    textFieldCerca.setPreferredSize(new Dimension(170,45));
+	    textFieldCerca.setMinimumSize(new Dimension(170,45));
+	    textFieldCerca.setOpaque(false);
+	    textFieldCerca.addActionListener(new Ascoltatore(this));
+	    textFieldCerca.getDocument().addDocumentListener(new Ascoltatore(this));
+	    /* border */
+	   	TitledBorder titoloCerca;
+	   	titoloCerca = BorderFactory.createTitledBorder("Cerca");
+	   	textFieldCerca.setBorder(titoloCerca);
+
+	  	reset();
+		gridCon.gridy = 0;
+	 	gridCon.gridx = 4;
+	 	gridCon.fill = GridBagConstraints.NONE;
+	 	gridCon.anchor = GridBagConstraints.LINE_END;
+	    gridBL.setConstraints(textFieldCerca, gridCon);
+	    panelPrincipale.add(textFieldCerca);
+
+
+	    /* -------------------------------------------------- RIGA 2 -------------------------------------------------- */
+	    
+	    /* JLabel */
+		labelViaggi = new JLabel("VIAGGI DISPONIBILI");
+		reset();
+	 	gridCon.gridy = 1;
+	 	gridCon.gridx = 0;
+	    gridBL.setConstraints(labelViaggi, gridCon);
+	    panelPrincipale.add(labelViaggi);
+
+
+	    labelDettagli = new JLabel("DETTAGLI");
+		reset();
+	 	gridCon.gridy = 1;
+	 	gridCon.gridx = 3;
+	    gridBL.setConstraints(labelDettagli, gridCon);
+	    panelPrincipale.add(labelDettagli);
+
+
+	    /* -------------------------------------------------- RIGA 3 -------------------------------------------------- */
+
+	    /* JList */
+	    model = new DefaultListModel<MioModello>();
+		listOrari = new JList<MioModello>(model);
+		listOrari.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		listOrari.setCellRenderer(new MyCellRenderer());
+
+		scrollList = new JScrollPane(listOrari);
+	    scrollList.setPreferredSize(new Dimension(480, 260));
+		scrollList.setMinimumSize(new Dimension(480, 260));
+
+		reset();
+	    gridCon.gridy = 2;
+	    gridCon.gridx = 0;
+	    gridCon.gridwidth = 2;
+		gridCon.gridheight = 2;
+	    gridCon.anchor = GridBagConstraints.NORTHWEST;
+	    gridCon.fill = GridBagConstraints.HORIZONTAL;
+	    gridBL.setConstraints(scrollList, gridCon);
+	    panelPrincipale.add(scrollList);
+
+
+	    /* JTextPane */
+	    textPaneDettagli = new JTextPane();
+	    textPaneDettagli.setContentType("text/html");
+	    textPaneDettagli.setEditable(false);
+
+	    scrollDettagli = new JScrollPane(textPaneDettagli);
+	    scrollDettagli.setPreferredSize(new Dimension(270,210));
+		scrollDettagli.setMinimumSize(new Dimension(270,210));
+
+	 	reset();
+	 	gridCon.gridy = 2;
+	 	gridCon.gridx = 3;
+	 	gridCon.gridwidth = 2;
+	 	gridCon.fill = GridBagConstraints.HORIZONTAL;
+	    gridBL.setConstraints(scrollDettagli, gridCon);
+	    panelPrincipale.add(scrollDettagli);
+
+
+	    /* -------------------------------------------------- RIGA 4 -------------------------------------------------- */
+
+		/* JButton */
+	    buttonAcquista = new JButton("Acquista");
+
+	 	reset();
+	 	gridCon.gridy = 3;
+	 	gridCon.gridx = 3;
+		gridCon.gridwidth = 2;
+	 	gridCon.anchor = GridBagConstraints.NORTHWEST;
+	 	gridCon.fill = GridBagConstraints.BOTH;
+	    gridBL.setConstraints(buttonAcquista, gridCon);
+	    panelPrincipale.add(buttonAcquista);
+
+
+
+	    /* -------------------------------------------------- RIGA 5 -------------------------------------------------- */
+
+	    /* JTextArea */
+	    textAreaConsole = new JTextArea();
+	    textAreaConsole.setEditable(false);
+
+	    scrollConsole = new JScrollPane(textAreaConsole);
+	    scrollConsole.setPreferredSize(new Dimension(700,120));
+		scrollConsole.setMinimumSize(new Dimension(700,120));
+
+	 	reset();
+		gridCon.insets.top = 50;
+
+	 	gridCon.gridy = 4;
+	 	gridCon.gridx = 0;
+	 	gridCon.gridwidth = 5;
+	    gridBL.setConstraints(scrollConsole, gridCon);
+	    panelPrincipale.add(scrollConsole);
+
+
+	    /* aggiunta degli ascoltatori */
+		boxOrdina.addActionListener(new Ascoltatore(this));
+		listOrari.addListSelectionListener(new Ascoltatore(this));
+		buttonAcquista.addActionListener(new Ascoltatore(this));
+
+
+
+		/*---------
+		|		  |
+		|  TAB_2  | (ACQUISTATI)
+		|		  |
+		---------*/
+		/* -------------------------------------------------- RIGA 1 -------------------------------------------------- */
+		
+		/* JTable */
+		modelTableAcquistati = new DefaultTableModel(new MioModello[][] {}, new String[] {"Treno","Partenza","Stazione di partenza","Arrivo","Stazione di arrivo","Durata","Prezzo"}) {
+		    public boolean isCellEditable(int row, int column) {
+		       //all cells false
+		       return false;
+		    }
+		};
+
+		tableAcquistati = new JTable(modelTableAcquistati);
+		for (int i=0; i<=6; i++) {	// 6 è il numero delle colonne della tabella
+			if(i==0 || i==2 | i==4){
+				tableAcquistati.getColumnModel().getColumn(i).setPreferredWidth(120);
+			}else{
+				tableAcquistati.getColumnModel().getColumn(i).setMinWidth(60);
+				tableAcquistati.getColumnModel().getColumn(i).setMaxWidth(60);	
+			}
+		}
+		
+		JScrollPane contenitore = new JScrollPane(tableAcquistati);
+	 	gridCon2.gridy = 0;
+	 	gridCon2.gridx = 0;
+	 	gridCon2.weightx = 1;
+	 	gridCon2.weighty = 1;
+	 	gridCon2.anchor = GridBagConstraints.WEST;
+	 	gridCon2.fill = GridBagConstraints.BOTH;
+	    gridBL2.setConstraints(contenitore, gridCon2);
+
+	    panelAcquistati.add(contenitore);
+	    
+
+
+	    /* istruzioni finali */
+
+	    pack();
+	    setLocationRelativeTo(null);
+	    setVisible(true);
+
+	}
+
+	/**
+	* Metodo che si occupa di riportare tutti i parametri dell'oggetto <code>GridBagConstraints</code> allo stato iniziale
+	* voluto dal programmatore
+	*/
+	public void reset(){
+
+		gridCon.fill = GridBagConstraints.BOTH;
+	    gridCon.gridheight = 1;
+	    gridCon.gridwidth = 1;
+	    gridCon.weightx = 1;
+	    gridCon.weighty = 1;
+	    gridCon.anchor = GridBagConstraints.PAGE_START;
+		gridCon.insets.top = 5;
+	    gridCon.insets.bottom = 5;
+	    gridCon.insets.left = 5;
+	    gridCon.insets.right = 5;
+
+	}
+
+	/**
+	* Metodo che si occupa di riempire un array model da inserire nel componente grafico JList per popolare la lista degli orari.&nbsp;
+	*
+	* @param lista l'array di oggetti di tipo {@link Orario} (lista degli orari)
+	* @param check parametro necessario a riconoscere da chi è richiamato il metodo, e gestire di conseguenza istruzioni differenti
+	*/
+	public void caricaDati(ArrayList<Orario> lista, int check) {
+
+		if(check==0) {	//se 0, arriva dal MAIN -> salvo su lista originale, e non tocco più
+			arrayOrariOriginale = lista;
+		}
+
+		model.removeAllElements();
+		arrayOrari = lista;
+
+		for ( int i = 0; i < arrayOrari.size(); i++ ) {	//per ogni orario, creo una stringa da inserire nel modello della JList
+
+			String s = "<html><pre>"+"    "+arrayOrari.get(i).getOrarioPartenza().toString();
+			s += "   "+arrayOrari.get(i).getStazionePartenza();
+			s += "\t\t"+arrayOrari.get(i).getOrarioArrivo().toString();
+			s += "   "+arrayOrari.get(i).getStazioneArrivo()+"</pre></html>";
+
+			/* inserisco il la stringa nel modello e gestiscto il logo */
+			if ((arrayOrari.get(i).getNome()).contains("Italo")) {
+				model.addElement(new MioModello(s,arrayOrari.get(i).getIdentificativo(),"icons/logo_italo.png"));
+			} else {
+				model.addElement(new MioModello(s,arrayOrari.get(i).getIdentificativo(),"icons/logo_fs.png"));
+			}
+
+		}
+		listOrari.setModel(model);
+
+	}
+
+	/**
+	* Metodo con lo scopo di ordinare l'array di orari, che verrà di volta in volta reinserito nel componente grafico JList
+	*
+	* @param scelta parametro in base al quale viene decretato quale metodo di ordinamento effettuare
+	*/
+	public void ordinaModello(int scelta) {
+
+		switch(scelta) {
+			case 0:
+					//no sorting
+					break;
+
+			case 1:
+					Collections.sort(arrayOrari, new Comparatore("orario","partenza"));
+					break;
+
+			case 2:
+					Collections.sort(arrayOrari, new Comparatore("orario","arrivo"));
+					break;
+
+			case 3:
+					Collections.sort(arrayOrari, new Comparatore("stazione","partenza"));
+					break;
+
+			case 4:
+					Collections.sort(arrayOrari, new Comparatore("stazione","arrivo"));
+					break;
+
+			default:
+					Collections.sort(arrayOrari, new Comparatore("orario","partenza"));
+					break;
+		}
+
+		/* ...dopo aver ordinato l'array, lo reinserisco nella JList */
+		caricaDati(arrayOrari,1);
+	}
+
+}
+	      </code>
+      </pre>
+
+      <p class="sottotitolo">Classe MioModello</p>
+      <pre class="listato-section">
+	      <code class="java">
+import javax.swing.*;
+
+/**
+* MioModello è la classe che ha il solo scopo di modellare un oggetto che contenga una stringa da stampare&nbsp;
+* all'interno della lista degli orari (componente grafico JList), e tenere traccia di un identificativo per riconoscere&nbsp;
+* in maniera univoca un dato orario
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class MioModello {
+
+	public String s;
+	public int id;
+	public ImageIcon image;
+
+	/**
+	* Costruttore vuoto per assegnare valori nulli/azzerati alle variabili dichiarate
+	*/
+	public MioModello() {
+		this.s = "";
+		this.id = -1;
+		this.image = null;
+	}
+
+	/**
+	* Costruttore si occupa di assegnare i valori ricevuti come parametri solo a due delle variabili dichiariarate, rispettivamente&nbsp;
+	* la stringa <code>s</code> e l'intero <code>id</code>
+	*
+	* @param s contiene l'effettiva stringa che rappresenta un dato orario
+	* @param id contiene l'identificativo univoco di un dato orario
+	*/
+	public MioModello(String s, int id) {
+		this.s = s;
+		this.id = id;
+		this.image = null;
+	}
+
+	/**
+	* Costruttore si occupa di assegnare i valori ricevuti come parametri a tutte le variabili dichiarate
+	*
+	* @param s contiene l'effettiva stringa che rappresenta un dato orario
+	* @param id contiene l'identificativo univoco di un dato orario
+	* @param path contiene una stringa che è il path di un immagine, attraverso il quale sarà istanziato l'oggetto ImageIcon
+	*/
+	public MioModello(String s, int id, String path) {
+		this.s = s;
+		this.id = id;
+		this.image = new ImageIcon(path);
+	}
+
+	/**
+	* Metodo che restituisce la stringa principale da stampare a video nell'interfaccia grafica
+	*
+	* @return stringa da stampare
+	*/
+	public String toString() {
+		return s;
+	}
+
+	/**
+	* Metodo che restituisce l'immagine dell'oggetto MioModello
+	*
+	* @return oggetto di tipo ImageIcon
+	*/
+	public ImageIcon getImmagine() {
+		return image;
+	}
+
+	/**
+	* Metodo che restituisce l'id dell'oggetto MioModello
+	*
+	* @return identificativo univoco dell'orario
+	*/
+	public int getId() {
+		return id;
+	}
+
+}
+
+	      </code>
+      </pre>
+
+      <p class="sottotitolo">Classe MyCellRenderer</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.awt.*;
+import javax.swing.*;
+
+/**
+* MyCellRenderer è una classe proprietaria con lo scopo di aggiungere un'icona
+* ad ogni elemento della lista di orari
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+* @see         &lt;a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/ListCellRenderer.html"&gt;Java API Library: &lt;code&gt;ListCellRenderer&lt;E&gt;&lt;/code&gt;&lt;/a&gt;
+*/
+public class MyCellRenderer extends JLabel implements ListCellRenderer&lt;Object&gt; {
+
+ /**
+ * Metodo necessario ad aggiungere il logo della compagnia che opererà il viaggio
+ * a fianco dell'elemento della lista degli orari
+ *
+ * @param list          la JList che si sta per stampare
+ * @param value         l'oggetto che viene trasformato nella stringa equivalente all'orario
+ * @param index         l'indice della cella
+ * @param isSelected    vero se la cella specificata è stata selezionata
+ * @param cellHasFocus  vero se la cella specificata ha il focus
+ * @return              un componente il cui metodo &lt;code&gt;paint()&lt;/code&gt; farà il
+ *                      render del &lt;code&gt;value&lt;/code&gt; specificato
+ * @see &lt;a href="https://docs.oracle.com/javase/7/docs/api/javax/swing/ListCellRenderer.html#getListCellRendererComponent(javax.swing.JList,%20E,%20int,%20boolean,%20boolean)"&gt;Java API Library: &lt;code&gt;getListCellRendererComponent()&lt;/code&gt;&lt;/a&gt;
+ */
+    public Component getListCellRendererComponent(JList<?> list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        String s = value.toString();
+        setText(s);
+
+        setIcon(((MioModello)value).getImmagine());
+
+        if (isSelected) {
+           setBackground(list.getSelectionBackground());
+           setForeground(list.getSelectionForeground());
+        } else {
+           setBackground(list.getBackground());
+           setForeground(list.getForeground());
+        }
+        setEnabled(list.isEnabled());
+        setFont(list.getFont());
+        setOpaque(true);
+        return this;
+    }
+}
+	      </code>
+      </pre>
+
+	<p class="sottotitolo">Classe Ascoltatore</p>
+      <pre class="listato-section">
+	      <code class="java">
+import java.util.*;
+import java.text.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.text.*;
+import javax.swing.event.*;
+
+/**
+* Ascoltatore è la classe che si occupa di notificare e di reagire agli
+* eventi generati dall'utente nella GUI
+*
+* @author      Amos Cappellaro
+* @author      Luca Dal Poz
+* @author      Marco Castagnera
+* @version     1.0, %G%
+*/
+public class Ascoltatore implements ActionListener, ListSelectionListener, DocumentListener {
+
+	private OrariGUI gui;
+
+	/**
+	* Costruttore assegna all'attributo dichiarato di tipo {@link OrariGUI} il parametro ottenuto
+	*
+	* @param gui	un'istanza della classe {@link OrariGUI} che gestisce l'interfaccia grafica
+	*/
+	public Ascoltatore(OrariGUI gui) {
+		this.gui = gui;
+	}
+
+	/**
+	* Metodo adibito a catturare l'evento ({@link ActionEvent}) e a gestirne
+	* tutti i vari casi
+	*
+	* @param e	l'evento generato da un'azione dell'utente
+	*/
+	public void actionPerformed(ActionEvent e) {
+		Object source = e.getSource();
+
+		if(source instanceof JComboBox) {
+			JComboBox box = (JComboBox)source;
+			gui.textPaneDettagli.setText("");
+			gui.ordinaModello(box.getSelectedIndex());
+		}else if(source instanceof JButton) {
+
+			JButton button = (JButton)source;
+			Date data = new Date();
+			SimpleDateFormat outputDate = new SimpleDateFormat("H:mm:ss", new Locale("it"));
+			JList list = (JList)gui.listOrari;
+			MioModello temp = (MioModello)list.getSelectedValue();
+			Boolean giaAcquistato = false;
+
+			try{
+				for(Orario orario : gui.arrayOrariOriginale) {
+					if(orario.getIdentificativo()==temp.id) {
+						for(int j=0; j&lt;gui.acquistati.size(); j++) {
+							if(gui.acquistati.get(j)==temp.id) {
+								giaAcquistato = true;
+							}
+						}
+						if(!giaAcquistato) {
+							int choice = JOptionPane.showOptionDialog(null,
+      							"Sei sicuro di voler acquistare questo viaggio?",
+      							"Conferma Acquisto",
+      							JOptionPane.YES_NO_OPTION,
+      							JOptionPane.QUESTION_MESSAGE,
+      							null, null, null);
+
+  							if (choice == JOptionPane.YES_OPTION) {
+								gui.textAreaConsole.append(outputDate.format(data)+" - Hai acquistato il biglietto per il treno "+orario.getNome()+" da "+orario.getStazionePartenza()+" ("+orario.getOrarioPartenza()+") a "+orario.getStazioneArrivo()+" ("+orario.getOrarioArrivo()+") al prezzo di "+orario.getPrezzo()+" \u20ac.\n");
+
+								gui.acquistati.add(temp.id);
+								gui.modelTableAcquistati.addRow(new MioModello[] {
+									new MioModello(orario.getNome(),temp.id),
+									new MioModello(orario.getOrarioPartenza().toString(),temp.id),
+									new MioModello(orario.getStazionePartenza(),temp.id),
+									new MioModello(orario.getOrarioArrivo().toString(),temp.id),
+									new MioModello(orario.getStazioneArrivo(),temp.id),
+									new MioModello(orario.getOrarioPartenza().sottrai(orario.getOrarioArrivo()).toString(),temp.id),
+									new MioModello(orario.getPrezzo().toString()+" \u20ac",temp.id)
+								});
+
+								gui.textAreaConsole.append("Fino ad ora hai speso: "+calcolaPrezzo()+" \u20ac \n\n");
+  							}
+						} else {
+							String warning = "Hai gi\u00E0 acquistato questo biglietto!";
+							System.out.println(warning);
+							JOptionPane.showMessageDialog(null, warning, "Attenzione", JOptionPane.WARNING_MESSAGE);
+						}
+					}
+				}
+			}catch(NullPointerException exc) {
+				String error = "Non \u00E8 stato selezionato alcun viaggio!";
+				System.out.println(error);
+				JOptionPane.showMessageDialog(null, error, "Errore", JOptionPane.ERROR_MESSAGE);
+			}
+
+		}
+	}
+
+	/**
+	* Metodo che richiama il metodo {@link #ricerca(DocumentEvent)}
+	*
+	* @param e l'evento generato dal campo di ricerca {@link JTextField}
+	*/
+	public void changedUpdate(DocumentEvent e) {
+		ricerca(e);
+	}
+
+	/**
+	* Metodo che richiama il metodo {@link #ricerca(DocumentEvent)}
+	*
+	* @param e l'evento generato dal campo di ricerca {@link JTextField}
+	*/
+	public void insertUpdate(DocumentEvent e) {
+		ricerca(e);
+	}
+
+	/**
+	* Metodo che richiama il metodo {@link #ricerca(DocumentEvent)}
+	*
+	* @param e l'evento generato dal campo di ricerca {@link JTextField}
+	*/
+	public void removeUpdate(DocumentEvent e) {
+		ricerca(e);
+	}
+
+	/**
+	* Metodo che cattura gli eventi generati dalla lista orari {@link JList} e in
+	* base al tipo di evento gestisce le casistiche
+	*
+	* @param e	l'evento generato dalla lista orari {@link JList}
+	*/
+	public void valueChanged(ListSelectionEvent e) {
+
+		Object source = e.getSource();
+		int id = 0;
+
+		if(source instanceof JList) {
+			//if(e.getValueIsAdjusting()){	//entra SOLO se l'elemento della lista è stato cliccato, NON se perde il focus
+				try{
+					JList list = (JList)source;
+					MioModello temp = (MioModello)list.getSelectedValue();
+					id = temp.id;
+
+					String stringaDettagli = "&lt;html&gt;&lt;body&gt;&lt;pre style='font-size: 10px'&gt;";
+
+					for(Orario orario : gui.arrayOrariOriginale) {
+						if(orario.getIdentificativo()==id) {
+							stringaDettagli += "&lt;b&gt;Treno: &lt;/b&gt;"+orario.getNome()+"&lt;br/&gt;&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Orario di partenza: &lt;/b&gt;"+orario.getOrarioPartenza()+"&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Stazione di partenza: &lt;/b&gt;"+orario.getStazionePartenza()+"&lt;br/&gt;&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Orario di arrivo: &lt;/b&gt;"+orario.getOrarioArrivo()+"&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Stazione di arrivo: &lt;/b&gt;"+orario.getStazioneArrivo()+"&lt;br/&gt;&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Durata: &lt;/b&gt;"+(orario.getOrarioPartenza().sottrai(orario.getOrarioArrivo()))+"&lt;br/&gt;";
+							stringaDettagli += "&lt;b&gt;Prezzo: &lt;/b&gt;"+orario.getPrezzo()+" &euro;&lt;br/&gt;";
+							stringaDettagli += "&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;";
+
+							gui.textPaneDettagli.setText(stringaDettagli);
+						}
+					}
+				}catch(NullPointerException exc) {
+					//do nothing
+				}
+			//}
+		}
+
+	}
+
+	/**
+	* Metodo che calcola il prezzo complessivo di tutti i biglietti acquistati
+	*
+	* @return l'ammontare del prezzo totale comprensivo di tutti i biglietti acquistati
+	*/
+	public double calcolaPrezzo() {
+
+		double prezzo = 0d;
+
+		for (int id : gui.acquistati) {
+			for (Orario orTemp : gui.arrayOrariOriginale ) {
+				if(orTemp.getIdentificativo()==id) {
+					prezzo += orTemp.getPrezzo();
+				}
+			}
+		}
+
+		prezzo = Math.round(prezzo * 100.0) / 100.0;
+
+		return prezzo;
+
+	}
+
+	/**
+	* Metodo che si occupa di ripopolare la lista orari filtrata in base al cambiamento
+	* del campo di ricerca
+	*
+	* @param e	l'evento generato dal campo di ricerca {@link JTextField}, passato dai metodi ascoltatori
+	*/
+	public void ricerca(DocumentEvent e) {
+		try{
+			String testo = e.getDocument().getText(0,e.getDocument().getLength());
+			ArrayList<Orario> arrayOrariCercati = new ArrayList<>();
+
+			for(Orario orario : gui.arrayOrariOriginale) {
+				if(orario.getStazionePartenza().toLowerCase().contains(testo.toLowerCase()) || orario.getStazioneArrivo().toLowerCase().contains(testo.toLowerCase())){
+					arrayOrariCercati.add(orario);
+				}
+			}
+
+			gui.caricaDati(arrayOrariCercati,1);
+		}catch(BadLocationException exc){
+			exc.printStackTrace();
+		}
+
+	}
+
+}
+	      </code>
+      </pre>
+
+ 	</div>
+
+ 	<div class="sezione">
+		<p class="titolo">PROVA DI ESECUZIONE</p>
+		<div>
+			<video autoplay="autoplay" loop>
+	  			<source src="demoVid/terminal.mp4" type="video/mp4"/>
+			</video>
+			<video autoplay="autoplay" loop>
+				<source src="demoVid/demo.mp4" type="video/mp4"/>
+			</video>
+		</div>
+	</div>
+
+	<!--
+	<div id="alert">LUCA STA ESEGUENDO MODIFICHE</div>
+	-->
+
+</div></body>
+</html>
