@@ -115,6 +115,7 @@ strong {
     opacity: .4;
     transition: opacity .5s ease;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .exp-item:hover {
