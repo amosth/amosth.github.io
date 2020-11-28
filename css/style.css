@@ -588,6 +588,7 @@ h3 {
 }
 
 #about-subtitle {
+    height: 80px;
     font-size: 32px;
     letter-spacing: -.5px;
 }
