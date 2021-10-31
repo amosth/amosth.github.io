@@ -57,7 +57,7 @@ strong {
     width: 100%;
 }
 
-.project-item {
+.project-item, .project-item-disabled {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,6 +72,10 @@ strong {
     margin-bottom: 40px;
     transition: all ease .2s;
     color: hsl(0,0%,90%);
+}
+
+.project-item-disabled {
+    opacity: .75;
 }
 
 .project-item-description {
@@ -109,6 +113,10 @@ strong {
 
 .project-item * {
     cursor: pointer;
+}
+
+.project-item-disabled * {
+    cursor: not-allowed;
 }
 
 .project-item:hover {
