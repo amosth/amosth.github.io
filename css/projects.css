@@ -120,6 +120,10 @@ strong {
     cursor: not-allowed;
 }
 
+.project-item-disabled:hover {
+    text-decoration: none;
+}
+
 .project-item:hover {
     transform: scale(1.02);
     text-decoration: none;
