@@ -188,6 +188,90 @@ span {
     height: 100%;
 }
 
+.code-text {
+    color: inherit;
+    font-weight: 600;
+}
+
+.essay-fig {
+    margin-top: 28px !important;
+    margin-bottom: 14px !important;
+}
+
+.caption {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 48px;
+}
+
+.inline-link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.inline-link-400 {
+    text-decoration: none;
+    font-weight: 400;
+    color: #666666 !important;
+}
+
+.inline-link:hover {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.inline-link-400:hover {
+    text-decoration: none;
+    font-weight: 400;
+    color: #666666 !important;
+}
+
+.ext-link {
+    color: #000000;
+}
+.ext-link:hover {
+    color: #000000;
+}
+
+.list-header {
+    margin: 0;
+}
+
+.infoviz-list {
+    padding-left: 40px;
+}
+
+.infoviz-list li {
+    list-style-type: circle;
+}
+
+.infoviz-ref-list li {
+    font-size: 10px;
+    margin-bottom: 4px;
+}
+
+.list-header-ref {
+    margin-top: 8px !important;
+    margin-bottom: 4px !important;
+}
+
+.reference-item {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.essay-fig-wrapper {
+    display: flex;
+}
+
+.essay-fig-wrapper img {
+    min-width: 480px;
+    width: 75%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
 @media (max-width: 991px) {
     #projects-title {
         font-size: 32px;

@@ -90,154 +90,328 @@
 
 
                     <div class="solution-wrapper">
-                        <span class="solution">INTRODUCTION</span>
-                        <p class="solution">This essay is aimed to present, explain and reflect on a mockup of a visualization focused on the topic of Journalistic Data Storytelling: through this topic, it has been expected to realize an engaging information visualization tool to support Donald Trump’s ideas on climate change, together with the exploitation of dark patterns. Most significant images of the mockup will be presented to support concepts and ideas through the essay: all full size images of the mockup will be provided as appendix.
-                            Since the visualization in analysis is meant to support Donald Trump’s agenda, it has been straight- forwardly assumed that it could be made available on his website with a target set on American citizens. Figure 1 proposes real Trump’s landing page with a climate report in evidence, contain- ing the visualization. Three main sections are provided within the visualization: the first one (S1 ), Global Warming, o↵ers absolute low temperatures data on American soil (Wikipedia, 2021a), together with mean temperature anomalies data (GCAG, 2016); the second section (S2), CO2 Emissions v Sea Level Rising, presents data on carbon dioxide emissions from fossil fuels by USA and China (CDIAC, 2014), compared with the global average absolute sea level change (CSIRO, 2015); finally, the third section (S3), Trends in Atmospheric CO2, shows the annual mean of car- bon dioxide mole fraction (ESRL, 2017). Once the user decides to consult the Climate report page, they will be brought to the first visualization’s section S1. Each of these sections start with an introductory part and, apart from the last section S3, scrolling will be needed in order to reach the actual visualizations (see Figure 2). We will now focus on their visualization’s representation, presentation and interaction aspects, along with the dark patterns used.
+                        <span class="solution section-title">INTRODUCTION</span>
+                        <p class="solution">This essay is aimed to present, explain and reflect on a mockup of a visualization
+                            focused on the topic of <em>Journalistic Data Storytelling</em>: through this topic, it has been expected
+                            to realize an engaging information visualization tool to support Donald Trump’s ideas on <em>climate
+                            change</em>, together with the exploitation of <em>dark patterns</em>. Most significant images of the mockup
+                            will be presented to support concepts and ideas through the essay.
                         </p>
-                        <img id="view_1" src="img/fig1.png" alt="View 1">
-                        <img id="view_2" src="img/fig2.png" alt="View 2">
+                        <p class="solution">
+                            Since the visualization in analysis is meant to support Donald Trump’s agenda, it has been straightforwardly
+                            assumed that it could be made available on his website with a target set on American citizens.
+                            <a class="inline-link" href="#fig1">Figure 1</a> proposes real Trump’s landing page with a climate report in
+                            evidence, containing the visualization. Three main sections are provided within the visualization: the first
+                            one (<strong>S1</strong>), <em>Global Warming</em>, offers absolute low temperatures data on American soil
+                            (<a class="inline-link" href="#wiki2021a">Wikipedia, 2021a</a>), together with mean temperature anomalies data
+                            (<a class="inline-link" href="#gcag2016">GCAG, 2016</a>); the second section (<strong>S2</strong>), <em>CO2
+                            Emissions v Sea Level Rising</em>, presents data on carbon dioxide emissions from fossil fuels by USA and China
+                            (<a class="inline-link" href="#cdiac2014">CDIAC, 2014</a>), compared with the global average absolute sea level
+                            change (<a class="inline-link" href="#csiro2015">CSIRO, 2015</a>); finally, the third section (<strong>S3</strong>),
+                            <em>Trends in Atmospheric CO2</em>, shows the annual mean of carbon dioxide mole fraction
+                            (<a class="inline-link" href="#esrl2017">ESRL, 2017</a>). Once the user decides to consult the Climate report page,
+                            they will be brought to the first visualization’s section <strong>S1</strong>. Each of these sections start with an introductory part
+                            and, apart from the last section <strong>S3</strong>, scrolling will be needed in order to reach the actual visualizations (see
+                            <a class="inline-link" href="#fig2">Figure 2</a>). We will now focus on their visualization’s representation,
+                            presentation and interaction aspects, along with the dark patterns used.
+                        </p>
+                        <img id="fig1" class="essay-fig" src="img/fig1.png" alt="View 1">
+                        <p class="solution caption">
+                            Figure 1: Donald Trump website’s landing page
+                        </p>
+                        <img id="fig2" class="essay-fig" src="img/fig2.png" alt="View 2">
+                        <p class="solution caption">
+                            Figure 2: Sections <strong>S1</strong>, <strong>S2</strong> and <strong>S3</strong>’s introductory pages
+                        </p>
 
                         <span class="solution">EXPLANATION</span>
                         <p class="solution">
-                            According to Spence’s Reference Model (2014, p.37), representation is aimed to present data clearly to the mind (Spence, 2014, p.42). In our case, all core data provided by datahub.io came in form of tables: as we know, tables are of limited help and their data needs to be rearranged into some other representation (Spence, 2014, p.23). One important aspect to take into account is data derived from the domain of climate change. In this context, all data share a pivotal dimension as attribute: time. On a representation level, therefore, came the decision of representing data through two-dimensional graphs on all of the visualization’s sections, as common way to represent time-varying data. Graphs aren’t an opinion: they represent cold hard numbers. Yet, all proposed graphs in the visualization are misleading, since they take advantage of dark patterns. Scales have been vastly distorted by important lie factors (Craven, 2001) to shape skeptical opinions against the topic of climate change. That refers, to some extent, to the misdirection dark pattern category (Mathur et al, 2019, p.16): design purposefully focuses user’s attention on the coloured graph’s curves rather than on their scales. S1 deserves a particular mention: text, a timeline and a map are used as other means of representation in addition to the graph (see Figure 3).
+                            According to Spence’s Reference Model (<a class="inline-link" href="#spence2014">2014, p.37</a>), representation
+                            is aimed to present data clearly to the mind (<a class="inline-link" href="#spence2014">Spence, 2014, p.42</a>).
+                            In our case, all core data provided by <a class="inline-link ext-link" href="https://datahub.io/collections/climate-change"><code class="code-text">datahub.io</code></a>
+                            came in form of tables: as we know, tables are of limited help and their data needs to be rearranged into some other representation
+                            (<a class="inline-link" href="#spence2014">Spence, 2014, p.23</a>). One important aspect to take into account is data
+                            derived from the domain of climate change. In this context, all data share a pivotal dimension as attribute: time.
+                            On a representation level, therefore, came the decision of representing data through two-dimensional graphs on
+                            all the visualization’s sections, as common way to represent time-varying data. Graphs aren’t an opinion: they
+                            represent cold hard numbers. Yet, all proposed graphs in the visualization are misleading, since they take advantage
+                            of dark patterns. Scales have been vastly distorted by important lie factors (<a class="inline-link" href="#craven2001">Craven, 2001</a>)
+                            to shape skeptical opinions against the topic of climate change. That refers, to some extent, to the misdirection dark
+                            pattern category (<a class="inline-link" href="#mathur2019">Mathur et al, 2019, p.16</a>): design purposefully focuses
+                            user’s attention on the coloured graph’s curves rather than on their scales. <strong>S1</strong> deserves a particular mention:
+                            text, a timeline and a map are used as other means of representation in addition to the graph (see <a class="inline-link" href="#fig3">Figure 3</a>).
                         </p>
-                        <img id="view_3" src="img/fig3.png" alt="View 3">
+                        <img id="fig3" class="essay-fig" src="img/fig3.png" alt="View 3">
+                        <p class="solution caption">
+                            Figure 3: Section <strong>S1</strong>’s text, timeline and map before the graph representation
+                        </p>
 
                         <p class="solution">
-                            These auxiliary artifacts, in this case, involve tunnelling (Maier and Harr, 2020, p.8), since users are guided through a series of steps, wishing to change their thinking. S3 also provides the timeline artifact below the graph representation (see Figure 4).<br>
+                            These auxiliary artifacts, in this case, involve tunnelling (<a class="inline-link" href="#maier2020">Maier and Harr, 2020, p.8</a>),
+                            since users are guided through a series of steps, wishing to change their thinking. <strong>S3</strong> also provides the timeline
+                            artifact below the graph representation (see <a class="inline-link" href="#fig4">Figure 4</a>).<br>
                         </p>
-                        <img id="view_4" src="img/fig4.png" alt="View 4">
+                        <img id="fig4" class="essay-fig" src="img/fig4.png" alt="View 4">
+                        <p class="solution caption">
+                            Figure 4: Section <strong>S1</strong>’s timeline artifact under the graph representation
+                        </p>
 
                         <p class="solution">
-                            Turning attention on the presentation and interaction aspects, S1 (Figure 3) presents a vertical thermometer-shaped timeline, indicating the six visualization’s steps. To know at which step the user is currently in, di↵erent indicators are available: the inner red level, together with a white dot on its top; or the extended blue notch towards the text indicating date, location and temperature recorded. Just as Spence suggests (2014, p.184), when an attribute limit is changed, the e↵ect is shown immediately. As soon as the user brushes through any of the steps on the thermometer (SI), related state’s area in the map becomes solid red and data showed in text updates (SM), while the others with data available remain presented with red stripes as an a↵ordance (Spence, 2014, p.178), suggesting interaction. By hovering over these states, a ToolTip showing some data will appear. The map on the right is tightly connected to the thermometer. We may identify a technique Spence calls Invisible Links (Spence, 2014, p.85): the thermometer’s level, in fact, implies a link with the highlighted state on the map. A down arrow at the bottom suggests the user to scroll down towards the final page, which will present global temperature anomalies on a vertically compressed graph (see Figure 5). Here, additional text is used to persuade the user. As will happen for all other graphs in other sections of the whole visualization, interaction is allowed by hovering over the curve to get more detailed data.
+                            Turning attention on the presentation and interaction aspects, <strong>S1</strong> (<a class="inline-link" href="#fig3">Figure 3</a>)
+                            presents a vertical thermometer-shaped timeline, indicating the six visualization’s steps. To know at which step the user is currently
+                            in, different indicators are available: the inner red level, together with a white dot on its top; or the extended blue notch towards
+                            the text indicating <em>date</em>, <em>location</em> and <em>temperature</em> recorded. Just as Spence suggests (<a class="inline-link" href="#spence2014">2014, p.184</a>),
+                            when an attribute limit is changed, the effect is shown immediately. As soon as the user <em>brushes</em> through any of the steps on the
+                            thermometer (<em>SI</em>, or <em>sensitivity-interaction</em>), related state’s area in the map becomes solid red and data showed in text updates (<em>SM</em>,
+                            or <em>sensitivity-movement</em>), while the others with data available remain presented with red stripes as an <em>affordance</em>
+                            (<a class="inline-link" href="#spence2014">Spence, 2014, p.178</a>), suggesting interaction. By hovering over these states, a <em>ToolTip</em> showing
+                            some data will appear. The map on the right is tightly connected to the thermometer. We may identify a technique Spence calls <em>Invisible Links</em>
+                            (<a class="inline-link" href="#spence2014">Spence, 2014, p.85</a>): the thermometer’s level, in fact, implies a link with the highlighted
+                            state on the map. A <em>down</em> arrow at the bottom suggests the user to <em>scroll</em> down towards the final page, which will present global
+                            temperature <em>anomalies</em> on a vertically compressed graph (see <a class="inline-link" href="#fig5">Figure 5</a>). Here, additional text
+                            is used to persuade the user. As will happen for all other graphs in other sections of the whole visualization, interaction is allowed
+                            by hovering over the curve to get more detailed data.
                         </p>
-                        <img id="view_5" src="img/fig5.png" alt="View 5">
+                        <img id="fig5" class="essay-fig" src="img/fig5.png" alt="View 5">
+                        <p class="solution caption">
+                            Figure 5: Section <strong>S1</strong>’s graph
+                        </p>
 
                         <p class="solution">
-                            A slightly di↵erent approach has been used for the graph on S2 (see Figure 6): since correlation between carbon emissions and sea level change was needed, a second y-axis has been embedded. Here, the y-axes hide distortion by o↵ering inconsistent data points, even if the underlying grid makes it look like they’re consistent. Curves of carbon emissions from USA and China are presented as bubbles simulating the smoke coming out of factories. To present China’s data, in particular, a technique called Cherry Picking (TEDEd, 2017) has been applied: only data since 1920 - the most significant time range - is being presented, in order to show the massive increase in carbon emissions. That would also solve the spatial problem of placing the factory representing China at a di↵erent starting point of the USA’s one.
+                            A slightly different approach has been used for the graph on <strong>S2</strong> (see <a class="inline-link" href="#fig6">Figure 6</a>): since
+                            correlation between carbon emissions and sea level change was needed, a second <em>y-axis</em> has been embedded. Here, the <em>y-axes</em> hide
+                            <em>distortion</em> by offering inconsistent data points, even if the underlying grid makes it look like they’re consistent. Curves of
+                            <em>carbon emissions</em> from USA and China are presented as bubbles simulating the smoke coming out of factories. To present China’s data,
+                            in particular, a technique called <em>Cherry Picking</em> (<a class="inline-link" href="#teded2017">TEDEd, 2017</a>) has been applied: only
+                            data since 1920 - the most significant time range - is being presented, in order to show the massive increase in carbon emissions.
+                            That would also solve the spatial problem of placing the factory representing China at a different starting point of the USA’s one.
                         </p>
-                        <img id="view_6" src="img/fig6.png" alt="View 6">
+                        <img id="fig6" class="essay-fig" src="img/fig6.png" alt="View 6">
+                        <p class="solution caption">
+                            Figure 6: Section <strong>S2</strong>’s graph
+                        </p>
 
                         <p class="solution">
-                            The user may also want to filter out data and highlight China’s carbon emission’s curve, for instance, by clicking on the respective factory (see Figure 7); as you may notice, the y-axis labels not dealing with the selected data are greyed out. Another component to observe is the banner above the graph, including a deceptive Countdown Counter dark pattern (Mathur et al, 2019, p. 14) - inspired by the Climate Clock (Golan et al, 2020): in case the user won’t interact with it on the first thirty seconds, a pop-up box will appear (see Figure 8) and the user will be forced to interact, since the rest of the screen will get freezed out: this somehow follows the dark pattern called Roach Motel, where it’s very easy to get into a certain situation, but then makes it hard to get out of it (Brignull, 2018). The only way to get out of this situation will be by clicking on “No, I’m fine with letting ourselves drown”: a clear example of Confirmshaming, using language and emotion (shame) to steer users away from making a certain choice (Mathur et al, 2019, p. 12).
+                            The user may also want to <em>filter out</em> data and highlight China’s carbon emission’s curve, for instance, by clicking on the respective
+                            factory (see <a class="inline-link" href="#fig7">Figure 7</a>); as you may notice, the y-axis labels not dealing with the selected data are
+                            <em>greyed out</em>. Another component to observe is the <em>banner</em> above the graph, including a deceptive <strong>Countdown Counter</strong>
+                            dark pattern (<a class="inline-link" href="#mathur2019">Mathur et al, 2019, p. 14</a>) - inspired by the <em>Climate Clock</em>
+                            (<a class="inline-link" href="#golan2020">Golan et al, 2020</a>): in case the user won’t interact with it on the first thirty seconds, a <em>pop-up box</em>
+                            will appear (see <a class="inline-link" href="#fig8">Figure 8</a>) and the user will be forced to interact, since the rest of the screen will get freezed out:
+                            this somehow follows the dark pattern called <strong>Roach Motel</strong>, where it’s very easy to get into a certain situation,
+                            but then makes it hard to get out of it (<a class="inline-link" href="#brignull2018">Brignull, 2018</a>). The only way to get out of this situation will be by
+                            clicking on <em>“No, I’m fine with letting ourselves drown”</em>: a clear example of <strong>Confirmshaming</strong>, using language
+                            and emotion (shame) to steer users away from making a certain choice (<a class="inline-link" href="#mathur2019">Mathur et al, 2019, p. 12</a>).
                         </p>
-                        <img id="view_7" src="img/fig7.png" alt="View 7">
-                        <img id="view_8" src="img/fig8.png" alt="View 8">
+                        <img id="fig7" class="essay-fig" src="img/fig7.png" alt="View 7">
+                        <p class="solution caption">
+                            Figure 7: Section <strong>S2</strong>’s example of interaction (<em>clicking on the Chinese factory</em>)
+                        </p>
+
+                        <img id="fig8" class="essay-fig" src="img/fig8.png" alt="View 8">
+                        <p class="solution caption">
+                            Figure 8: Section <strong>S2</strong>’s <em>pop-up box</em>
+                        </p>
 
                         <p class="solution">
-                            S3 presents, once again, similar presentation and interaction (see Figure 9). The graph is distorted in the way that part of the y-axis is cut out: this technique is quite known and, as suggested by Hu(1954, p.62), “if any carping fellow objects to your misleading graph, you may say you’ve saved paper too”. This technique, in our case, made us save some screen real estate. It’s crucial to mention that the y-axis is displaying data on a logarithmic scale. A peculiarity about this visualization is the interactive timeline under the graph, similar to what Spence calls Dynamic Queries (2014, p.67), supporting exploration of data between di↵erent time frames, filtering out possible distracting ranges to reduce cognitive e↵ort involved in a search. The play button suggests animation, making the curve populate with data year by year. Finally, if the user notices the logarithmic scale, a tab bar may apparently allow them to change the y-axis into a linear scale. As Fogg suggests (2009), the easier a task appears, the more responsive people are likely to be, so the tab bar artifact is a perfect tool as easy and immediate to make the user interact with it.
+                            <strong>S3</strong> presents, once again, similar presentation and interaction (see <a class="inline-link" href="#fig9">Figure 9</a>).
+                            The graph is distorted in the way that part of the y-axis is cut out: this technique is quite known and, as suggested by Huff
+                            (<a class="inline-link" href="#huff1954">1954, p.62</a>), <em>“if any carping fellow objects to your misleading graph, you may say you’ve saved paper too”</em>.
+                            This technique, in our case, made us save some screen real estate. It’s crucial to mention that the y-axis is displaying data on a <em>logarithmic scale</em>.
+                            A peculiarity about this visualization is the interactive timeline under the graph, similar to what Spence calls <em>Dynamic Queries</em>
+                            (<a class="inline-link" href="#spence2014">2014, p.67</a>), supporting exploration of data between different time frames,
+                            filtering out possible distracting ranges to reduce <em>cognitive effort</em> involved in a search. The play button suggests <em>animation</em>,
+                            making the curve populate with data year by year. Finally, if the user notices the logarithmic scale, a <em>tab bar</em> may apparently allow them to
+                            change the y-axis into a linear scale. As Fogg suggests (<a class="inline-link" href="#fogg2009">2009</a>), the easier a task appears, the more responsive
+                            people are likely to be, so the tab bar artifact is a perfect tool as easy and immediate to make the user interact with it.
                         </p>
-                        <img id="view_9" src="img/fig9.png" alt="View 9">
+                        <img id="fig9" class="essay-fig" src="img/fig9.png" alt="View 9">
+                        <p class="solution caption">
+                            Figure 9: Section <strong>S3</strong>’s <em>pop-up box</em>
+                        </p>
 
                         <p class="solution">
-                            Eventually, though, the tab bar is just a hook used to trick the user: a click on it will trigger a pop-up donation box (see Figure 10). This may be considered as some sort of instance of the Disguised Ads dark pattern, since it’s just a form of advert disguised as other kinds of navigation component (Brignull, 2018). The rather shady and urgent text in the pop-up box, moreover, comes authentically from Trump’s real website, and proves that they’re actually using dark patterns themselves, like the pre-checked checkboxes hiding the Sneak into Basket dark pattern (Mathur et al, 2019, p.12).
+                            Eventually, though, the tab bar is just a <em>hook</em> used to trick the user: a click on it will trigger a <em>pop-up donation box</em> (see
+                            <a class="inline-link" href="#fig10">Figure 10</a>). This may be considered as some sort of instance of the <strong>Disguised Ads</strong> dark pattern,
+                            since it’s just a form of advert disguised as other kinds of navigation component (<a class="inline-link" href="#brignull2018">Brignull, 2018</a>).
+                            The rather shady and urgent text in the pop-up box, moreover, comes authentically from Trump’s real website, and proves that they’re actually using
+                            dark patterns themselves, like the pre-checked checkboxes hiding the <strong>Sneak into Basket</strong> dark pattern
+                            (<a class="inline-link" href="#mathur2019">Mathur et al, 2019, p. 12</a>).
                         </p>
-                        <img id="view_10" src="img/fig10.png" alt="View 10">
+                        <img id="fig10" class="essay-fig" src="img/fig10.png" alt="View 10">
+                        <p class="solution caption">
+                            Figure 10: Section <strong>S3</strong>’s <em>pop-up donation box</em>
+                        </p>
 
                         <span class="solution">REFLECTION</span>
                         <p class="solution">
-                            By facing the task of creating an information visualization tool on climate change for Donald Trump’s come-back in 2024, many limiting challenges arouse: first of all, the constraint of basing the visualization mainly on datasets coming from the collection on climate change on datahub.io. Data from this source just shout out on an impressive climate change, removing all doubt on any thought against it, that is rapidly a↵ecting our globe: data also reports some parameters (ie. carbon dioxide emissions or population growth) proving how humans are a contributing cause to climate change, making it even more di cult to being included in a visualization tool supporting the client’s ideas, where - in out case - the client is the 45th President of the United States of America. In a book called The Dangerous Case of Donald Trump, 27 psychiatrists point out the former president’s psychological dangerousness from observed behaviour, where the unthinkable becomes the norm (Lee, 2017), like deliriously thinking that climate change does not exist. To be mentioned the striking event of his second impeachment in January 2021, questioning his presidency capacity of powers and duties under the 25th Amendment (Wikipedia, 2021b).
+                            By facing the task of creating an information visualization tool on climate change for Donald Trump’s come-back in 2024,
+                            many limiting challenges arouse: first of all, the constraint of basing the visualization mainly on datasets coming from the
+                            collection on climate change on <a class="inline-link ext-link" href="https://datahub.io/collections/climate-change"><code class="code-text">datahub.io</code></a>.
+                            Data from this source just shout out on an impressive climate change, removing all doubt on any thought against it, that is
+                            rapidly affecting our globe: data also reports some parameters (i.e. carbon dioxide emissions or population growth) proving
+                            how humans are a contributing cause to climate change, making it even more difficult to being included in a visualization
+                            tool supporting the client’s ideas, where - in out case - the client is the <em>45th President of the United States of America</em>.
+                            In a book called <em>The Dangerous Case of Donald Trump</em>, 27 psychiatrists point out the former president’s psychological
+                            dangerousness from observed behaviour, where the unthinkable becomes the norm (<a class="inline-link" href="#lee2017">Lee, 2017</a>),
+                            like deliriously thinking that climate change does not exist. To be mentioned the striking event of his second impeachment in
+                            January 2021, questioning his presidency capacity of powers and duties under the <em>25th Amendment</em>
+                            (<a class="inline-link" href="#wiki2021b">Wikipedia, 2021b</a>).
                         </p>
                         <p class="solution">
-                            The goal was, therefore, to subvert reality and present data in a machiavellian, diabolic yet per- suasive way. At this point, the use of dark patterns on a deceptive dimension - that is inducing false beliefs (Mathur et al, 2019, p.5) - for this visualization became not only an option but a necessity, as described in the explanation part for Misdirection, Roach Motel, Confirmshaming and Disguised Ads. Most of the research - which then influenced the solution design - was done on misleading graphs, as meant as graphs that distract the user from fully understanding what they’re viewing: one source used is a TEDEd video “How to spot a misleading graph” produced by the former Harvard University student Lea Gaslowitz (TEDEd, 2017), combined with a deepening page on misleading graphs on her website www.frontporchmath.com (Gaslowitz, 2017). This of course counters Tufte’s concept of graphical integrity, whose excellence begins with telling the truth about data (2001).
+                            The goal was, therefore, to subvert reality and present data in a <em>machiavellian</em>, diabolic yet persuasive way. At this point,
+                            the use of dark patterns on a deceptive dimension - that is inducing false beliefs (<a class="inline-link" href="#mathur2019">Mathur et al, 2019, p.5</a>)
+                            - for this visualization became not only an option but a necessity, as described in the explanation part for Misdirection, Roach Motel, Confirmshaming
+                            and Disguised Ads. Most of the research - which then influenced the solution design - was done on <em>misleading graphs</em>, as meant as graphs that distract
+                            the user from fully understanding what they’re viewing: one source used is a TEDEd video <em>"How to spot a misleading graph"</em> produced by the
+                            former Harvard University student Lea Gaslowitz (<a class="inline-link" href="#teded2017">TEDEd, 2017</a>), combined with a deepening page on misleading
+                            graphs on her website <a class="inline-link ext-link" href="https://www.frontporchmath.com"><code class="code-text">www.frontporchmath.com</code></a>
+                            (<a class="inline-link" href="#gaslowitz2017">Gaslowitz, 2017</a>). This of course counters Tufte’s concept of <em>graphical integrity</em>, whose excellence
+                            begins with telling the truth about data (<a class="inline-link" href="#tufte2001">2001</a>).
                         </p>
                         <p class="solution">
-                            On S1, the United States map facilitates the user forming a useful mental model and making rapid judgments, by letting them associate the di↵erent record low temperatures to the di↵erent states: in other words, this representation allows to achieve what Spence calls a qualitative awareness of some aspect of data (2014, p.25). The glass thermometer, instead, is purposefully presented in a misleading way, since it is actually used to present a timeline: as the user scrolls down, its level will shrink and the visualization will go through the record low temperatures from less to most recent (not from highest to lowest). This concept is supposed to counter the idea of global warming, as to make the user suspecting how that could be real since very low temperatures are still recorded. Moreover, in some cases the proposed record low temperatures may not be that astonishing: hence, to make them feel like very low, the choice of displaying them in Celsius rather than in Fahrenheit, usually resulting in a lower number. American citizens are also not so practiced with that unit of measure, so that’s another useful way to bias them.
+                            On <strong>S1</strong>, the United States map facilitates the user forming a useful mental model and making rapid judgments, by letting them associate
+                            the different record low temperatures to the different states: in other words, this representation allows to achieve what Spence calls a <em>qualitative awareness</em>
+                            of some aspect of data (<a class="inline-link" href="#spence2014">2014, p.25</a>). The glass thermometer, instead, is purposefully presented in a
+                            misleading way, since it is actually used to present a timeline: as the user scrolls down, its level will shrink and the visualization will go through
+                            the record low temperatures from <em>less</em> to <em>most</em> recent (not from <em>highest</em> to <em>lowest</em>). This concept is supposed to
+                            counter the idea of global warming, as to make the user suspecting how that could be real since very low temperatures are still recorded. Moreover, in
+                            some cases the proposed record low temperatures may not be that astonishing: hence, to make them feel like very low, the choice of displaying them
+                            in <em>Celsius</em> rather than in <em>Fahrenheit</em>, usually resulting in a lower number. American citizens are also not so practiced with that
+                            unit of measure, so that’s another useful way to bias them.
                         </p>
-                        <p class="solution">
-                            As anticipated in the explanation part, all graphs o↵ered are misleading graphs:
-                            <ul>
+                        <p class="solution list-header">
+                            As anticipated in the explanation part, all graphs offered are misleading graphs:
+                            <ul class="infoviz-list">
                                 <li>
-                                    • in S1, the graph intentionally tries to make the curve look as flat as possible, whereas apparent minor changes of even half a degree Celsius can actually cause ecological disruption;
+                                    in <strong>S1</strong>, the graph intentionally tries to make the curve look as <em>flat</em> as possible, whereas apparent minor
+                                    changes of even half a degree Celsius can actually cause ecological disruption;
                                 </li>
                                 <li>
-                                    • in S2, two y-axes are applied to suggest correlation: with this technique, anything can be correlated, but correlation des not mean causation (Tufte, 2006)! Moreover, both y-axes present inconsistent data points, making China’s emissions look more and USA’s ones look less than they are;
+                                    in <strong>S2</strong>, two y-axes are applied to suggest <em>correlation</em>: with this technique, anything can be correlated,
+                                    but correlation des not mean causation (<a class="inline-link" href="#tufte2006">Tufte, 2006</a>)! Moreover, both y-axes present
+                                    inconsistent data points, making China’s emissions look more and USA’s ones look less than they are;
                                 </li>
                                 <li>
-                                    • in S3, data points on y-axis are intentionally disposed on a logarithmic scale: the same data, on a linear scale, would result in a quite more worrying curve in trends of carbon dioxide in atmosphere.
+                                    in <strong>S3</strong>, data points on y-axis are intentionally disposed on a logarithmic scale: the same data, on a linear scale,
+                                    would result in a quite more worrying curve in trends of carbon dioxide in atmosphere.
                                 </li>
                             </ul>
                         </p>
                         <p class="solution">
-                            Graphs were also chosen for another reason: they were identified as most flexible, simple and quick artifacts to produce and straightforwardly combine with dark patterns and techniques to trick users. Graphs, though, may result a bit boring: in case it would have been given more time to realize the information visualization in analysis, some more time-consuming yet more fun and interesting-to-observe alternatives to misleading graphs would have been considered. The challenge would not be only to choose from the many other alternatives to represent time-varying data - a couple of eligible examples may be the ThemeRiver (Spence, 2014, p.54) and the Nightingale’s diagram (Spence, 2014, p.60), both rather e↵ective in showing changes over time - but also then find good ways to combine those representations with the dark patterns, needed to bias users.
+                            Graphs were also chosen for another reason: they were identified as most flexible, simple and quick artifacts to produce and straightforwardly
+                            combine with dark patterns and techniques to trick users. Graphs, though, may result a bit boring: in case it would have been given more time
+                            to realize the information visualization in analysis, some more time-consuming yet more fun and <em>interesting-to-observe</em> alternatives
+                            to misleading graphs would have been considered. The challenge would not be only to choose from the many other alternatives to represent
+                            <em>time-varying data</em> - a couple of eligible examples may be the <em>ThemeRiver</em> (<a class="inline-link" href="#spence2014">Spence, 2014, p.54</a>)
+                            and the <em>Nightingale’s diagram</em> (<a class="inline-link" href="#spence2014">Spence, 2014, p.60</a>), both rather effective in showing changes
+                            over time - but also then find good ways to combine those representations with the dark patterns, needed to bias users.
                         </p>
                         <p class="solution">
-                            If more time was given, also, another possible visualization could have been provided: Figure 11 comes as data source from the datahub.io climate change collection (Climate4You, 2021). It reconstructs global temperature over the past 420,000 years based on the Vostok ice core from the Antarctica (Petit et al, 2001). As you may observe, given such a great timespan, some cyclicality occurs: this would even support Trump’s thesis of climate change not being a↵ected by humans; on the other hand, though, any dark pattern - even if required - wouldn’t be needed. Also, a possible representation technique that would perfectly fit to indicate such repetitions would be the Arc Diagrams (Spence, 2014, p.55).
+                            If more time was given, also, another possible visualization could have been provided: <a class="inline-link" href="#fig11">Figure 11</a> comes as
+                            data source from the <a class="inline-link ext-link" href="https://datahub.io/collections/climate-change"><code class="code-text">datahub.io</code></a>
+                            climate change collection (<a class="inline-link" href="#climate4you2021">Climate4You, 2021</a>). It reconstructs global temperature over the
+                            past <em>420,000 years</em> based on the <em>Vostok</em> ice core from the Antarctica (<a class="inline-link" href="#petit2001">Petit et al, 2001</a>). As you may
+                            observe, given such a great timespan, some <em>cyclicality</em> occurs: this would even support Trump’s thesis of climate change not being affected by humans;
+                            on the other hand, though, any dark pattern - even if required - wouldn’t be needed. Also, a possible representation technique that would perfectly fit to
+                            indicate such repetitions would be the <em>Arc Diagrams</em> (<a class="inline-link" href="#spence2014">Spence, 2014, p.55</a>).
                         </p>
-                        <img id="view_11" src="img/fig11.png" alt="View 11">
+                        <div class="essay-fig-wrapper">
+                            <img id="fig11" class="essay-fig" src="img/fig11.png" alt="View 11">
+                        </div>
+                        <p class="solution caption">
+                            Figure 11: Temperature anomaly over the past <em>420,000 years</em> (<a class="inline-link" href="#petit2001">Petit et al, 2001</a>)
+                        </p>
 
                         <span class="solution">REFERENCES</span>
-                        <p class="solution">
-                            Wikipedia (2021a) various data gathered from:
-                            • U.S. State and Territory Temperature Extremes.
-                            URL: en.wikipedia.org/wiki/U.S. state and territory temperature extremes
-                            • 2013 extreme weather events.
-                            URL: en.wikipedia.org/wiki/2013 extreme weather events#United States
-                            • 2014–15 North American winter.
-                            URL: en.wikipedia.org/wiki/2014-15 North American winter
-                            • December 2017–January 2018 North American cold wave.
-                            URL: en.wikipedia.org/wiki/December 2017-January 2018 North American cold wave
-                            • January–February 2019 North American cold wave.
-                            URL: en.wikipedia.org/wiki/January-February 2019 North American cold wave
-                            • February 13–17, 2021 North American winter storm.
-                            URL: en.wikipedia.org/wiki/February 13-17, 2021 North American winter storm
+                        <p id="wiki2021a" class="list-header-ref solution reference-item">
+                            <strong>Wikipedia (2021a)</strong>. <em>Various data gathered from</em>:
+                                <ul class="infoviz-list infoviz-ref-list">
+                                    <li>
+                                        U.S. State and Territory Temperature Extremes.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/U.S._state_and_territory_temperature_extremes" target="_blank"><code class="code-text">en.wikipedia.org/wiki/U.S._state_and_territory_temperature_extremes</code></a>
+                                    </li>
+                                    <li>
+                                        2013 extreme weather events.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/2013_extreme_weather_events#United_States" target="_blank"><code class="code-text">en.wikipedia.org/wiki/2013_extreme_weather_events#United_States</code></a>
+                                    </li>
+                                    <li>
+                                        2014–15 North American winter.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/2014-15_North_American_winter" target="_blank"><code class="code-text">en.wikipedia.org/wiki/2014-15_North_American_winter</code></a>
+                                    </li>
+                                    <li>
+                                        December 2017–January 2018 North American cold wave.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/December_2017-January_2018_North_American_cold_wave" target="_blank"><code class="code-text">en.wikipedia.org/wiki/December_2017-January_2018_North_American_cold_wave</code></a>
+                                    </li>
+                                    <li>
+                                        January–February 2019 North American cold wave.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/January-February_2019_North_American_cold_wave" target="_blank"><code class="code-text">en.wikipedia.org/wiki/January-February_2019_North_American_cold_wave</code></a>
+                                    </li>
+                                    <li>
+                                        February 13–17, 2021 North American winter storm.
+                                        URL: <a class="inline-link-400 ext-link" href="https://en.wikipedia.org/wiki/February_13-17,_2021_North_American_winter_storm" target="_blank"><code class="code-text">en.wikipedia.org/wiki/February_13-17,_2021_North_American_winter_storm</code></a>
+                                    </li>
+                                </ul>
                         </p>
-                        <p class="solution">
-                            GCAG - Climate at a Glance (2016) Global Temperature Time Series, from National Centers for Environmental Information (NOAA). URL: datahub.io/core/global-temp
+                        <p id="gcag2016" class="solution reference-item">
+                            <strong>GCAG - Climate at a Glance (2016)</strong>. <em>Global Temperature Time Series, from National Centers for Environmental Information (NOAA)</em>. URL: <a class="inline-link-400 ext-link" href="https://datahub.io/core/global-temp" target="_blank"><code class="code-text">datahub.io/core/global-temp</code></a>
                         </p>
-                        <p class="solution">
-                            CDIAC - Carbon Dioxide Information Analysis Center(2014) CO2 Emissions from Fossil Fuels since 1751, By Nation. URL: datahub.io/core/co2-fossil-by-nation
+                        <p id="cdiac2014" class="solution reference-item">
+                            <strong>CDIAC - Carbon Dioxide Information Analysis Center(2014)</strong>. <em>CO2 Emissions from Fossil Fuels since 1751, By Nation</em>. URL: <a class="inline-link-400 ext-link" href="https://datahub.io/core/co2-fossil-by-nation" target="_blank"><code class="code-text">datahub.io/core/co2-fossil-by-nation</code></a>
                         </p>
-                        <p class="solution">
-                            CSIRO - Commonwealth Scientific and Industrial Research Organization (2015) Global Average Absolute Sea Level Change, 1880-2014. URL: datahub.io/core/sea-level-rise
+                        <p id="csiro2015" class="solution reference-item">
+                            <strong>CSIRO - Commonwealth Scientific and Industrial Research Organization (2015)</strong>. <em>Global Average Absolute Sea Level Change, 1880-2014</em>. URL: <a class="inline-link-400 ext-link" href="https://datahub.io/core/sea-level-rise" target="_blank"><code class="code-text">datahub.io/core/sea-level-rise</code></a>
                         </p>
-                        <p class="solution">
-                            ESRL - Earth System Research Laboratory (2017) CO2 PPM - Trends in Atmospheric Car- bon Dioxide, from National Centers for Environmental Information (NOAA). URL: datahub.io /core/co2-ppm
+                        <p id="esrl2017" class="solution reference-item">
+                            <strong>ESRL - Earth System Research Laboratory (2017)</strong>. <em>CO2 PPM - Trends in Atmospheric Carbon Dioxide</em>, from National Centers for Environmental Information (NOAA). URL: <a class="inline-link-400 ext-link" href="https://datahub.io/core/co2-ppm" target="_blank"><code class="code-text">datahub.io/core/co2-ppm</code></a>
                         </p>
-                        <p class="solution">
-                            Spence, R. (2014) Information Visualization: An Introduction. 3rd edition. Springer Interna- tional Publishing Switzerland.
+                        <p id="spence2014" class="solution reference-item">
+                            <strong>Spence, R. (2014)</strong>. <em>Information Visualization: An Introduction</em>. 3rd edition. Springer International Publishing Switzerland.
                         </p>
-                        <p class="solution">
-                            Craven, T.(2001) LIS504 - Terms with Definitions, Faculty of Information and Media Studies at the University of Western Ontario. URL: publish.uwo.ca/⇠craven/504/504ter.htm
+                        <p id="craven2001" class="solution reference-item">
+                            <strong>Craven, T.(2001)</strong>. <em>LIS504 - Terms with Definitions, Faculty of Information and Media Studies at the University of Western Ontario</em>. URL: <a class="inline-link-400 ext-link" href="https://publish.uwo.ca/⇠craven/504/504ter.htm" target="_blank"><code class="code-text">publish.uwo.ca/⇠craven/504/504ter.htm</code></a>
                         </p>
-                        <p class="solution">
-                            Mathur, A., Acar, G., Friedman, M.J., Lucherini, E., Mayer, J., Chetty, M. and Nara- yanan, A. (2019) Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Web- sites, in Proceedings of the ACM on Human-Computer Interaction, 3(CSCW), 1–32. ACM Press.
+                        <p id="mathur2019" class="solution reference-item">
+                            <strong>Mathur, A., Acar, G., Friedman, M.J., Lucherini, E., Mayer, J., Chetty, M. and Narayanan, A. (2019)</strong>. <em>Dark Patterns at Scale: Findings from a Crawl of 11K Shopping Websites</em>, in Proceedings of the ACM on Human-Computer Interaction, 3(CSCW), 1–32. ACM Press.
                         </p>
-                        <p class="solution">
-                            Maier, M. and Harr, R. (2020) Dark Design Patterns: An End-User Perspective. In Human Technology, 16(2).
+                        <p id="maier2020" class="solution reference-item">
+                            <strong>Maier, M. and Harr, R. (2020)</strong>. <em>Dark Design Patterns: An End-User Perspective</em>. In Human Technology, 16(2).
                         </p>
-                        <p class="solution">
-                            TEDEd (2017) How to spot a misleading graph - Lea Gaslowitz. YouTube. URL: youtu.be/E91bGT 9BjYk
+                        <p id="teded2017" class="solution reference-item">
+                            <strong>TEDEd (2017)</strong>. <em>How to spot a misleading graph - Lea Gaslowitz</em>. YouTube. URL: youtu.be/E91bGT 9BjYk
                         </p>
-                        <p class="solution">
-                            Golan, G., Boyd, A., Peyton Hofstadter, K. and Carpenter, A. (2020) Climate Clock. URL: climateclock.world
+                        <p id="golan2020" class="solution reference-item">
+                            <strong>Golan, G., Boyd, A., Peyton Hofstadter, K. and Carpenter, A. (2020)</strong>. <em>Climate Clock</em>. URL: <a class="inline-link-400 ext-link" href="https://climateclock.world" target="_blank"><code class="code-text">climateclock.world</code></a>
                         </p>
-                        <p class="solution">
-                            Brignull, H. (2018) Dark Patterns. URL: darkpatterns.org
+                        <p id="brignull2018" class="solution reference-item">
+                            <strong>Brignull, H. (2018)</strong>. <em>Dark Patterns</em>. URL: <a class="inline-link-400 ext-link" href="https://darkpatterns.org" target="_blank"><code class="code-text">darkpatterns.org</code></a>
                         </p>
-                        <p class="solution">
-                            Huff, D. (1954) How to Lie with Statistics. 1st edition. New York, NY: Norton.
+                        <p id="huff1954" class="solution reference-item">
+                            <strong>Huff, D. (1954)</strong>. <em>How to Lie with Statistics</em>. 1st edition. New York, NY: Norton.
                         </p>
-                        <p class="solution">
-                            Lee, B.X. (2017) The Dangerous Case of Donald Trump: 27 Psychiatrists and Mental Health Experts Assess a President. 1st edition. New York, NY: St. Martin’s Press.
+                        <p id="fogg2009" class="solution reference-item">
+                            <strong>Fogg, B.J. (2009)</strong>. <em>A Behavior Model for Persuasive Design</em>, in Proceedings of the 4th International Conference on Persuasive Technology (Persuasive ’09), Article 40, 1–7. ACM Press.
                         </p>
-                        <p class="solution">
-                            Wikipedia (2021b) Second Impeachment of Donald Trump. URL: en.wikipedia.org/wiki/Sec ond impeachment of Donald Trump
+                        <p id="lee2017" class="solution reference-item">
+                            <strong>Lee, B.X. (2017)</strong>. <em>The Dangerous Case of Donald Trump: 27 Psychiatrists and Mental Health Experts Assess a President</em>. 1st edition. New York, NY: St. Martin’s Press.
                         </p>
-                        <p class="solution">
-                            Gaslowitz, L. (2017) Misleading Graphs.Front Porch Math. URL: www.frontporchmath.com/t opics/probability-statistics/graphs/misleading-graphs/
+                        <p id="wiki2021b" class="solution reference-item">
+                            <strong>Wikipedia (2021b)</strong>. <em>Second Impeachment of Donald Trump</em>. URL: en.wikipedia.org/wiki/Sec ond impeachment of Donald Trump
                         </p>
-                        <p class="solution">
-                            Tufte, E.R. (2001) The Visual Display of Quantitative Information. 2nd edition. Cheshire, CT: Graphics Press.
+                        <p id="gaslowitz2017" class="solution reference-item">
+                            <strong>Gaslowitz, L. (2017)</strong>. <em>Misleading Graphs. Front Porch Math</em>. URL: <a class="inline-link-400 ext-link" href="https://www.frontporchmath.com/topics/probability-statistics/graphs/misleading-graphs/" target="_blank"><code class="code-text">www.frontporchmath.com/topics/probability-statistics/graphs/misleading-graphs/</code></a>
                         </p>
-                        <p class="solution">
-                            Tufte, E.R. (2006) The Cognitive Style of PowerPoint: Pitching Out Corrupts Within. 2nd edition. Cheshire, CT: Graphics Press.
+                        <p id="tufte2001" class="solution reference-item">
+                            <strong>Tufte, E.R. (2001)</strong>. <em>The Visual Display of Quantitative Information</em>. 2nd edition. Cheshire, CT: Graphics Press.
                         </p>
-                        <p class="solution">
-                            Climate4You (2021) Global Temperatures. URL: www.climate4you.com/GlobalTemperatures .htm#GISP2%20diagram
+                        <p id="tufte2006" class="solution reference-item">
+                            <strong>Tufte, E.R. (2006)</strong>. <em>The Cognitive Style of PowerPoint: Pitching Out Corrupts Within</em>. 2nd edition. Cheshire, CT: Graphics Press.
                         </p>
-                        <p class="solution">
-                            Petit, J.R., et al., (2001) Vostok Ice Core Data for 420,000 Years. IGBP PAGES/World Data Center for Paleoclimatology Data Contribution Series #2001-076. NOAA/NGDC Paleocli- matology Program, Boulder CO, USA.
+                        <p id="climate4you2021" class="solution reference-item">
+                            <strong>Climate4You (2021)</strong>. <em>Global Temperatures</em>. URL: <a class="inline-link-400 ext-link" href="https://www.climate4you.com/GlobalTemperatures.htm#GISP2%20diagram" target="_blank"><code class="code-text">www.climate4you.com/GlobalTemperatures.htm#GISP2%20diagram</code></a>
+                        </p>
+                        <p id="petit2001" class="solution reference-item">
+                            <strong>Petit, J.R., et al., (2001)</strong>. <em>Vostok Ice Core Data for 420,000 Years.</em> IGBP PAGES/World Data Center for Paleoclimatology Data Contribution Series #2001-076. NOAA/NGDC Paleoclimatology Program, Boulder CO, USA.
                         </p>
                     </div>
                 </div>
